@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LiveCommerce.View.Configurar;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -220,6 +221,12 @@ namespace LiveCommerce.View
         {
             FrmSobre frmSobre = new FrmSobre();
             frmSobre.Show();
+        }
+
+        private void parâmetrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmParam frmp = new FrmParam();
+            frmp.Show();
         }
     }
 }

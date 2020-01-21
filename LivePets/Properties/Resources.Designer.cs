@@ -263,6 +263,16 @@ namespace LiveCommerce.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Tela2 {
+            get {
+                object obj = ResourceManager.GetObject("Tela2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Venda {
             get {
                 object obj = ResourceManager.GetObject("Venda", resourceCulture);

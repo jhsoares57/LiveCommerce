@@ -153,6 +153,12 @@
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Utils\Criptografia.cs" />
+    <Compile Include="View\Configurar\FrmParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Configurar\FrmParam.Designer.cs">
+      <DependentUpon>FrmParam.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\CpfInvalidoException.cs" />
     <Compile Include="View\FrmCadastroCliente.cs">
       <SubType>Form</SubType>
@@ -291,6 +297,9 @@
     <EmbeddedResource Include="Relatorios\Produtos.rdlc" />
     <EmbeddedResource Include="Relatorios\VendasDia.rdlc" />
     <EmbeddedResource Include="Relatorios\VendasFormaPagamento.rdlc" />
+    <EmbeddedResource Include="View\Configurar\FrmParam.resx">
+      <DependentUpon>FrmParam.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FrmCadastroCliente.resx">
       <DependentUpon>FrmCadastroCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -392,6 +401,7 @@
     <None Include="Resources\Editar1.png" />
     <None Include="Resources\atencion.gif" />
     <None Include="Resources\finalizar.png" />
+    <None Include="Resources\Tela2.jpg" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
