@@ -95,6 +95,12 @@ namespace LiveCommerce.View
         {
             try
             {
+                string Tipo = cbxTipoFornecedor.Text.Replace("SELECIONE", "").Trim();
+                if (string.IsNullOrEmpty(Tipo))
+                {
+                    throw new CpfInvalidoException("Tipo do Fornecedor é necessário para prosseguir!");
+
+                }
 
                 int TP = Convert.ToInt32(cbxTipoFornecedor.SelectedValue.ToString());
                 if (TP == 1)
@@ -139,6 +145,108 @@ namespace LiveCommerce.View
                     {
                         throw new CampoInvalidoException("CEP Inválido.");
                     }
+                }
+                string Situacao = cbxTipoFornecedor.Text.Replace("SELECIONE", "").Trim();
+                if (string.IsNullOrEmpty(Situacao))
+                {
+                    throw new CpfInvalidoException("Situação do Fornecedor é necessário para prosseguir!");
+
+                }
+                string UF = cbxUFCadastroFornecedor.Text.Replace("SELECIONE", "").Trim();
+                if (string.IsNullOrEmpty(UF))
+                {
+                    throw new CpfInvalidoException("Situação do cliente é necessário para prosseguir!");
+
+                }
+                string CidadeEx = cbxCidade.Text.Replace("SELECIONE", "").Trim();
+                if (string.IsNullOrEmpty(CidadeEx))
+                {
+                    throw new CpfInvalidoException("Situação do cliente é necessário para prosseguir!");
+
+                }
+                string Rzao = txtRazaoFornecedor.Text;
+                if (string.IsNullOrEmpty(Rzao))
+                {
+                    if (cbxTipoFornecedor.SelectedValue.ToString() == "1")
+                    {
+                        throw new CpfInvalidoException("Nome do cliente é necessário para prosseguir!");
+                    }
+                    else
+                    {
+                        throw new CpfInvalidoException("Razão Social é necessário para prosseguir!");
+                    }
+
+                }
+                string Fantasia = txtNomeFantasia.Text;
+                if (string.IsNullOrEmpty(Fantasia))
+                {
+                    if (cbxTipoFornecedor.SelectedValue.ToString() == "2")
+                    {
+                        throw new CpfInvalidoException("Nome Fantasia é necessário para prosseguir!");
+                    }
+
+                }
+                string CNPJ = txtNomeFantasia.Text;
+                if (string.IsNullOrEmpty(CNPJ))
+                {
+                    if (cbxTipoFornecedor.SelectedValue.ToString() == "2")
+                    {
+                        throw new CpfInvalidoException("CNPJ é necessário para prosseguir!");
+                    }
+                    else
+                    {
+                        throw new CampoInvalidoException("CPF é necessário´para prosseguir!");
+                    }
+
+                }
+                string IE = txtNomeFantasia.Text;
+                if (string.IsNullOrEmpty(IE))
+                {
+                    if (cbxTipoFornecedor.SelectedValue.ToString() == "2")
+                    {
+                        throw new CpfInvalidoException("Inscrição Estadual é necessário para prosseguir!");
+                    }
+                    else
+                    {
+                        throw new CampoInvalidoException("RG é necessário´para prosseguir!");
+                    }
+
+                }
+                string Enderecoex = txtEnderecoFornecedor.Text;
+                if (string.IsNullOrEmpty(Enderecoex))
+                {
+                    throw new CpfInvalidoException("Endereço é necessário para prosseguir!");
+
+                }
+                string BairroEx = txtBairroFornecedor.Text;
+                if (string.IsNullOrEmpty(BairroEx))
+                {
+                    throw new CpfInvalidoException("Bairro é necessário para prosseguir!");
+
+                }
+                string NumeroEx = txtNumeroFornecedor.Text;
+                if (string.IsNullOrEmpty(NumeroEx))
+                {
+                    throw new CpfInvalidoException("Numero é necessário para prosseguir!");
+
+                }
+                string CepEx = txtCpfCnpj.Text.Replace("_", "").Replace("-", "").Replace("00000-000", "").Trim();
+                if (string.IsNullOrEmpty(CepEx))
+                {
+                    throw new CpfInvalidoException("Cep é necessário para prosseguir!");
+
+                }
+                string Tel = txtTelefone.Text.Replace("_", "").Replace("-", "").Replace(")", "").Replace("(","").Trim();
+                if (string.IsNullOrEmpty(Tel))
+                {
+                    throw new CpfInvalidoException("Telefone é necessário para prosseguir!");
+
+                }
+                string Cel = txtCelular.Text.Replace("_", "").Replace("-", "").Replace(")", "").Replace("(", "").Trim();
+                if (string.IsNullOrEmpty(Cel))
+                {
+                    throw new CpfInvalidoException("Celular é necessário para prosseguir!");
+
                 }
 
                 if (string.IsNullOrEmpty(txtIdFornecedor.Text))
@@ -188,7 +296,7 @@ namespace LiveCommerce.View
                     F.TipoPessoa = Convert.ToInt32(cbxTipoFornecedor.SelectedValue);
 
                     fService.Update(F);
-                    MessageBox.Show("Fornecedor atulizau com sucesso");
+                    MessageBox.Show("Fornecedor atualizado com sucesso!","Mensagem");
                     LimparCampo();
 
                 }
@@ -324,6 +432,7 @@ namespace LiveCommerce.View
                 lblRazao.Text = "Razão Social";
                 lblFantasia.Visible = true;
                 txtNomeFantasia.Visible = true;
+                lblCPFCNPJ.Text = "CNPJ";
                 lblIERG.Text = "Inscrição estadual";
             }
             else
@@ -333,6 +442,7 @@ namespace LiveCommerce.View
                 lblRazao.Text = "Nome";
                 lblFantasia.Visible = false;
                 txtNomeFantasia.Visible = false;
+                lblCPFCNPJ.Text = "CPF";
                 lblIERG.Text = "RG";
             }
         }
