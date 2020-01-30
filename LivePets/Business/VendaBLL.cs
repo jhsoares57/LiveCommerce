@@ -33,5 +33,18 @@ namespace LiveCommerce.Business
 
             return atualizou;
         }
+
+        public bool ImprimeVnedaParam(Venda v)
+        {
+            bool atualizou = false;
+            VendaDAL vendaDAL = new VendaDAL();
+
+            if (vendaDAL.ParamImprimeVenda(v) > 0)
+            {
+                atualizou = true;
+            }
+
+            return atualizou;
+        }
     }
 }

@@ -183,3 +183,7 @@ D:\Projetos\Projeto_RR\LiveCommerce\LivePets\obj\Debug\LiveCommerce.csprojAssemb
 D:\Projetos\Projeto_RR\LiveCommerce\LivePets\bin\Debug\Validacao.dll
 D:\Projetos\Projeto_RR\LiveCommerce\LivePets\bin\Debug\Validacao.pdb
 D:\Projetos\Projeto_RR\LiveCommerce\LivePets\obj\Debug\LiveCommerce.View.Configurar.FrmParam.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LivePets\bin\Debug\LiveCommerce.exe.manifest
+D:\Projetos\Projeto_RR\LiveCommerce\LivePets\bin\Debug\LiveCommerce.application
+D:\Projetos\Projeto_RR\LiveCommerce\LivePets\obj\Debug\LiveCommerce.exe.manifest
+D:\Projetos\Projeto_RR\LiveCommerce\LivePets\obj\Debug\LiveCommerce.application

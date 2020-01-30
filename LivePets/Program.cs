@@ -17,7 +17,7 @@ namespace LiveCommerce
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmProgressBar());
+            Application.Run(new FrmPaginaInicial());
         }
     }
 }

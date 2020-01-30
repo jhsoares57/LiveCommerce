@@ -249,7 +249,15 @@ namespace LiveCommerce.View
 
                 if (result == System.Windows.Forms.DialogResult.Yes)
                 {
-                    ImprimirVenda();
+                    Venda I = new Venda();
+                    I.IdVenda = v.IdVenda;
+
+                    if (I.IdVenda > 0)
+                    {
+                        vendaService.ImprimeVnedaParam(I);
+                        ImprimirVenda();
+                    }
+
                 }
                 LimparCampos();
 

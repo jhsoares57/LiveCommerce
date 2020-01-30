@@ -107,5 +107,30 @@ namespace LiveCommerce.DAL
             return linhasAfetadas;
 
         }
+
+        public int ParamImprimeVenda(Venda v)
+        {
+            cf = new ConnectionFactory();
+            int linhasAfetadas = 0;
+
+            string query = "USP_IMPRIMI_VENDA";
+
+            cf.Comando = cf.Conexao.CreateCommand();
+            cf.Comando.Parameters.AddWithValue("@ID", v.IdVenda);
+            cf.Comando.CommandType = CommandType.StoredProcedure;
+            cf.Comando.CommandText = query.ToString();
+
+            cf.Conexao.Open();
+
+            linhasAfetadas = cf.Comando.ExecuteNonQuery();
+
+            cf.Conexao.Close();
+
+            return linhasAfetadas;
+
+        }
+
+       
+        
     }
 }

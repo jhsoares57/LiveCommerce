@@ -94,6 +94,37 @@ namespace LiveCommerce.View
             }
             
         }
-        
+
+        private void btnImprimirVenda_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Venda v = new Venda();
+                v.IdVenda = id;
+
+
+
+                if (v.IdVenda > 0)
+                {
+                    vendaService.ImprimeVnedaParam(v);
+                    ImprimirVenda();
+                }
+                else
+                {
+                    MessageBox.Show("SELECIONE UMA VENDA");
+                }
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("SELECIONE UMA VENDA");
+            }
+        }
+        private void ImprimirVenda()
+        {
+            Impressao.FrmImprimirVenda FrImprimi = new Impressao.FrmImprimirVenda();
+            FrImprimi.Show();
+        }
     }
 }

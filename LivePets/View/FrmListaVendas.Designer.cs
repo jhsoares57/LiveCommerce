@@ -74,6 +74,7 @@
             this.btnImprimirVenda.Text = "Imprimir";
             this.btnImprimirVenda.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnImprimirVenda.UseVisualStyleBackColor = true;
+            this.btnImprimirVenda.Click += new System.EventHandler(this.btnImprimirVenda_Click);
             // 
             // btnCancelarVenda
             // 
