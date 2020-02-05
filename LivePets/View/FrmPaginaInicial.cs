@@ -228,5 +228,11 @@ namespace LiveCommerce.View
             FrmParam frmp = new FrmParam();
             frmp.Show();
         }
+
+        private void contasAPagarEReceberToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            View.Contas.FrmContas frcontas = new View.Contas.FrmContas();
+            frcontas.Show();
+        }
     }
 }

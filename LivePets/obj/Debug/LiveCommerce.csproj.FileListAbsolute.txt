@@ -187,3 +187,4 @@ D:\Projetos\Projeto_RR\LiveCommerce\LivePets\bin\Debug\LiveCommerce.exe.manifest
 D:\Projetos\Projeto_RR\LiveCommerce\LivePets\bin\Debug\LiveCommerce.application
 D:\Projetos\Projeto_RR\LiveCommerce\LivePets\obj\Debug\LiveCommerce.exe.manifest
 D:\Projetos\Projeto_RR\LiveCommerce\LivePets\obj\Debug\LiveCommerce.application
+D:\Projetos\Projeto_RR\LiveCommerce\LivePets\obj\Debug\LiveCommerce.View.Contas.FrmContas.resources

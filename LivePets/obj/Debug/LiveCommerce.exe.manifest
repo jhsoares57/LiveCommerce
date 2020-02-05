@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LiveCommerce.exe" size="795584">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LiveCommerce.exe" size="804288">
       <assemblyIdentity name="LiveCommerce" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>FPRXHmSuWIShyIUH43l6dHILm2zKinLdxz4kVYwYzOo=</dsig:DigestValue>
+        <dsig:DigestValue>3zTJ+hTj5GKnF37A+Pn/Fh7SSh3LhSeRROEuo6Lgabg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -722,22 +722,22 @@
       <dsig:DigestValue>Ku5Ohgo2tAVrEhdcGcrsm7IGo3G6F+TvlK9lOmU+SYw=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="DAL\BD\IMPRIMIR_VENDA.sql" size="1478">
+  <file name="DAL\BD\LIVE18112018.sql" size="13778">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>gKKvc6hxQv+8umYDmIvIT3BmTLJgGyWS+FxWXBdMGsI=</dsig:DigestValue>
+      <dsig:DigestValue>M0kQ/r0wLI+wwtDgUVz2IIpEEa7W0HmjPfozF+K2q2o=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="DAL\BD\LIVE18112018.sql" size="15611">
+  <file name="DAL\BD\LV_IMPRIMI_VENDA_COMPLETA_V1.sql" size="986">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Vpmg/vuxEhsB+kb74iLxk+2jim2KzdnFTlVzdjynlpM=</dsig:DigestValue>
+      <dsig:DigestValue>5tE8lW0pVQbsWHZb2LVNJ56RuHDBDc/2RO6P60G7WCk=</dsig:DigestValue>
     </hash>
   </file>
   <file name="DAL\BD\PROCEDURE PETSTATUS.sql" size="331">

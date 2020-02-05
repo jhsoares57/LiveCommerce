@@ -95,6 +95,8 @@
     <Compile Include="Business\CategoriaProdutoBLL.cs" />
     <Compile Include="Business\CidadesBLL.cs" />
     <Compile Include="Business\ClienteBLL.cs" />
+    <Compile Include="Business\ContasPagarReceberBLL.cs" />
+    <Compile Include="DAL\ContasPagarReceberDAL.cs" />
     <Compile Include="Business\Exceptions\CampoInvalidoException.cs" />
     <Compile Include="Business\Exceptions\CepCpfCnpjException.cs" />
     <Compile Include="Business\Exceptions\CpfInvalidoException.cs" />
@@ -132,6 +134,7 @@
     <Compile Include="DAL\UsuarioDAL.cs" />
     <Compile Include="DAL\VendaDAL.cs" />
     <Compile Include="DAL\VendasItensDAL.cs" />
+    <Compile Include="Model\ContasPagarReceber.cs" />
     <Compile Include="Model\TipoPessoa.cs" />
     <Compile Include="Model\TipoProduto.cs" />
     <Compile Include="Model\Cidades.cs" />
@@ -171,6 +174,12 @@
     </Compile>
     <Compile Include="View\Configurar\FrmParam.Designer.cs">
       <DependentUpon>FrmParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Contas\FrmContas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Contas\FrmContas.Designer.cs">
+      <DependentUpon>FrmContas.cs</DependentUpon>
     </Compile>
     <Compile Include="View\CpfInvalidoException.cs" />
     <Compile Include="View\FrmCadastroCliente.cs">
@@ -313,6 +322,9 @@
     <EmbeddedResource Include="View\Configurar\FrmParam.resx">
       <DependentUpon>FrmParam.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\Contas\FrmContas.resx">
+      <DependentUpon>FrmContas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FrmCadastroCliente.resx">
       <DependentUpon>FrmCadastroCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -393,11 +405,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DAL\BD\CIDADES_ATUALIZADO.sql" />
-    <Content Include="DAL\BD\IMPRIMIR_VENDA.sql" />
     <Content Include="DAL\BD\LIVE18112018.sql" />
+    <Content Include="DAL\BD\LV_IMPRIMI_VENDA_COMPLETA_V1.sql" />
+    <Content Include="DAL\BD\LV_INSERIR_CONT_V1.sql" />
     <Content Include="DAL\BD\PROCEDURE PETSTATUS.sql" />
     <Content Include="DAL\BD\PROCEDURE USP_AGENDAMENTO.sql" />
     <Content Include="DAL\BD\PROCEDURE VENDAS DIAS POR FORMA PAGAMENTO.sql" />
+    <Content Include="DAL\BD\TABELA_CONTAS_PAGAR_RECEBER.sql" />
     <Content Include="Icones\CadPlanos.png" />
     <None Include="Relatorios\dsRelatorios.xsc">
       <DependentUpon>dsRelatorios.xsd</DependentUpon>

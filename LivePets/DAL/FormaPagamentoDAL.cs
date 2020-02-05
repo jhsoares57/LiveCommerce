@@ -19,15 +19,16 @@ namespace LiveCommerce.DAL
 
             StringBuilder query = new StringBuilder();
             query.AppendLine("INSERT INTO FORMA_DE_PAGAMENTO");
-            query.AppendLine("(DS_FORMAPAGAMENTO)");
-            query.AppendLine("VALUES (@DS_FORMAPAGAMENTO)");
+            query.AppendLine("(DS_FORMAPAGAMENTO,LANCA_FINANCEIRO)");
+            query.AppendLine("VALUES (@DS_FORMAPAGAMENTO,@LANCA_FINANCEIRO)");
             query.AppendLine("SELECT SCOPE_IDENTITY();");
 
             cf.Comando = cf.Conexao.CreateCommand();
 
             cf.Comando.Parameters.AddWithValue("@DS_FORMAPAGAMENTO", c.DsFormaPagamento);
+            cf.Comando.Parameters.AddWithValue("@LANCA_FINANCEIRO", c.Financeiro);
             // cf.Comando.Parameters.AddWithValue("@DS_USUARIO", c.DsUsuario);
-           // cf.Comando.Parameters.AddWithValue("@SENHA_USUARIO", c.Senhausuario);
+            // cf.Comando.Parameters.AddWithValue("@SENHA_USUARIO", c.Senhausuario);
 
             cf.Comando.CommandType = CommandType.Text;
             cf.Comando.CommandText = query.ToString();

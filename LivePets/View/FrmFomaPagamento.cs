@@ -14,6 +14,7 @@ namespace LiveCommerce.View
 {
     public partial class FrmFomaPagamento : Form
     {
+        SituacaoBLL situacaoService = new SituacaoBLL();
         FormaPagamentoBLL Pagamentoservice = new FormaPagamentoBLL();
         public FrmFomaPagamento()
         {
@@ -29,12 +30,26 @@ namespace LiveCommerce.View
         {
             FormaPagamento P = new FormaPagamento();
             P.DsFormaPagamento = txtDescricaoFormaPagamento.Text;
+            P.Financeiro = Convert.ToInt32(cbxFinanceiro.SelectedValue);
 
-            if (Pagamentoservice.Insert(P))
-            {
-                string mensagem = "Usuario inserido com sucesso";
-                MessageBox.Show(mensagem);
+            Pagamentoservice.Insert(P);
+                MessageBox.Show("Forma Recebimento Inserida com sucesso", "Mensagem");
             }
+
+        private void FrmFomaPagamento_Load(object sender, EventArgs e)
+        {
+            CarregarSituacao();
+        }
+
+        private void CarregarSituacao()
+        {
+            List<Situacao> FinanCeiro = new List<Situacao>();
+            //FinanCeiro.Add(new Situacao() { IdSituacao = 0, DsSituacao = "SELECIONE" });
+            FinanCeiro.AddRange(situacaoService.FindALL());
+            cbxFinanceiro.DataSource = FinanCeiro;
+            cbxFinanceiro.ValueMember = "idSituacao";
+            cbxFinanceiro.DisplayMember = "DsSituacao";
+
         }
     }
 }

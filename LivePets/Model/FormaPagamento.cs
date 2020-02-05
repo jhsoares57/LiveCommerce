@@ -12,7 +12,10 @@ namespace LiveCommerce.Model
 
         private string dsFormaPagamento;
 
+        private int financeiro;
+
         public int IdFormaPagamento { get => idFormaPagamento; set => idFormaPagamento = value; }
         public string DsFormaPagamento { get => dsFormaPagamento; set => dsFormaPagamento = value; }
+        public int Financeiro { get => financeiro; set => financeiro = value; }
     }
 }
