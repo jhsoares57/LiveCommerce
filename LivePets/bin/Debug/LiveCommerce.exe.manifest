@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LiveCommerce.exe" size="804288">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LiveCommerce.exe" size="808384">
       <assemblyIdentity name="LiveCommerce" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>3zTJ+hTj5GKnF37A+Pn/Fh7SSh3LhSeRROEuo6Lgabg=</dsig:DigestValue>
+        <dsig:DigestValue>kFTuewyU7WnupCRhKn1wqL7w00g8AMkR6Ky/8mpVxvQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -740,6 +740,15 @@
       <dsig:DigestValue>5tE8lW0pVQbsWHZb2LVNJ56RuHDBDc/2RO6P60G7WCk=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="DAL\BD\LV_INSERIR_CONT_V1.sql" size="402">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MHH75WZ+vAwW8xarnFfCmkBBaByd4O0Yc5BitaG5NBE=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="DAL\BD\PROCEDURE PETSTATUS.sql" size="331">
     <hash>
       <dsig:Transforms>
@@ -765,6 +774,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>dkINCFPmpB9C6QJ+eYq58qfcATwZDrJbId3pg7q41WU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DAL\BD\TABELA_CONTAS_PAGAR_RECEBER.sql" size="251">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5IBUkiOmeA04nmZD9CKDBOGBkoBqwy62sAG2Psfi7A8=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Icones\CadPlanos.png" size="9382">

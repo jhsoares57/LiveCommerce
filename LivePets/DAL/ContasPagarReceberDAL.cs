@@ -28,8 +28,7 @@ namespace LiveCommerce.Business
             cf.Comando.Parameters.AddWithValue("@CDTLANC", c.CdtLanc);
             cf.Comando.Parameters.AddWithValue("@CCODORI", c.CcodOri);
             cf.Comando.Parameters.AddWithValue("@CVLRCNT", c.CvlrCnt);
-            cf.Comando.Parameters.AddWithValue("@@CDTPAG", c.DdtPag);
-            cf.Comando.Parameters.AddWithValue("@@CDTVCTO", c.CdtVcto);
+            cf.Comando.Parameters.AddWithValue("@CDTVCTO", c.CdtVcto);
             cf.Comando.Parameters.AddWithValue("@COBS", c.Cobs);
 
             cf.Comando.Parameters.AddWithValue("@ID_OUT", 0).Direction = ParameterDirection.Output;

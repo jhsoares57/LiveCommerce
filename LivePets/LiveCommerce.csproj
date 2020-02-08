@@ -96,6 +96,7 @@
     <Compile Include="Business\CidadesBLL.cs" />
     <Compile Include="Business\ClienteBLL.cs" />
     <Compile Include="Business\ContasPagarReceberBLL.cs" />
+    <Compile Include="Business\ListaGenericaBLL.cs" />
     <Compile Include="DAL\ContasPagarReceberDAL.cs" />
     <Compile Include="Business\Exceptions\CampoInvalidoException.cs" />
     <Compile Include="Business\Exceptions\CepCpfCnpjException.cs" />
@@ -116,6 +117,7 @@
     <Compile Include="Business\UsuarioBLL.cs" />
     <Compile Include="Business\VendaBLL.cs" />
     <Compile Include="Business\VendasItensBLL.cs" />
+    <Compile Include="DAL\ListaGenericaDAL.cs" />
     <Compile Include="DAL\PlanoPagamentoDAL.cs" />
     <Compile Include="DAL\TipoPessoaDAL.cs" />
     <Compile Include="DAL\TipoProdutoDAL.cs" />
@@ -135,6 +137,7 @@
     <Compile Include="DAL\VendaDAL.cs" />
     <Compile Include="DAL\VendasItensDAL.cs" />
     <Compile Include="Model\ContasPagarReceber.cs" />
+    <Compile Include="Model\ListaGenerica.cs" />
     <Compile Include="Model\TipoPessoa.cs" />
     <Compile Include="Model\TipoProduto.cs" />
     <Compile Include="Model\Cidades.cs" />

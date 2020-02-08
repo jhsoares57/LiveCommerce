@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.GBgbDados = new System.Windows.Forms.GroupBox();
             this.txtDtPagamento = new System.Windows.Forms.DateTimePicker();
-            this.txtDTFuncionario = new System.Windows.Forms.DateTimePicker();
+            this.txtDtLanc = new System.Windows.Forms.DateTimePicker();
             this.btnIncluir = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.cbxTipoLabnc = new System.Windows.Forms.ComboBox();
@@ -44,7 +44,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
@@ -69,7 +69,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.GBgbDados.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -81,7 +81,7 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.groupBox2.Controls.Add(this.groupBox3);
+            this.groupBox2.Controls.Add(this.GBgbDados);
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(776, 159);
@@ -89,31 +89,31 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Lançamento";
             // 
-            // groupBox3
+            // GBgbDados
             // 
-            this.groupBox3.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.groupBox3.Controls.Add(this.txtDtPagamento);
-            this.groupBox3.Controls.Add(this.txtDTFuncionario);
-            this.groupBox3.Controls.Add(this.btnIncluir);
-            this.groupBox3.Controls.Add(this.btnLimpar);
-            this.groupBox3.Controls.Add(this.cbxTipoLabnc);
-            this.groupBox3.Controls.Add(this.cbxOrigem);
-            this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.txtObservacao);
-            this.groupBox3.Controls.Add(this.txtValor);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Controls.Add(this.textBox1);
-            this.groupBox3.Controls.Add(this.label1);
-            this.groupBox3.Location = new System.Drawing.Point(6, 19);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(764, 126);
-            this.groupBox3.TabIndex = 0;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Dados";
+            this.GBgbDados.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.GBgbDados.Controls.Add(this.txtDtPagamento);
+            this.GBgbDados.Controls.Add(this.txtDtLanc);
+            this.GBgbDados.Controls.Add(this.btnIncluir);
+            this.GBgbDados.Controls.Add(this.btnLimpar);
+            this.GBgbDados.Controls.Add(this.cbxTipoLabnc);
+            this.GBgbDados.Controls.Add(this.cbxOrigem);
+            this.GBgbDados.Controls.Add(this.label7);
+            this.GBgbDados.Controls.Add(this.txtObservacao);
+            this.GBgbDados.Controls.Add(this.txtValor);
+            this.GBgbDados.Controls.Add(this.label6);
+            this.GBgbDados.Controls.Add(this.label5);
+            this.GBgbDados.Controls.Add(this.label4);
+            this.GBgbDados.Controls.Add(this.label3);
+            this.GBgbDados.Controls.Add(this.label2);
+            this.GBgbDados.Controls.Add(this.txtCodigo);
+            this.GBgbDados.Controls.Add(this.label1);
+            this.GBgbDados.Location = new System.Drawing.Point(6, 19);
+            this.GBgbDados.Name = "GBgbDados";
+            this.GBgbDados.Size = new System.Drawing.Size(764, 126);
+            this.GBgbDados.TabIndex = 0;
+            this.GBgbDados.TabStop = false;
+            this.GBgbDados.Text = "Dados";
             // 
             // txtDtPagamento
             // 
@@ -124,14 +124,14 @@
             this.txtDtPagamento.Size = new System.Drawing.Size(97, 20);
             this.txtDtPagamento.TabIndex = 5;
             // 
-            // txtDTFuncionario
+            // txtDtLanc
             // 
-            this.txtDTFuncionario.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtDTFuncionario.Location = new System.Drawing.Point(198, 31);
-            this.txtDTFuncionario.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
-            this.txtDTFuncionario.Name = "txtDTFuncionario";
-            this.txtDTFuncionario.Size = new System.Drawing.Size(97, 20);
-            this.txtDTFuncionario.TabIndex = 2;
+            this.txtDtLanc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtDtLanc.Location = new System.Drawing.Point(198, 31);
+            this.txtDtLanc.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            this.txtDtLanc.Name = "txtDtLanc";
+            this.txtDtLanc.Size = new System.Drawing.Size(97, 20);
+            this.txtDtLanc.TabIndex = 2;
             // 
             // btnIncluir
             // 
@@ -141,6 +141,7 @@
             this.btnIncluir.TabIndex = 7;
             this.btnIncluir.Text = "Incluir Dados";
             this.btnIncluir.UseVisualStyleBackColor = true;
+            this.btnIncluir.Click += new System.EventHandler(this.btnIncluir_Click);
             // 
             // btnLimpar
             // 
@@ -153,11 +154,13 @@
             // 
             // cbxTipoLabnc
             // 
+            this.cbxTipoLabnc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxTipoLabnc.FormattingEnabled = true;
             this.cbxTipoLabnc.Location = new System.Drawing.Point(82, 31);
             this.cbxTipoLabnc.Name = "cbxTipoLabnc";
             this.cbxTipoLabnc.Size = new System.Drawing.Size(107, 21);
             this.cbxTipoLabnc.TabIndex = 1;
+            this.cbxTipoLabnc.SelectedIndexChanged += new System.EventHandler(this.cbxTipoLabnc_SelectedIndexChanged);
             // 
             // cbxOrigem
             // 
@@ -236,13 +239,13 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Data Lançamento:";
             // 
-            // textBox1
+            // txtCodigo
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(9, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(49, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtCodigo.Enabled = false;
+            this.txtCodigo.Location = new System.Drawing.Point(9, 32);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(49, 20);
+            this.txtCodigo.TabIndex = 1;
             // 
             // label1
             // 
@@ -372,7 +375,7 @@
             this.btnFechar.TabIndex = 14;
             this.btnFechar.Text = "Fechar";
             this.btnFechar.UseVisualStyleBackColor = true;
-            this.btnFechar.Click += new System.EventHandler(this.button5_Click);
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // groupBox5
             // 
@@ -437,6 +440,7 @@
             // 
             // cbxFiltroTipo
             // 
+            this.cbxFiltroTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxFiltroTipo.FormattingEnabled = true;
             this.cbxFiltroTipo.Location = new System.Drawing.Point(22, 34);
             this.cbxFiltroTipo.Name = "cbxFiltroTipo";
@@ -485,9 +489,10 @@
             this.Name = "FrmContas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contas a Pagar e Receber";
+            this.Load += new System.EventHandler(this.FrmContas_Load);
             this.groupBox2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.GBgbDados.ResumeLayout(false);
+            this.GBgbDados.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
@@ -503,8 +508,7 @@
 
         #endregion
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -530,7 +534,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DateTimePicker txtDtPagamento;
-        private System.Windows.Forms.DateTimePicker txtDTFuncionario;
+        private System.Windows.Forms.DateTimePicker txtDtLanc;
         private System.Windows.Forms.DateTimePicker txtFiltroPagamento;
         private System.Windows.Forms.DateTimePicker txtFiltroLanc;
         private System.Windows.Forms.GroupBox groupBox7;
@@ -542,5 +546,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.GroupBox GBgbDados;
     }
 }
