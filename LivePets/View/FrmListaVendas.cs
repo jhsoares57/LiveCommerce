@@ -59,7 +59,6 @@ namespace LiveCommerce.View
                 Venda v = new Venda();
                 v.IdVenda = id;
 
-                
 
                 if (v.IdVenda > 0)
                 {

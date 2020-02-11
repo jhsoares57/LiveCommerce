@@ -228,5 +228,36 @@ namespace LiveCommerce.DAL
             return c;
         }
 
+        public List<Cliente> FindNome()
+        {
+            cf = new ConnectionFactory();
+
+            string query = "SELECT ID_CLIENTE,NM_CLIENTE FROM CLIENTE";
+
+            cf.Comando = cf.Conexao.CreateCommand();
+
+            cf.Comando.CommandType = CommandType.Text;
+
+            cf.Comando.CommandText = query;
+
+            cf.Conexao.Open();
+
+            List<Cliente> lista = new List<Cliente>();
+
+            SqlDataReader dr = cf.Comando.ExecuteReader();
+
+            while (dr.Read())
+            {
+                Cliente F = new Cliente();
+                F.ID = Convert.ToInt32(dr["ID_CLIENTE"]);
+                F.NomeCliente = Convert.ToString(dr["NM_CLIENTE"]);
+
+                lista.Add(F);
+            }
+
+            cf.Conexao.Close();
+
+            return lista;
+        }
     }
 }

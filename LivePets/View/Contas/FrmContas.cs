@@ -18,6 +18,9 @@ namespace LiveCommerce.View.Contas
         ListaGenericaBLL ListServive = new ListaGenericaBLL();
         FornecedorBLL fornecedorService = new FornecedorBLL();
         ContasPagarReceberBLL contaService = new ContasPagarReceberBLL();
+        ClienteBLL ClienteService = new ClienteBLL();
+        public static int id;
+        public static decimal total;
         public FrmContas()
         {
             InitializeComponent();
@@ -82,6 +85,16 @@ namespace LiveCommerce.View.Contas
             cbxOrigem.DisplayMember = "NomeFantasia";
         }
 
+        private void CarregarCliente()
+        {
+            List<Cliente> listaFornecedor = new List<Cliente>();
+            listaFornecedor.Add(new Cliente() { ID = 0, NomeCliente = "SELECIONE" });
+            listaFornecedor.AddRange(ClienteService.FindNome());
+            cbxOrigem.DataSource = listaFornecedor;
+            cbxOrigem.ValueMember = "ID";
+            cbxOrigem.DisplayMember = "NomeCliente";
+        }
+
         private void FrmContas_Load(object sender, EventArgs e)
         {
             carregarTipo();
@@ -101,9 +114,84 @@ namespace LiveCommerce.View.Contas
                 }
                 else
                 {
-
+                    CarregarCliente();
                 }
             }
-        //}
+        }
+
+        public void CarregarConta()
+        {
+            int tipo = Convert.ToInt32(cbxFiltroTipo.SelectedValue);
+            dgvContas.DataSource = contaService.FindFiltroTipo(tipo);
+        }
+
+        private void btnFiltrar_Click(object sender, EventArgs e)
+        {
+            CarregarConta();
+
+          
+            total = 0;
+            foreach (DataGridViewRow linha in dgvContas.Rows)
+            {
+                total += Convert.ToDecimal(linha.Cells[4].Value);
+            }
+
+            txtTotalContas.Text = total.ToString();
+        }
+
+        private void btnRealizarPagamento_Click(object sender, EventArgs e)
+        {
+                try
+                {
+                    ContasPagarReceber v = new ContasPagarReceber();
+                    v.CodCont = id;
+
+
+
+                    if (v.CodCont > 0)
+                    {
+                    //contaService.PagamentoConta(v);
+                    PagamentoConta(v.CodCont);
+                        MessageBox.Show("Conta Paga com sucesso!");
+                        CarregarConta();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Selecione uma conta!");
+                    }
+
+                }
+                catch (Exception)
+                {
+
+                    MessageBox.Show("Selecione uma conta!");
+                }
+
+            
+        }
+
+        private void PagamentoConta(int idc)
+        {
+            ContasPagarReceber p = new ContasPagarReceber();
+            p.DdtPag = Convert.ToDateTime(txtDataPagamentoFim.Text);
+            p.CodCont = Convert.ToInt32(idc);
+            
+
+            contaService.PagamentoConta(p);
+
+        }
+
+        private void dgvContas_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                id = Convert.ToInt32(dgvContas.Rows[e.RowIndex].Cells[0].Value.ToString());
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Selecione uma conta!");
+            }
+        }
     }
 }

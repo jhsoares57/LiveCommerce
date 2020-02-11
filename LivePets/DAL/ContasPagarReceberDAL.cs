@@ -3,6 +3,7 @@ using LiveCommerce.Model;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -49,6 +50,51 @@ namespace LiveCommerce.Business
 
             if (o != null)
                 c.CodCont = Convert.ToInt32(o);
+        }
+
+        public DataTable FindFiltroTipo(int tipo)
+        {
+            cf = new ConnectionFactory();
+            string query = "LV_CONTAPAGAR_RECEBER_TIPO_V1";
+
+            cf.Comando = cf.Conexao.CreateCommand();
+            cf.Comando.CommandType = CommandType.StoredProcedure;
+            cf.Comando.CommandText = query.ToString();
+
+            cf.Comando.Parameters.AddWithValue("@TIPO", tipo);
+
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cf.Comando);
+
+            cf.Conexao.Open();
+            da.Fill(dt);
+            cf.Conexao.Close();
+
+            return dt;
+        }
+
+        public int PagamentoConta(ContasPagarReceber c)
+        {
+            cf = new ConnectionFactory();
+            string query = "LV_CONTA_PAGAR_RECEBER_CONFIRMA_PAGAMENTO";
+
+            //Variável guardará a quantidade de linhas afetadas
+            int linhasAfetadas = 0;
+
+            //PARAMETROS 
+            cf.Comando = cf.Conexao.CreateCommand();
+            cf.Comando.Parameters.AddWithValue("@ID", c.CodCont);
+            cf.Comando.Parameters.AddWithValue("@DATAPAGAMENTO", c.DdtPag);
+
+            cf.Comando.CommandType = CommandType.StoredProcedure;
+            cf.Comando.CommandText = query;
+            //ExecuteNonQuery: Retorna o número de linhas afetadas no Banco de dados para a variável.
+            cf.Conexao.Open();
+            linhasAfetadas = cf.Comando.ExecuteNonQuery();
+            cf.Conexao.Close();
+
+            //Este método retorna um número inteiro, conforme o que a assinatura pede.
+            return linhasAfetadas;
         }
     }
 }

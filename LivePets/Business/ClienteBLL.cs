@@ -54,5 +54,11 @@ namespace LiveCommerce.Business
             return new ClienteDAL().FindById(id);
         }
 
+        public List<Cliente> FindNome()
+        {
+            ClienteDAL forDAL = new ClienteDAL();
+            return forDAL.FindNome();
+        }
+
     }
 }

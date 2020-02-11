@@ -48,10 +48,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.txtVencidas = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.txtTotalPagas = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.txtTotalContas = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -59,15 +55,13 @@
             this.btnRealizarPagamento = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.txtFiltroPagamento = new System.Windows.Forms.DateTimePicker();
-            this.txtFiltroLanc = new System.Windows.Forms.DateTimePicker();
-            this.btnFiltrar = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.cbxFiltroTipo = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvContas = new System.Windows.Forms.DataGridView();
+            this.btnFiltrar = new System.Windows.Forms.Button();
+            this.txtDataPagamentoFim = new System.Windows.Forms.DateTimePicker();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.GBgbDados.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -75,7 +69,7 @@
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvContas)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -156,14 +150,15 @@
             // 
             this.cbxTipoLabnc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxTipoLabnc.FormattingEnabled = true;
-            this.cbxTipoLabnc.Location = new System.Drawing.Point(82, 31);
+            this.cbxTipoLabnc.Location = new System.Drawing.Point(65, 31);
             this.cbxTipoLabnc.Name = "cbxTipoLabnc";
-            this.cbxTipoLabnc.Size = new System.Drawing.Size(107, 21);
+            this.cbxTipoLabnc.Size = new System.Drawing.Size(127, 21);
             this.cbxTipoLabnc.TabIndex = 1;
             this.cbxTipoLabnc.SelectedIndexChanged += new System.EventHandler(this.cbxTipoLabnc_SelectedIndexChanged);
             // 
             // cbxOrigem
             // 
+            this.cbxOrigem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxOrigem.FormattingEnabled = true;
             this.cbxOrigem.Location = new System.Drawing.Point(301, 31);
             this.cbxOrigem.Name = "cbxOrigem";
@@ -224,7 +219,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(79, 16);
+            this.label3.Location = new System.Drawing.Point(62, 15);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 13);
             this.label3.TabIndex = 3;
@@ -265,60 +260,20 @@
             this.groupBox4.Controls.Add(this.groupBox1);
             this.groupBox4.Location = new System.Drawing.Point(12, 177);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(776, 281);
+            this.groupBox4.Size = new System.Drawing.Size(776, 353);
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Dados Lançados";
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.txtVencidas);
-            this.groupBox7.Controls.Add(this.label14);
-            this.groupBox7.Controls.Add(this.txtTotalPagas);
-            this.groupBox7.Controls.Add(this.label13);
             this.groupBox7.Controls.Add(this.txtTotalContas);
             this.groupBox7.Controls.Add(this.label12);
-            this.groupBox7.Location = new System.Drawing.Point(6, 238);
+            this.groupBox7.Location = new System.Drawing.Point(6, 309);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(664, 37);
             this.groupBox7.TabIndex = 16;
             this.groupBox7.TabStop = false;
-            // 
-            // txtVencidas
-            // 
-            this.txtVencidas.Enabled = false;
-            this.txtVencidas.ForeColor = System.Drawing.Color.Red;
-            this.txtVencidas.Location = new System.Drawing.Point(102, 11);
-            this.txtVencidas.Name = "txtVencidas";
-            this.txtVencidas.Size = new System.Drawing.Size(100, 20);
-            this.txtVencidas.TabIndex = 21;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(7, 16);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(96, 13);
-            this.label14.TabIndex = 20;
-            this.label14.Text = "Total de Vencidas:";
-            // 
-            // txtTotalPagas
-            // 
-            this.txtTotalPagas.Enabled = false;
-            this.txtTotalPagas.ForeColor = System.Drawing.Color.Lime;
-            this.txtTotalPagas.Location = new System.Drawing.Point(329, 11);
-            this.txtTotalPagas.Name = "txtTotalPagas";
-            this.txtTotalPagas.Size = new System.Drawing.Size(100, 20);
-            this.txtTotalPagas.TabIndex = 19;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(242, 16);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(82, 13);
-            this.label13.TabIndex = 18;
-            this.label13.Text = "Total de Pagas:";
             // 
             // txtTotalContas
             // 
@@ -340,11 +295,13 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.txtDataPagamentoFim);
+            this.groupBox6.Controls.Add(this.label10);
             this.groupBox6.Controls.Add(this.label11);
             this.groupBox6.Controls.Add(this.btnRealizarPagamento);
-            this.groupBox6.Location = new System.Drawing.Point(480, 19);
+            this.groupBox6.Location = new System.Drawing.Point(307, 19);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(284, 71);
+            this.groupBox6.Size = new System.Drawing.Size(395, 71);
             this.groupBox6.TabIndex = 15;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Realizar Pagamento";
@@ -352,7 +309,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 19);
+            this.label11.Location = new System.Drawing.Point(151, 16);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(196, 13);
             this.label11.TabIndex = 14;
@@ -360,16 +317,17 @@
             // 
             // btnRealizarPagamento
             // 
-            this.btnRealizarPagamento.Location = new System.Drawing.Point(9, 32);
+            this.btnRealizarPagamento.Location = new System.Drawing.Point(154, 31);
             this.btnRealizarPagamento.Name = "btnRealizarPagamento";
-            this.btnRealizarPagamento.Size = new System.Drawing.Size(260, 33);
+            this.btnRealizarPagamento.Size = new System.Drawing.Size(235, 33);
             this.btnRealizarPagamento.TabIndex = 13;
             this.btnRealizarPagamento.Text = "Realizar Pagamento";
             this.btnRealizarPagamento.UseVisualStyleBackColor = true;
+            this.btnRealizarPagamento.Click += new System.EventHandler(this.btnRealizarPagamento_Click);
             // 
             // btnFechar
             // 
-            this.btnFechar.Location = new System.Drawing.Point(676, 238);
+            this.btnFechar.Location = new System.Drawing.Point(676, 309);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(94, 37);
             this.btnFechar.TabIndex = 14;
@@ -379,78 +337,29 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.txtFiltroPagamento);
-            this.groupBox5.Controls.Add(this.txtFiltroLanc);
             this.groupBox5.Controls.Add(this.btnFiltrar);
-            this.groupBox5.Controls.Add(this.label10);
-            this.groupBox5.Controls.Add(this.label9);
             this.groupBox5.Controls.Add(this.cbxFiltroTipo);
             this.groupBox5.Controls.Add(this.label8);
             this.groupBox5.Location = new System.Drawing.Point(6, 19);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(468, 71);
+            this.groupBox5.Size = new System.Drawing.Size(270, 71);
             this.groupBox5.TabIndex = 2;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Filtros";
-            // 
-            // txtFiltroPagamento
-            // 
-            this.txtFiltroPagamento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtFiltroPagamento.Location = new System.Drawing.Point(239, 35);
-            this.txtFiltroPagamento.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
-            this.txtFiltroPagamento.Name = "txtFiltroPagamento";
-            this.txtFiltroPagamento.Size = new System.Drawing.Size(97, 20);
-            this.txtFiltroPagamento.TabIndex = 11;
-            // 
-            // txtFiltroLanc
-            // 
-            this.txtFiltroLanc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtFiltroLanc.Location = new System.Drawing.Point(138, 35);
-            this.txtFiltroLanc.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
-            this.txtFiltroLanc.Name = "txtFiltroLanc";
-            this.txtFiltroLanc.Size = new System.Drawing.Size(97, 20);
-            this.txtFiltroLanc.TabIndex = 10;
-            // 
-            // btnFiltrar
-            // 
-            this.btnFiltrar.Location = new System.Drawing.Point(355, 32);
-            this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(94, 23);
-            this.btnFiltrar.TabIndex = 12;
-            this.btnFiltrar.Text = "Filtrar";
-            this.btnFiltrar.UseVisualStyleBackColor = true;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(236, 19);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(90, 13);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "Data Pagamento:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(135, 19);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(95, 13);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "Data Lançamento:";
             // 
             // cbxFiltroTipo
             // 
             this.cbxFiltroTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxFiltroTipo.FormattingEnabled = true;
-            this.cbxFiltroTipo.Location = new System.Drawing.Point(22, 34);
+            this.cbxFiltroTipo.Location = new System.Drawing.Point(10, 35);
             this.cbxFiltroTipo.Name = "cbxFiltroTipo";
-            this.cbxFiltroTipo.Size = new System.Drawing.Size(107, 21);
+            this.cbxFiltroTipo.Size = new System.Drawing.Size(122, 21);
             this.cbxFiltroTipo.TabIndex = 9;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(19, 19);
+            this.label8.Location = new System.Drawing.Point(7, 19);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(93, 13);
             this.label8.TabIndex = 14;
@@ -459,29 +368,58 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.dgvContas);
             this.groupBox1.Location = new System.Drawing.Point(6, 96);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(758, 136);
+            this.groupBox1.Size = new System.Drawing.Size(758, 207);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Lista";
             // 
-            // dataGridView1
+            // dgvContas
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(746, 108);
-            this.dataGridView1.TabIndex = 15;
+            this.dgvContas.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvContas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvContas.Location = new System.Drawing.Point(6, 11);
+            this.dgvContas.Name = "dgvContas";
+            this.dgvContas.Size = new System.Drawing.Size(746, 190);
+            this.dgvContas.TabIndex = 15;
+            this.dgvContas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvContas_CellClick);
+            // 
+            // btnFiltrar
+            // 
+            this.btnFiltrar.Location = new System.Drawing.Point(163, 33);
+            this.btnFiltrar.Name = "btnFiltrar";
+            this.btnFiltrar.Size = new System.Drawing.Size(94, 23);
+            this.btnFiltrar.TabIndex = 12;
+            this.btnFiltrar.Text = "Filtrar";
+            this.btnFiltrar.UseVisualStyleBackColor = true;
+            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
+            // 
+            // txtDataPagamentoFim
+            // 
+            this.txtDataPagamentoFim.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtDataPagamentoFim.Location = new System.Drawing.Point(18, 35);
+            this.txtDataPagamentoFim.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            this.txtDataPagamentoFim.Name = "txtDataPagamentoFim";
+            this.txtDataPagamentoFim.Size = new System.Drawing.Size(112, 20);
+            this.txtDataPagamentoFim.TabIndex = 17;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(15, 19);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(90, 13);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "Data Pagamento:";
             // 
             // FrmContas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(800, 470);
+            this.ClientSize = new System.Drawing.Size(800, 535);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
             this.MaximizeBox = false;
@@ -501,7 +439,7 @@
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvContas)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -526,26 +464,20 @@
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.Button btnRealizarPagamento;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Button btnFiltrar;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox cbxFiltroTipo;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvContas;
         private System.Windows.Forms.DateTimePicker txtDtPagamento;
         private System.Windows.Forms.DateTimePicker txtDtLanc;
-        private System.Windows.Forms.DateTimePicker txtFiltroPagamento;
-        private System.Windows.Forms.DateTimePicker txtFiltroLanc;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.TextBox txtVencidas;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox txtTotalPagas;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtTotalContas;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox GBgbDados;
+        private System.Windows.Forms.Button btnFiltrar;
+        private System.Windows.Forms.DateTimePicker txtDataPagamentoFim;
+        private System.Windows.Forms.Label label10;
     }
 }

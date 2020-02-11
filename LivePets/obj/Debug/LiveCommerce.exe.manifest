@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LiveCommerce.exe" size="808384">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LiveCommerce.exe" size="809920">
       <assemblyIdentity name="LiveCommerce" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>kFTuewyU7WnupCRhKn1wqL7w00g8AMkR6Ky/8mpVxvQ=</dsig:DigestValue>
+        <dsig:DigestValue>USlZbZyCN1FZEgGFpHMtT+o/YOXublLujraKTqxEwIs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -722,6 +722,33 @@
       <dsig:DigestValue>Ku5Ohgo2tAVrEhdcGcrsm7IGo3G6F+TvlK9lOmU+SYw=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="DAL\BD\ContasPagarReceber\LV_CONTA_PAGAR_RECEBER_CONFIRMA_PAGAMENTO.sql" size="175">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Izs26N4SeXqQu30ys5cSEqzGe9Uh3P5gQEK7Sl0u42s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DAL\BD\ContasPagarReceber\LV_CONTAPAGAR_RECEBER_TIPO_V1.sql" size="863">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xuWH4Ycdnda7/48tlYFJiYkqwzog+lEX+zEzKdHVbXA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DAL\BD\ContasPagarReceber\LV_INSERIR_CONT_V1.sql" size="402">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MHH75WZ+vAwW8xarnFfCmkBBaByd4O0Yc5BitaG5NBE=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="DAL\BD\LIVE18112018.sql" size="13778">
     <hash>
       <dsig:Transforms>
@@ -738,15 +765,6 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>5tE8lW0pVQbsWHZb2LVNJ56RuHDBDc/2RO6P60G7WCk=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="DAL\BD\LV_INSERIR_CONT_V1.sql" size="402">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>MHH75WZ+vAwW8xarnFfCmkBBaByd4O0Yc5BitaG5NBE=</dsig:DigestValue>
     </hash>
   </file>
   <file name="DAL\BD\PROCEDURE PETSTATUS.sql" size="331">

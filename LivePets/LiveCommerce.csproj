@@ -408,9 +408,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DAL\BD\CIDADES_ATUALIZADO.sql" />
+    <Content Include="DAL\BD\ContasPagarReceber\LV_CONTAPAGAR_RECEBER_TIPO_V1.sql" />
+    <Content Include="DAL\BD\ContasPagarReceber\LV_CONTA_PAGAR_RECEBER_CONFIRMA_PAGAMENTO.sql" />
     <Content Include="DAL\BD\LIVE18112018.sql" />
     <Content Include="DAL\BD\LV_IMPRIMI_VENDA_COMPLETA_V1.sql" />
-    <Content Include="DAL\BD\LV_INSERIR_CONT_V1.sql" />
+    <Content Include="DAL\BD\ContasPagarReceber\LV_INSERIR_CONT_V1.sql" />
     <Content Include="DAL\BD\PROCEDURE PETSTATUS.sql" />
     <Content Include="DAL\BD\PROCEDURE USP_AGENDAMENTO.sql" />
     <Content Include="DAL\BD\PROCEDURE VENDAS DIAS POR FORMA PAGAMENTO.sql" />
