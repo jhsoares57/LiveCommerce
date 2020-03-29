@@ -1,0 +1,6 @@
+E:\Projetos\Projeto_RR\LiveCommerce\Validacao\bin\Release\Validacao.dll
+E:\Projetos\Projeto_RR\LiveCommerce\Validacao\bin\Release\Validacao.pdb
+E:\Projetos\Projeto_RR\LiveCommerce\Validacao\obj\Release\Validacao.csprojAssemblyReference.cache
+E:\Projetos\Projeto_RR\LiveCommerce\Validacao\obj\Release\Validacao.csproj.CoreCompileInputs.cache
+E:\Projetos\Projeto_RR\LiveCommerce\Validacao\obj\Release\Validacao.dll
+E:\Projetos\Projeto_RR\LiveCommerce\Validacao\obj\Release\Validacao.pdb

@@ -11,7 +11,7 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\Hugo Barros\Desktop\</PublishUrl>
+    <PublishUrl>C:\Users\Hugo Barros\Desktop\Compilacao\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -21,9 +21,10 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>20.00.03.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -57,6 +58,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icone.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
@@ -320,6 +324,7 @@
     <EmbeddedResource Include="Relatorios\ImprimirVendaPadrao.rdlc" />
     <EmbeddedResource Include="Relatorios\ImprimiVenda.rdlc" />
     <EmbeddedResource Include="Relatorios\Produtos.rdlc" />
+    <EmbeddedResource Include="Relatorios\VendaFormaPagamentoDia.rdlc" />
     <EmbeddedResource Include="Relatorios\VendasDia.rdlc" />
     <EmbeddedResource Include="Relatorios\VendasFormaPagamento.rdlc" />
     <EmbeddedResource Include="View\Configurar\FrmParam.resx">
@@ -415,8 +420,9 @@
     <Content Include="DAL\BD\ContasPagarReceber\LV_INSERIR_CONT_V1.sql" />
     <Content Include="DAL\BD\PROCEDURE PETSTATUS.sql" />
     <Content Include="DAL\BD\PROCEDURE USP_AGENDAMENTO.sql" />
-    <Content Include="DAL\BD\PROCEDURE VENDAS DIAS POR FORMA PAGAMENTO.sql" />
+    <Content Include="DAL\BD\USP_VENDA_DIA.sql" />
     <Content Include="DAL\BD\TABELA_CONTAS_PAGAR_RECEBER.sql" />
+    <Content Include="Icone.ico" />
     <Content Include="Icones\CadPlanos.png" />
     <None Include="Relatorios\dsRelatorios.xsc">
       <DependentUpon>dsRelatorios.xsd</DependentUpon>
@@ -435,6 +441,7 @@
     <None Include="Resources\atencion.gif" />
     <None Include="Resources\finalizar.png" />
     <None Include="Resources\Tela2.jpg" />
+    <None Include="Resources\Logo.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -472,6 +479,11 @@
     <None Include="Resources\Adicionar.png" />
   </ItemGroup>
   <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
       <Visible>False</Visible>
       <ProductName>.NET Framework 3.5 SP1</ProductName>

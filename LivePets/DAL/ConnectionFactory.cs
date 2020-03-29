@@ -13,7 +13,7 @@ namespace LiveCommerce.DAL
     public class ConnectionFactory :IDisposable//Adicione a interface IDisposable 
     {
         //Declarando o Variável com o nome da Chave contida no WebConfig.
-        static string conectionName = "ConexaoHoracio";
+        static string conectionName = "LiveCommerce.Properties.Settings.PETS201802ConnectionString";
 
         private SqlConnection conexao;
         private SqlCommand comando;

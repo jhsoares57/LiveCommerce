@@ -32,19 +32,9 @@ namespace LiveCommerce.Relatorios {
         
         private USP_VENDA_DO_DIADataTable tableUSP_VENDA_DO_DIA;
         
-        private LV_IMPRIMI_VENDA_CLIENTE_P1DataTable tableLV_IMPRIMI_VENDA_CLIENTE_P1;
-        
-        private LV_IMPRIMI_VENDA_CLIENTE_P2DataTable tableLV_IMPRIMI_VENDA_CLIENTE_P2;
-        
-        private LV_IMPRIMI_VENDA_CLIENTE_P3DataTable tableLV_IMPRIMI_VENDA_CLIENTE_P3;
-        
-        private LV_IMPRIMI_VENDA_CLIENTE_P4DataTable tableLV_IMPRIMI_VENDA_CLIENTE_P4;
-        
         private LV_IMPRIMI_VENDA_COMPLETA_V1DataTable tableLV_IMPRIMI_VENDA_COMPLETA_V1;
         
-        private LV_IMPRIMI_VENDA_PADRAO_P1DataTable tableLV_IMPRIMI_VENDA_PADRAO_P1;
-        
-        private LV_IMPRIMI_VENDA_PADRAO_P2DataTable tableLV_IMPRIMI_VENDA_PADRAO_P2;
+        private LV_VENDA_FORMA_PAGAMENTO_DIADataTable tableLV_VENDA_FORMA_PAGAMENTO_DIA;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -86,26 +76,11 @@ namespace LiveCommerce.Relatorios {
                 if ((ds.Tables["USP_VENDA_DO_DIA"] != null)) {
                     base.Tables.Add(new USP_VENDA_DO_DIADataTable(ds.Tables["USP_VENDA_DO_DIA"]));
                 }
-                if ((ds.Tables["LV_IMPRIMI_VENDA_CLIENTE_P1"] != null)) {
-                    base.Tables.Add(new LV_IMPRIMI_VENDA_CLIENTE_P1DataTable(ds.Tables["LV_IMPRIMI_VENDA_CLIENTE_P1"]));
-                }
-                if ((ds.Tables["LV_IMPRIMI_VENDA_CLIENTE_P2"] != null)) {
-                    base.Tables.Add(new LV_IMPRIMI_VENDA_CLIENTE_P2DataTable(ds.Tables["LV_IMPRIMI_VENDA_CLIENTE_P2"]));
-                }
-                if ((ds.Tables["LV_IMPRIMI_VENDA_CLIENTE_P3"] != null)) {
-                    base.Tables.Add(new LV_IMPRIMI_VENDA_CLIENTE_P3DataTable(ds.Tables["LV_IMPRIMI_VENDA_CLIENTE_P3"]));
-                }
-                if ((ds.Tables["LV_IMPRIMI_VENDA_CLIENTE_P4"] != null)) {
-                    base.Tables.Add(new LV_IMPRIMI_VENDA_CLIENTE_P4DataTable(ds.Tables["LV_IMPRIMI_VENDA_CLIENTE_P4"]));
-                }
                 if ((ds.Tables["LV_IMPRIMI_VENDA_COMPLETA_V1"] != null)) {
                     base.Tables.Add(new LV_IMPRIMI_VENDA_COMPLETA_V1DataTable(ds.Tables["LV_IMPRIMI_VENDA_COMPLETA_V1"]));
                 }
-                if ((ds.Tables["LV_IMPRIMI_VENDA_PADRAO_P1"] != null)) {
-                    base.Tables.Add(new LV_IMPRIMI_VENDA_PADRAO_P1DataTable(ds.Tables["LV_IMPRIMI_VENDA_PADRAO_P1"]));
-                }
-                if ((ds.Tables["LV_IMPRIMI_VENDA_PADRAO_P2"] != null)) {
-                    base.Tables.Add(new LV_IMPRIMI_VENDA_PADRAO_P2DataTable(ds.Tables["LV_IMPRIMI_VENDA_PADRAO_P2"]));
+                if ((ds.Tables["LV_VENDA_FORMA_PAGAMENTO_DIA"] != null)) {
+                    base.Tables.Add(new LV_VENDA_FORMA_PAGAMENTO_DIADataTable(ds.Tables["LV_VENDA_FORMA_PAGAMENTO_DIA"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -169,46 +144,6 @@ namespace LiveCommerce.Relatorios {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public LV_IMPRIMI_VENDA_CLIENTE_P1DataTable LV_IMPRIMI_VENDA_CLIENTE_P1 {
-            get {
-                return this.tableLV_IMPRIMI_VENDA_CLIENTE_P1;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        [global::System.ComponentModel.Browsable(false)]
-        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public LV_IMPRIMI_VENDA_CLIENTE_P2DataTable LV_IMPRIMI_VENDA_CLIENTE_P2 {
-            get {
-                return this.tableLV_IMPRIMI_VENDA_CLIENTE_P2;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        [global::System.ComponentModel.Browsable(false)]
-        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public LV_IMPRIMI_VENDA_CLIENTE_P3DataTable LV_IMPRIMI_VENDA_CLIENTE_P3 {
-            get {
-                return this.tableLV_IMPRIMI_VENDA_CLIENTE_P3;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        [global::System.ComponentModel.Browsable(false)]
-        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public LV_IMPRIMI_VENDA_CLIENTE_P4DataTable LV_IMPRIMI_VENDA_CLIENTE_P4 {
-            get {
-                return this.tableLV_IMPRIMI_VENDA_CLIENTE_P4;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        [global::System.ComponentModel.Browsable(false)]
-        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
         public LV_IMPRIMI_VENDA_COMPLETA_V1DataTable LV_IMPRIMI_VENDA_COMPLETA_V1 {
             get {
                 return this.tableLV_IMPRIMI_VENDA_COMPLETA_V1;
@@ -219,19 +154,9 @@ namespace LiveCommerce.Relatorios {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public LV_IMPRIMI_VENDA_PADRAO_P1DataTable LV_IMPRIMI_VENDA_PADRAO_P1 {
+        public LV_VENDA_FORMA_PAGAMENTO_DIADataTable LV_VENDA_FORMA_PAGAMENTO_DIA {
             get {
-                return this.tableLV_IMPRIMI_VENDA_PADRAO_P1;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        [global::System.ComponentModel.Browsable(false)]
-        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public LV_IMPRIMI_VENDA_PADRAO_P2DataTable LV_IMPRIMI_VENDA_PADRAO_P2 {
-            get {
-                return this.tableLV_IMPRIMI_VENDA_PADRAO_P2;
+                return this.tableLV_VENDA_FORMA_PAGAMENTO_DIA;
             }
         }
         
@@ -314,26 +239,11 @@ namespace LiveCommerce.Relatorios {
                 if ((ds.Tables["USP_VENDA_DO_DIA"] != null)) {
                     base.Tables.Add(new USP_VENDA_DO_DIADataTable(ds.Tables["USP_VENDA_DO_DIA"]));
                 }
-                if ((ds.Tables["LV_IMPRIMI_VENDA_CLIENTE_P1"] != null)) {
-                    base.Tables.Add(new LV_IMPRIMI_VENDA_CLIENTE_P1DataTable(ds.Tables["LV_IMPRIMI_VENDA_CLIENTE_P1"]));
-                }
-                if ((ds.Tables["LV_IMPRIMI_VENDA_CLIENTE_P2"] != null)) {
-                    base.Tables.Add(new LV_IMPRIMI_VENDA_CLIENTE_P2DataTable(ds.Tables["LV_IMPRIMI_VENDA_CLIENTE_P2"]));
-                }
-                if ((ds.Tables["LV_IMPRIMI_VENDA_CLIENTE_P3"] != null)) {
-                    base.Tables.Add(new LV_IMPRIMI_VENDA_CLIENTE_P3DataTable(ds.Tables["LV_IMPRIMI_VENDA_CLIENTE_P3"]));
-                }
-                if ((ds.Tables["LV_IMPRIMI_VENDA_CLIENTE_P4"] != null)) {
-                    base.Tables.Add(new LV_IMPRIMI_VENDA_CLIENTE_P4DataTable(ds.Tables["LV_IMPRIMI_VENDA_CLIENTE_P4"]));
-                }
                 if ((ds.Tables["LV_IMPRIMI_VENDA_COMPLETA_V1"] != null)) {
                     base.Tables.Add(new LV_IMPRIMI_VENDA_COMPLETA_V1DataTable(ds.Tables["LV_IMPRIMI_VENDA_COMPLETA_V1"]));
                 }
-                if ((ds.Tables["LV_IMPRIMI_VENDA_PADRAO_P1"] != null)) {
-                    base.Tables.Add(new LV_IMPRIMI_VENDA_PADRAO_P1DataTable(ds.Tables["LV_IMPRIMI_VENDA_PADRAO_P1"]));
-                }
-                if ((ds.Tables["LV_IMPRIMI_VENDA_PADRAO_P2"] != null)) {
-                    base.Tables.Add(new LV_IMPRIMI_VENDA_PADRAO_P2DataTable(ds.Tables["LV_IMPRIMI_VENDA_PADRAO_P2"]));
+                if ((ds.Tables["LV_VENDA_FORMA_PAGAMENTO_DIA"] != null)) {
+                    base.Tables.Add(new LV_VENDA_FORMA_PAGAMENTO_DIADataTable(ds.Tables["LV_VENDA_FORMA_PAGAMENTO_DIA"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -392,46 +302,16 @@ namespace LiveCommerce.Relatorios {
                     this.tableUSP_VENDA_DO_DIA.InitVars();
                 }
             }
-            this.tableLV_IMPRIMI_VENDA_CLIENTE_P1 = ((LV_IMPRIMI_VENDA_CLIENTE_P1DataTable)(base.Tables["LV_IMPRIMI_VENDA_CLIENTE_P1"]));
-            if ((initTable == true)) {
-                if ((this.tableLV_IMPRIMI_VENDA_CLIENTE_P1 != null)) {
-                    this.tableLV_IMPRIMI_VENDA_CLIENTE_P1.InitVars();
-                }
-            }
-            this.tableLV_IMPRIMI_VENDA_CLIENTE_P2 = ((LV_IMPRIMI_VENDA_CLIENTE_P2DataTable)(base.Tables["LV_IMPRIMI_VENDA_CLIENTE_P2"]));
-            if ((initTable == true)) {
-                if ((this.tableLV_IMPRIMI_VENDA_CLIENTE_P2 != null)) {
-                    this.tableLV_IMPRIMI_VENDA_CLIENTE_P2.InitVars();
-                }
-            }
-            this.tableLV_IMPRIMI_VENDA_CLIENTE_P3 = ((LV_IMPRIMI_VENDA_CLIENTE_P3DataTable)(base.Tables["LV_IMPRIMI_VENDA_CLIENTE_P3"]));
-            if ((initTable == true)) {
-                if ((this.tableLV_IMPRIMI_VENDA_CLIENTE_P3 != null)) {
-                    this.tableLV_IMPRIMI_VENDA_CLIENTE_P3.InitVars();
-                }
-            }
-            this.tableLV_IMPRIMI_VENDA_CLIENTE_P4 = ((LV_IMPRIMI_VENDA_CLIENTE_P4DataTable)(base.Tables["LV_IMPRIMI_VENDA_CLIENTE_P4"]));
-            if ((initTable == true)) {
-                if ((this.tableLV_IMPRIMI_VENDA_CLIENTE_P4 != null)) {
-                    this.tableLV_IMPRIMI_VENDA_CLIENTE_P4.InitVars();
-                }
-            }
             this.tableLV_IMPRIMI_VENDA_COMPLETA_V1 = ((LV_IMPRIMI_VENDA_COMPLETA_V1DataTable)(base.Tables["LV_IMPRIMI_VENDA_COMPLETA_V1"]));
             if ((initTable == true)) {
                 if ((this.tableLV_IMPRIMI_VENDA_COMPLETA_V1 != null)) {
                     this.tableLV_IMPRIMI_VENDA_COMPLETA_V1.InitVars();
                 }
             }
-            this.tableLV_IMPRIMI_VENDA_PADRAO_P1 = ((LV_IMPRIMI_VENDA_PADRAO_P1DataTable)(base.Tables["LV_IMPRIMI_VENDA_PADRAO_P1"]));
+            this.tableLV_VENDA_FORMA_PAGAMENTO_DIA = ((LV_VENDA_FORMA_PAGAMENTO_DIADataTable)(base.Tables["LV_VENDA_FORMA_PAGAMENTO_DIA"]));
             if ((initTable == true)) {
-                if ((this.tableLV_IMPRIMI_VENDA_PADRAO_P1 != null)) {
-                    this.tableLV_IMPRIMI_VENDA_PADRAO_P1.InitVars();
-                }
-            }
-            this.tableLV_IMPRIMI_VENDA_PADRAO_P2 = ((LV_IMPRIMI_VENDA_PADRAO_P2DataTable)(base.Tables["LV_IMPRIMI_VENDA_PADRAO_P2"]));
-            if ((initTable == true)) {
-                if ((this.tableLV_IMPRIMI_VENDA_PADRAO_P2 != null)) {
-                    this.tableLV_IMPRIMI_VENDA_PADRAO_P2.InitVars();
+                if ((this.tableLV_VENDA_FORMA_PAGAMENTO_DIA != null)) {
+                    this.tableLV_VENDA_FORMA_PAGAMENTO_DIA.InitVars();
                 }
             }
         }
@@ -452,20 +332,10 @@ namespace LiveCommerce.Relatorios {
             base.Tables.Add(this.tableUSP_VENDA_DIA);
             this.tableUSP_VENDA_DO_DIA = new USP_VENDA_DO_DIADataTable();
             base.Tables.Add(this.tableUSP_VENDA_DO_DIA);
-            this.tableLV_IMPRIMI_VENDA_CLIENTE_P1 = new LV_IMPRIMI_VENDA_CLIENTE_P1DataTable();
-            base.Tables.Add(this.tableLV_IMPRIMI_VENDA_CLIENTE_P1);
-            this.tableLV_IMPRIMI_VENDA_CLIENTE_P2 = new LV_IMPRIMI_VENDA_CLIENTE_P2DataTable();
-            base.Tables.Add(this.tableLV_IMPRIMI_VENDA_CLIENTE_P2);
-            this.tableLV_IMPRIMI_VENDA_CLIENTE_P3 = new LV_IMPRIMI_VENDA_CLIENTE_P3DataTable();
-            base.Tables.Add(this.tableLV_IMPRIMI_VENDA_CLIENTE_P3);
-            this.tableLV_IMPRIMI_VENDA_CLIENTE_P4 = new LV_IMPRIMI_VENDA_CLIENTE_P4DataTable();
-            base.Tables.Add(this.tableLV_IMPRIMI_VENDA_CLIENTE_P4);
             this.tableLV_IMPRIMI_VENDA_COMPLETA_V1 = new LV_IMPRIMI_VENDA_COMPLETA_V1DataTable();
             base.Tables.Add(this.tableLV_IMPRIMI_VENDA_COMPLETA_V1);
-            this.tableLV_IMPRIMI_VENDA_PADRAO_P1 = new LV_IMPRIMI_VENDA_PADRAO_P1DataTable();
-            base.Tables.Add(this.tableLV_IMPRIMI_VENDA_PADRAO_P1);
-            this.tableLV_IMPRIMI_VENDA_PADRAO_P2 = new LV_IMPRIMI_VENDA_PADRAO_P2DataTable();
-            base.Tables.Add(this.tableLV_IMPRIMI_VENDA_PADRAO_P2);
+            this.tableLV_VENDA_FORMA_PAGAMENTO_DIA = new LV_VENDA_FORMA_PAGAMENTO_DIADataTable();
+            base.Tables.Add(this.tableLV_VENDA_FORMA_PAGAMENTO_DIA);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -494,43 +364,13 @@ namespace LiveCommerce.Relatorios {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private bool ShouldSerializeLV_IMPRIMI_VENDA_CLIENTE_P1() {
-            return false;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private bool ShouldSerializeLV_IMPRIMI_VENDA_CLIENTE_P2() {
-            return false;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private bool ShouldSerializeLV_IMPRIMI_VENDA_CLIENTE_P3() {
-            return false;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private bool ShouldSerializeLV_IMPRIMI_VENDA_CLIENTE_P4() {
-            return false;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private bool ShouldSerializeLV_IMPRIMI_VENDA_COMPLETA_V1() {
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private bool ShouldSerializeLV_IMPRIMI_VENDA_PADRAO_P1() {
-            return false;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private bool ShouldSerializeLV_IMPRIMI_VENDA_PADRAO_P2() {
+        private bool ShouldSerializeLV_VENDA_FORMA_PAGAMENTO_DIA() {
             return false;
         }
         
@@ -602,25 +442,10 @@ namespace LiveCommerce.Relatorios {
         public delegate void USP_VENDA_DO_DIARowChangeEventHandler(object sender, USP_VENDA_DO_DIARowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public delegate void LV_IMPRIMI_VENDA_CLIENTE_P1RowChangeEventHandler(object sender, LV_IMPRIMI_VENDA_CLIENTE_P1RowChangeEvent e);
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public delegate void LV_IMPRIMI_VENDA_CLIENTE_P2RowChangeEventHandler(object sender, LV_IMPRIMI_VENDA_CLIENTE_P2RowChangeEvent e);
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public delegate void LV_IMPRIMI_VENDA_CLIENTE_P3RowChangeEventHandler(object sender, LV_IMPRIMI_VENDA_CLIENTE_P3RowChangeEvent e);
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public delegate void LV_IMPRIMI_VENDA_CLIENTE_P4RowChangeEventHandler(object sender, LV_IMPRIMI_VENDA_CLIENTE_P4RowChangeEvent e);
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public delegate void LV_IMPRIMI_VENDA_COMPLETA_V1RowChangeEventHandler(object sender, LV_IMPRIMI_VENDA_COMPLETA_V1RowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public delegate void LV_IMPRIMI_VENDA_PADRAO_P1RowChangeEventHandler(object sender, LV_IMPRIMI_VENDA_PADRAO_P1RowChangeEvent e);
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public delegate void LV_IMPRIMI_VENDA_PADRAO_P2RowChangeEventHandler(object sender, LV_IMPRIMI_VENDA_PADRAO_P2RowChangeEvent e);
+        public delegate void LV_VENDA_FORMA_PAGAMENTO_DIARowChangeEventHandler(object sender, LV_VENDA_FORMA_PAGAMENTO_DIARowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -1862,1194 +1687,6 @@ namespace LiveCommerce.Relatorios {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class LV_IMPRIMI_VENDA_CLIENTE_P1DataTable : global::System.Data.TypedTableBase<LV_IMPRIMI_VENDA_CLIENTE_P1Row> {
-            
-            private global::System.Data.DataColumn columnCODIGO;
-            
-            private global::System.Data.DataColumn columnNOME;
-            
-            private global::System.Data.DataColumn columnCPF;
-            
-            private global::System.Data.DataColumn columnRG;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_CLIENTE_P1DataTable() {
-                this.TableName = "LV_IMPRIMI_VENDA_CLIENTE_P1";
-                this.BeginInit();
-                this.InitClass();
-                this.EndInit();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal LV_IMPRIMI_VENDA_CLIENTE_P1DataTable(global::System.Data.DataTable table) {
-                this.TableName = table.TableName;
-                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
-                    this.CaseSensitive = table.CaseSensitive;
-                }
-                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
-                    this.Locale = table.Locale;
-                }
-                if ((table.Namespace != table.DataSet.Namespace)) {
-                    this.Namespace = table.Namespace;
-                }
-                this.Prefix = table.Prefix;
-                this.MinimumCapacity = table.MinimumCapacity;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected LV_IMPRIMI_VENDA_CLIENTE_P1DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
-                    base(info, context) {
-                this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn CODIGOColumn {
-                get {
-                    return this.columnCODIGO;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn NOMEColumn {
-                get {
-                    return this.columnNOME;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn CPFColumn {
-                get {
-                    return this.columnCPF;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn RGColumn {
-                get {
-                    return this.columnRG;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            [global::System.ComponentModel.Browsable(false)]
-            public int Count {
-                get {
-                    return this.Rows.Count;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_CLIENTE_P1Row this[int index] {
-                get {
-                    return ((LV_IMPRIMI_VENDA_CLIENTE_P1Row)(this.Rows[index]));
-                }
-            }
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event LV_IMPRIMI_VENDA_CLIENTE_P1RowChangeEventHandler LV_IMPRIMI_VENDA_CLIENTE_P1RowChanging;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event LV_IMPRIMI_VENDA_CLIENTE_P1RowChangeEventHandler LV_IMPRIMI_VENDA_CLIENTE_P1RowChanged;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event LV_IMPRIMI_VENDA_CLIENTE_P1RowChangeEventHandler LV_IMPRIMI_VENDA_CLIENTE_P1RowDeleting;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event LV_IMPRIMI_VENDA_CLIENTE_P1RowChangeEventHandler LV_IMPRIMI_VENDA_CLIENTE_P1RowDeleted;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void AddLV_IMPRIMI_VENDA_CLIENTE_P1Row(LV_IMPRIMI_VENDA_CLIENTE_P1Row row) {
-                this.Rows.Add(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_CLIENTE_P1Row AddLV_IMPRIMI_VENDA_CLIENTE_P1Row(string NOME, string CPF, string RG) {
-                LV_IMPRIMI_VENDA_CLIENTE_P1Row rowLV_IMPRIMI_VENDA_CLIENTE_P1Row = ((LV_IMPRIMI_VENDA_CLIENTE_P1Row)(this.NewRow()));
-                object[] columnValuesArray = new object[] {
-                        null,
-                        NOME,
-                        CPF,
-                        RG};
-                rowLV_IMPRIMI_VENDA_CLIENTE_P1Row.ItemArray = columnValuesArray;
-                this.Rows.Add(rowLV_IMPRIMI_VENDA_CLIENTE_P1Row);
-                return rowLV_IMPRIMI_VENDA_CLIENTE_P1Row;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_CLIENTE_P1Row FindByCODIGO(int CODIGO) {
-                return ((LV_IMPRIMI_VENDA_CLIENTE_P1Row)(this.Rows.Find(new object[] {
-                            CODIGO})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public override global::System.Data.DataTable Clone() {
-                LV_IMPRIMI_VENDA_CLIENTE_P1DataTable cln = ((LV_IMPRIMI_VENDA_CLIENTE_P1DataTable)(base.Clone()));
-                cln.InitVars();
-                return cln;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override global::System.Data.DataTable CreateInstance() {
-                return new LV_IMPRIMI_VENDA_CLIENTE_P1DataTable();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal void InitVars() {
-                this.columnCODIGO = base.Columns["CODIGO"];
-                this.columnNOME = base.Columns["NOME"];
-                this.columnCPF = base.Columns["CPF"];
-                this.columnRG = base.Columns["RG"];
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            private void InitClass() {
-                this.columnCODIGO = new global::System.Data.DataColumn("CODIGO", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCODIGO);
-                this.columnNOME = new global::System.Data.DataColumn("NOME", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNOME);
-                this.columnCPF = new global::System.Data.DataColumn("CPF", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCPF);
-                this.columnRG = new global::System.Data.DataColumn("RG", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnRG);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnCODIGO}, true));
-                this.columnCODIGO.AutoIncrement = true;
-                this.columnCODIGO.AutoIncrementSeed = -1;
-                this.columnCODIGO.AutoIncrementStep = -1;
-                this.columnCODIGO.AllowDBNull = false;
-                this.columnCODIGO.ReadOnly = true;
-                this.columnCODIGO.Unique = true;
-                this.columnNOME.AllowDBNull = false;
-                this.columnNOME.MaxLength = 35;
-                this.columnCPF.MaxLength = 15;
-                this.columnRG.MaxLength = 15;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_CLIENTE_P1Row NewLV_IMPRIMI_VENDA_CLIENTE_P1Row() {
-                return ((LV_IMPRIMI_VENDA_CLIENTE_P1Row)(this.NewRow()));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new LV_IMPRIMI_VENDA_CLIENTE_P1Row(builder);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override global::System.Type GetRowType() {
-                return typeof(LV_IMPRIMI_VENDA_CLIENTE_P1Row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanged(e);
-                if ((this.LV_IMPRIMI_VENDA_CLIENTE_P1RowChanged != null)) {
-                    this.LV_IMPRIMI_VENDA_CLIENTE_P1RowChanged(this, new LV_IMPRIMI_VENDA_CLIENTE_P1RowChangeEvent(((LV_IMPRIMI_VENDA_CLIENTE_P1Row)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanging(e);
-                if ((this.LV_IMPRIMI_VENDA_CLIENTE_P1RowChanging != null)) {
-                    this.LV_IMPRIMI_VENDA_CLIENTE_P1RowChanging(this, new LV_IMPRIMI_VENDA_CLIENTE_P1RowChangeEvent(((LV_IMPRIMI_VENDA_CLIENTE_P1Row)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleted(e);
-                if ((this.LV_IMPRIMI_VENDA_CLIENTE_P1RowDeleted != null)) {
-                    this.LV_IMPRIMI_VENDA_CLIENTE_P1RowDeleted(this, new LV_IMPRIMI_VENDA_CLIENTE_P1RowChangeEvent(((LV_IMPRIMI_VENDA_CLIENTE_P1Row)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleting(e);
-                if ((this.LV_IMPRIMI_VENDA_CLIENTE_P1RowDeleting != null)) {
-                    this.LV_IMPRIMI_VENDA_CLIENTE_P1RowDeleting(this, new LV_IMPRIMI_VENDA_CLIENTE_P1RowChangeEvent(((LV_IMPRIMI_VENDA_CLIENTE_P1Row)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void RemoveLV_IMPRIMI_VENDA_CLIENTE_P1Row(LV_IMPRIMI_VENDA_CLIENTE_P1Row row) {
-                this.Rows.Remove(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
-                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                dsRelatorios ds = new dsRelatorios();
-                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
-                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
-                any1.MinOccurs = new decimal(0);
-                any1.MaxOccurs = decimal.MaxValue;
-                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any1);
-                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
-                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
-                any2.MinOccurs = new decimal(1);
-                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any2);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute1.Name = "namespace";
-                attribute1.FixedValue = ds.Namespace;
-                type.Attributes.Add(attribute1);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "LV_IMPRIMI_VENDA_CLIENTE_P1DataTable";
-                type.Attributes.Add(attribute2);
-                type.Particle = sequence;
-                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
-                if (xs.Contains(dsSchema.TargetNamespace)) {
-                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
-                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
-                    try {
-                        global::System.Xml.Schema.XmlSchema schema = null;
-                        dsSchema.Write(s1);
-                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
-                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
-                            s2.SetLength(0);
-                            schema.Write(s2);
-                            if ((s1.Length == s2.Length)) {
-                                s1.Position = 0;
-                                s2.Position = 0;
-                                for (; ((s1.Position != s1.Length) 
-                                            && (s1.ReadByte() == s2.ReadByte())); ) {
-                                    ;
-                                }
-                                if ((s1.Position == s1.Length)) {
-                                    return type;
-                                }
-                            }
-                        }
-                    }
-                    finally {
-                        if ((s1 != null)) {
-                            s1.Close();
-                        }
-                        if ((s2 != null)) {
-                            s2.Close();
-                        }
-                    }
-                }
-                xs.Add(dsSchema);
-                return type;
-            }
-        }
-        
-        /// <summary>
-        ///Represents the strongly named DataTable class.
-        ///</summary>
-        [global::System.Serializable()]
-        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class LV_IMPRIMI_VENDA_CLIENTE_P2DataTable : global::System.Data.TypedTableBase<LV_IMPRIMI_VENDA_CLIENTE_P2Row> {
-            
-            private global::System.Data.DataColumn columnENDERECO;
-            
-            private global::System.Data.DataColumn columnNUMERO;
-            
-            private global::System.Data.DataColumn columnBAIRRO;
-            
-            private global::System.Data.DataColumn columnCEP;
-            
-            private global::System.Data.DataColumn columnUF;
-            
-            private global::System.Data.DataColumn columnCIDADE;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_CLIENTE_P2DataTable() {
-                this.TableName = "LV_IMPRIMI_VENDA_CLIENTE_P2";
-                this.BeginInit();
-                this.InitClass();
-                this.EndInit();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal LV_IMPRIMI_VENDA_CLIENTE_P2DataTable(global::System.Data.DataTable table) {
-                this.TableName = table.TableName;
-                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
-                    this.CaseSensitive = table.CaseSensitive;
-                }
-                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
-                    this.Locale = table.Locale;
-                }
-                if ((table.Namespace != table.DataSet.Namespace)) {
-                    this.Namespace = table.Namespace;
-                }
-                this.Prefix = table.Prefix;
-                this.MinimumCapacity = table.MinimumCapacity;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected LV_IMPRIMI_VENDA_CLIENTE_P2DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
-                    base(info, context) {
-                this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn ENDERECOColumn {
-                get {
-                    return this.columnENDERECO;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn NUMEROColumn {
-                get {
-                    return this.columnNUMERO;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn BAIRROColumn {
-                get {
-                    return this.columnBAIRRO;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn CEPColumn {
-                get {
-                    return this.columnCEP;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn UFColumn {
-                get {
-                    return this.columnUF;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn CIDADEColumn {
-                get {
-                    return this.columnCIDADE;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            [global::System.ComponentModel.Browsable(false)]
-            public int Count {
-                get {
-                    return this.Rows.Count;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_CLIENTE_P2Row this[int index] {
-                get {
-                    return ((LV_IMPRIMI_VENDA_CLIENTE_P2Row)(this.Rows[index]));
-                }
-            }
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event LV_IMPRIMI_VENDA_CLIENTE_P2RowChangeEventHandler LV_IMPRIMI_VENDA_CLIENTE_P2RowChanging;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event LV_IMPRIMI_VENDA_CLIENTE_P2RowChangeEventHandler LV_IMPRIMI_VENDA_CLIENTE_P2RowChanged;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event LV_IMPRIMI_VENDA_CLIENTE_P2RowChangeEventHandler LV_IMPRIMI_VENDA_CLIENTE_P2RowDeleting;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event LV_IMPRIMI_VENDA_CLIENTE_P2RowChangeEventHandler LV_IMPRIMI_VENDA_CLIENTE_P2RowDeleted;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void AddLV_IMPRIMI_VENDA_CLIENTE_P2Row(LV_IMPRIMI_VENDA_CLIENTE_P2Row row) {
-                this.Rows.Add(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_CLIENTE_P2Row AddLV_IMPRIMI_VENDA_CLIENTE_P2Row(string ENDERECO, int NUMERO, string BAIRRO, string CEP, string UF, string CIDADE) {
-                LV_IMPRIMI_VENDA_CLIENTE_P2Row rowLV_IMPRIMI_VENDA_CLIENTE_P2Row = ((LV_IMPRIMI_VENDA_CLIENTE_P2Row)(this.NewRow()));
-                object[] columnValuesArray = new object[] {
-                        ENDERECO,
-                        NUMERO,
-                        BAIRRO,
-                        CEP,
-                        UF,
-                        CIDADE};
-                rowLV_IMPRIMI_VENDA_CLIENTE_P2Row.ItemArray = columnValuesArray;
-                this.Rows.Add(rowLV_IMPRIMI_VENDA_CLIENTE_P2Row);
-                return rowLV_IMPRIMI_VENDA_CLIENTE_P2Row;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public override global::System.Data.DataTable Clone() {
-                LV_IMPRIMI_VENDA_CLIENTE_P2DataTable cln = ((LV_IMPRIMI_VENDA_CLIENTE_P2DataTable)(base.Clone()));
-                cln.InitVars();
-                return cln;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override global::System.Data.DataTable CreateInstance() {
-                return new LV_IMPRIMI_VENDA_CLIENTE_P2DataTable();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal void InitVars() {
-                this.columnENDERECO = base.Columns["ENDERECO"];
-                this.columnNUMERO = base.Columns["NUMERO"];
-                this.columnBAIRRO = base.Columns["BAIRRO"];
-                this.columnCEP = base.Columns["CEP"];
-                this.columnUF = base.Columns["UF"];
-                this.columnCIDADE = base.Columns["CIDADE"];
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            private void InitClass() {
-                this.columnENDERECO = new global::System.Data.DataColumn("ENDERECO", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnENDERECO);
-                this.columnNUMERO = new global::System.Data.DataColumn("NUMERO", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNUMERO);
-                this.columnBAIRRO = new global::System.Data.DataColumn("BAIRRO", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnBAIRRO);
-                this.columnCEP = new global::System.Data.DataColumn("CEP", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCEP);
-                this.columnUF = new global::System.Data.DataColumn("UF", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnUF);
-                this.columnCIDADE = new global::System.Data.DataColumn("CIDADE", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCIDADE);
-                this.columnENDERECO.MaxLength = 50;
-                this.columnBAIRRO.MaxLength = 30;
-                this.columnCEP.MaxLength = 9;
-                this.columnUF.AllowDBNull = false;
-                this.columnUF.MaxLength = 2;
-                this.columnCIDADE.AllowDBNull = false;
-                this.columnCIDADE.MaxLength = 50;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_CLIENTE_P2Row NewLV_IMPRIMI_VENDA_CLIENTE_P2Row() {
-                return ((LV_IMPRIMI_VENDA_CLIENTE_P2Row)(this.NewRow()));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new LV_IMPRIMI_VENDA_CLIENTE_P2Row(builder);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override global::System.Type GetRowType() {
-                return typeof(LV_IMPRIMI_VENDA_CLIENTE_P2Row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanged(e);
-                if ((this.LV_IMPRIMI_VENDA_CLIENTE_P2RowChanged != null)) {
-                    this.LV_IMPRIMI_VENDA_CLIENTE_P2RowChanged(this, new LV_IMPRIMI_VENDA_CLIENTE_P2RowChangeEvent(((LV_IMPRIMI_VENDA_CLIENTE_P2Row)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanging(e);
-                if ((this.LV_IMPRIMI_VENDA_CLIENTE_P2RowChanging != null)) {
-                    this.LV_IMPRIMI_VENDA_CLIENTE_P2RowChanging(this, new LV_IMPRIMI_VENDA_CLIENTE_P2RowChangeEvent(((LV_IMPRIMI_VENDA_CLIENTE_P2Row)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleted(e);
-                if ((this.LV_IMPRIMI_VENDA_CLIENTE_P2RowDeleted != null)) {
-                    this.LV_IMPRIMI_VENDA_CLIENTE_P2RowDeleted(this, new LV_IMPRIMI_VENDA_CLIENTE_P2RowChangeEvent(((LV_IMPRIMI_VENDA_CLIENTE_P2Row)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleting(e);
-                if ((this.LV_IMPRIMI_VENDA_CLIENTE_P2RowDeleting != null)) {
-                    this.LV_IMPRIMI_VENDA_CLIENTE_P2RowDeleting(this, new LV_IMPRIMI_VENDA_CLIENTE_P2RowChangeEvent(((LV_IMPRIMI_VENDA_CLIENTE_P2Row)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void RemoveLV_IMPRIMI_VENDA_CLIENTE_P2Row(LV_IMPRIMI_VENDA_CLIENTE_P2Row row) {
-                this.Rows.Remove(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
-                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                dsRelatorios ds = new dsRelatorios();
-                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
-                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
-                any1.MinOccurs = new decimal(0);
-                any1.MaxOccurs = decimal.MaxValue;
-                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any1);
-                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
-                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
-                any2.MinOccurs = new decimal(1);
-                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any2);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute1.Name = "namespace";
-                attribute1.FixedValue = ds.Namespace;
-                type.Attributes.Add(attribute1);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "LV_IMPRIMI_VENDA_CLIENTE_P2DataTable";
-                type.Attributes.Add(attribute2);
-                type.Particle = sequence;
-                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
-                if (xs.Contains(dsSchema.TargetNamespace)) {
-                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
-                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
-                    try {
-                        global::System.Xml.Schema.XmlSchema schema = null;
-                        dsSchema.Write(s1);
-                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
-                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
-                            s2.SetLength(0);
-                            schema.Write(s2);
-                            if ((s1.Length == s2.Length)) {
-                                s1.Position = 0;
-                                s2.Position = 0;
-                                for (; ((s1.Position != s1.Length) 
-                                            && (s1.ReadByte() == s2.ReadByte())); ) {
-                                    ;
-                                }
-                                if ((s1.Position == s1.Length)) {
-                                    return type;
-                                }
-                            }
-                        }
-                    }
-                    finally {
-                        if ((s1 != null)) {
-                            s1.Close();
-                        }
-                        if ((s2 != null)) {
-                            s2.Close();
-                        }
-                    }
-                }
-                xs.Add(dsSchema);
-                return type;
-            }
-        }
-        
-        /// <summary>
-        ///Represents the strongly named DataTable class.
-        ///</summary>
-        [global::System.Serializable()]
-        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class LV_IMPRIMI_VENDA_CLIENTE_P3DataTable : global::System.Data.TypedTableBase<LV_IMPRIMI_VENDA_CLIENTE_P3Row> {
-            
-            private global::System.Data.DataColumn columnCODIGO;
-            
-            private global::System.Data.DataColumn columnPRODUTO;
-            
-            private global::System.Data.DataColumn columnVALOR_PRODUTO;
-            
-            private global::System.Data.DataColumn columnQUANTIDADE;
-            
-            private global::System.Data.DataColumn columnTOTAL;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_CLIENTE_P3DataTable() {
-                this.TableName = "LV_IMPRIMI_VENDA_CLIENTE_P3";
-                this.BeginInit();
-                this.InitClass();
-                this.EndInit();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal LV_IMPRIMI_VENDA_CLIENTE_P3DataTable(global::System.Data.DataTable table) {
-                this.TableName = table.TableName;
-                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
-                    this.CaseSensitive = table.CaseSensitive;
-                }
-                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
-                    this.Locale = table.Locale;
-                }
-                if ((table.Namespace != table.DataSet.Namespace)) {
-                    this.Namespace = table.Namespace;
-                }
-                this.Prefix = table.Prefix;
-                this.MinimumCapacity = table.MinimumCapacity;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected LV_IMPRIMI_VENDA_CLIENTE_P3DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
-                    base(info, context) {
-                this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn CODIGOColumn {
-                get {
-                    return this.columnCODIGO;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn PRODUTOColumn {
-                get {
-                    return this.columnPRODUTO;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn VALOR_PRODUTOColumn {
-                get {
-                    return this.columnVALOR_PRODUTO;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn QUANTIDADEColumn {
-                get {
-                    return this.columnQUANTIDADE;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn TOTALColumn {
-                get {
-                    return this.columnTOTAL;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            [global::System.ComponentModel.Browsable(false)]
-            public int Count {
-                get {
-                    return this.Rows.Count;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_CLIENTE_P3Row this[int index] {
-                get {
-                    return ((LV_IMPRIMI_VENDA_CLIENTE_P3Row)(this.Rows[index]));
-                }
-            }
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event LV_IMPRIMI_VENDA_CLIENTE_P3RowChangeEventHandler LV_IMPRIMI_VENDA_CLIENTE_P3RowChanging;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event LV_IMPRIMI_VENDA_CLIENTE_P3RowChangeEventHandler LV_IMPRIMI_VENDA_CLIENTE_P3RowChanged;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event LV_IMPRIMI_VENDA_CLIENTE_P3RowChangeEventHandler LV_IMPRIMI_VENDA_CLIENTE_P3RowDeleting;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event LV_IMPRIMI_VENDA_CLIENTE_P3RowChangeEventHandler LV_IMPRIMI_VENDA_CLIENTE_P3RowDeleted;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void AddLV_IMPRIMI_VENDA_CLIENTE_P3Row(LV_IMPRIMI_VENDA_CLIENTE_P3Row row) {
-                this.Rows.Add(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_CLIENTE_P3Row AddLV_IMPRIMI_VENDA_CLIENTE_P3Row(int CODIGO, string PRODUTO, decimal VALOR_PRODUTO, int QUANTIDADE, decimal TOTAL) {
-                LV_IMPRIMI_VENDA_CLIENTE_P3Row rowLV_IMPRIMI_VENDA_CLIENTE_P3Row = ((LV_IMPRIMI_VENDA_CLIENTE_P3Row)(this.NewRow()));
-                object[] columnValuesArray = new object[] {
-                        CODIGO,
-                        PRODUTO,
-                        VALOR_PRODUTO,
-                        QUANTIDADE,
-                        TOTAL};
-                rowLV_IMPRIMI_VENDA_CLIENTE_P3Row.ItemArray = columnValuesArray;
-                this.Rows.Add(rowLV_IMPRIMI_VENDA_CLIENTE_P3Row);
-                return rowLV_IMPRIMI_VENDA_CLIENTE_P3Row;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public override global::System.Data.DataTable Clone() {
-                LV_IMPRIMI_VENDA_CLIENTE_P3DataTable cln = ((LV_IMPRIMI_VENDA_CLIENTE_P3DataTable)(base.Clone()));
-                cln.InitVars();
-                return cln;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override global::System.Data.DataTable CreateInstance() {
-                return new LV_IMPRIMI_VENDA_CLIENTE_P3DataTable();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal void InitVars() {
-                this.columnCODIGO = base.Columns["CODIGO"];
-                this.columnPRODUTO = base.Columns["PRODUTO"];
-                this.columnVALOR_PRODUTO = base.Columns["VALOR_PRODUTO"];
-                this.columnQUANTIDADE = base.Columns["QUANTIDADE"];
-                this.columnTOTAL = base.Columns["TOTAL"];
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            private void InitClass() {
-                this.columnCODIGO = new global::System.Data.DataColumn("CODIGO", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCODIGO);
-                this.columnPRODUTO = new global::System.Data.DataColumn("PRODUTO", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPRODUTO);
-                this.columnVALOR_PRODUTO = new global::System.Data.DataColumn("VALOR_PRODUTO", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnVALOR_PRODUTO);
-                this.columnQUANTIDADE = new global::System.Data.DataColumn("QUANTIDADE", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnQUANTIDADE);
-                this.columnTOTAL = new global::System.Data.DataColumn("TOTAL", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTOTAL);
-                this.columnCODIGO.AllowDBNull = false;
-                this.columnPRODUTO.MaxLength = 20;
-                this.columnVALOR_PRODUTO.AllowDBNull = false;
-                this.columnQUANTIDADE.AllowDBNull = false;
-                this.columnTOTAL.AllowDBNull = false;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_CLIENTE_P3Row NewLV_IMPRIMI_VENDA_CLIENTE_P3Row() {
-                return ((LV_IMPRIMI_VENDA_CLIENTE_P3Row)(this.NewRow()));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new LV_IMPRIMI_VENDA_CLIENTE_P3Row(builder);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override global::System.Type GetRowType() {
-                return typeof(LV_IMPRIMI_VENDA_CLIENTE_P3Row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanged(e);
-                if ((this.LV_IMPRIMI_VENDA_CLIENTE_P3RowChanged != null)) {
-                    this.LV_IMPRIMI_VENDA_CLIENTE_P3RowChanged(this, new LV_IMPRIMI_VENDA_CLIENTE_P3RowChangeEvent(((LV_IMPRIMI_VENDA_CLIENTE_P3Row)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanging(e);
-                if ((this.LV_IMPRIMI_VENDA_CLIENTE_P3RowChanging != null)) {
-                    this.LV_IMPRIMI_VENDA_CLIENTE_P3RowChanging(this, new LV_IMPRIMI_VENDA_CLIENTE_P3RowChangeEvent(((LV_IMPRIMI_VENDA_CLIENTE_P3Row)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleted(e);
-                if ((this.LV_IMPRIMI_VENDA_CLIENTE_P3RowDeleted != null)) {
-                    this.LV_IMPRIMI_VENDA_CLIENTE_P3RowDeleted(this, new LV_IMPRIMI_VENDA_CLIENTE_P3RowChangeEvent(((LV_IMPRIMI_VENDA_CLIENTE_P3Row)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleting(e);
-                if ((this.LV_IMPRIMI_VENDA_CLIENTE_P3RowDeleting != null)) {
-                    this.LV_IMPRIMI_VENDA_CLIENTE_P3RowDeleting(this, new LV_IMPRIMI_VENDA_CLIENTE_P3RowChangeEvent(((LV_IMPRIMI_VENDA_CLIENTE_P3Row)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void RemoveLV_IMPRIMI_VENDA_CLIENTE_P3Row(LV_IMPRIMI_VENDA_CLIENTE_P3Row row) {
-                this.Rows.Remove(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
-                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                dsRelatorios ds = new dsRelatorios();
-                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
-                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
-                any1.MinOccurs = new decimal(0);
-                any1.MaxOccurs = decimal.MaxValue;
-                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any1);
-                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
-                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
-                any2.MinOccurs = new decimal(1);
-                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any2);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute1.Name = "namespace";
-                attribute1.FixedValue = ds.Namespace;
-                type.Attributes.Add(attribute1);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "LV_IMPRIMI_VENDA_CLIENTE_P3DataTable";
-                type.Attributes.Add(attribute2);
-                type.Particle = sequence;
-                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
-                if (xs.Contains(dsSchema.TargetNamespace)) {
-                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
-                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
-                    try {
-                        global::System.Xml.Schema.XmlSchema schema = null;
-                        dsSchema.Write(s1);
-                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
-                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
-                            s2.SetLength(0);
-                            schema.Write(s2);
-                            if ((s1.Length == s2.Length)) {
-                                s1.Position = 0;
-                                s2.Position = 0;
-                                for (; ((s1.Position != s1.Length) 
-                                            && (s1.ReadByte() == s2.ReadByte())); ) {
-                                    ;
-                                }
-                                if ((s1.Position == s1.Length)) {
-                                    return type;
-                                }
-                            }
-                        }
-                    }
-                    finally {
-                        if ((s1 != null)) {
-                            s1.Close();
-                        }
-                        if ((s2 != null)) {
-                            s2.Close();
-                        }
-                    }
-                }
-                xs.Add(dsSchema);
-                return type;
-            }
-        }
-        
-        /// <summary>
-        ///Represents the strongly named DataTable class.
-        ///</summary>
-        [global::System.Serializable()]
-        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class LV_IMPRIMI_VENDA_CLIENTE_P4DataTable : global::System.Data.TypedTableBase<LV_IMPRIMI_VENDA_CLIENTE_P4Row> {
-            
-            private global::System.Data.DataColumn columnVL_FINAL_VENDA;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_CLIENTE_P4DataTable() {
-                this.TableName = "LV_IMPRIMI_VENDA_CLIENTE_P4";
-                this.BeginInit();
-                this.InitClass();
-                this.EndInit();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal LV_IMPRIMI_VENDA_CLIENTE_P4DataTable(global::System.Data.DataTable table) {
-                this.TableName = table.TableName;
-                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
-                    this.CaseSensitive = table.CaseSensitive;
-                }
-                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
-                    this.Locale = table.Locale;
-                }
-                if ((table.Namespace != table.DataSet.Namespace)) {
-                    this.Namespace = table.Namespace;
-                }
-                this.Prefix = table.Prefix;
-                this.MinimumCapacity = table.MinimumCapacity;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected LV_IMPRIMI_VENDA_CLIENTE_P4DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
-                    base(info, context) {
-                this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn VL_FINAL_VENDAColumn {
-                get {
-                    return this.columnVL_FINAL_VENDA;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            [global::System.ComponentModel.Browsable(false)]
-            public int Count {
-                get {
-                    return this.Rows.Count;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_CLIENTE_P4Row this[int index] {
-                get {
-                    return ((LV_IMPRIMI_VENDA_CLIENTE_P4Row)(this.Rows[index]));
-                }
-            }
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event LV_IMPRIMI_VENDA_CLIENTE_P4RowChangeEventHandler LV_IMPRIMI_VENDA_CLIENTE_P4RowChanging;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event LV_IMPRIMI_VENDA_CLIENTE_P4RowChangeEventHandler LV_IMPRIMI_VENDA_CLIENTE_P4RowChanged;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event LV_IMPRIMI_VENDA_CLIENTE_P4RowChangeEventHandler LV_IMPRIMI_VENDA_CLIENTE_P4RowDeleting;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event LV_IMPRIMI_VENDA_CLIENTE_P4RowChangeEventHandler LV_IMPRIMI_VENDA_CLIENTE_P4RowDeleted;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void AddLV_IMPRIMI_VENDA_CLIENTE_P4Row(LV_IMPRIMI_VENDA_CLIENTE_P4Row row) {
-                this.Rows.Add(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_CLIENTE_P4Row AddLV_IMPRIMI_VENDA_CLIENTE_P4Row(decimal VL_FINAL_VENDA) {
-                LV_IMPRIMI_VENDA_CLIENTE_P4Row rowLV_IMPRIMI_VENDA_CLIENTE_P4Row = ((LV_IMPRIMI_VENDA_CLIENTE_P4Row)(this.NewRow()));
-                object[] columnValuesArray = new object[] {
-                        VL_FINAL_VENDA};
-                rowLV_IMPRIMI_VENDA_CLIENTE_P4Row.ItemArray = columnValuesArray;
-                this.Rows.Add(rowLV_IMPRIMI_VENDA_CLIENTE_P4Row);
-                return rowLV_IMPRIMI_VENDA_CLIENTE_P4Row;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public override global::System.Data.DataTable Clone() {
-                LV_IMPRIMI_VENDA_CLIENTE_P4DataTable cln = ((LV_IMPRIMI_VENDA_CLIENTE_P4DataTable)(base.Clone()));
-                cln.InitVars();
-                return cln;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override global::System.Data.DataTable CreateInstance() {
-                return new LV_IMPRIMI_VENDA_CLIENTE_P4DataTable();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal void InitVars() {
-                this.columnVL_FINAL_VENDA = base.Columns["VL_FINAL_VENDA"];
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            private void InitClass() {
-                this.columnVL_FINAL_VENDA = new global::System.Data.DataColumn("VL_FINAL_VENDA", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnVL_FINAL_VENDA);
-                this.columnVL_FINAL_VENDA.AllowDBNull = false;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_CLIENTE_P4Row NewLV_IMPRIMI_VENDA_CLIENTE_P4Row() {
-                return ((LV_IMPRIMI_VENDA_CLIENTE_P4Row)(this.NewRow()));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new LV_IMPRIMI_VENDA_CLIENTE_P4Row(builder);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override global::System.Type GetRowType() {
-                return typeof(LV_IMPRIMI_VENDA_CLIENTE_P4Row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanged(e);
-                if ((this.LV_IMPRIMI_VENDA_CLIENTE_P4RowChanged != null)) {
-                    this.LV_IMPRIMI_VENDA_CLIENTE_P4RowChanged(this, new LV_IMPRIMI_VENDA_CLIENTE_P4RowChangeEvent(((LV_IMPRIMI_VENDA_CLIENTE_P4Row)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanging(e);
-                if ((this.LV_IMPRIMI_VENDA_CLIENTE_P4RowChanging != null)) {
-                    this.LV_IMPRIMI_VENDA_CLIENTE_P4RowChanging(this, new LV_IMPRIMI_VENDA_CLIENTE_P4RowChangeEvent(((LV_IMPRIMI_VENDA_CLIENTE_P4Row)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleted(e);
-                if ((this.LV_IMPRIMI_VENDA_CLIENTE_P4RowDeleted != null)) {
-                    this.LV_IMPRIMI_VENDA_CLIENTE_P4RowDeleted(this, new LV_IMPRIMI_VENDA_CLIENTE_P4RowChangeEvent(((LV_IMPRIMI_VENDA_CLIENTE_P4Row)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleting(e);
-                if ((this.LV_IMPRIMI_VENDA_CLIENTE_P4RowDeleting != null)) {
-                    this.LV_IMPRIMI_VENDA_CLIENTE_P4RowDeleting(this, new LV_IMPRIMI_VENDA_CLIENTE_P4RowChangeEvent(((LV_IMPRIMI_VENDA_CLIENTE_P4Row)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void RemoveLV_IMPRIMI_VENDA_CLIENTE_P4Row(LV_IMPRIMI_VENDA_CLIENTE_P4Row row) {
-                this.Rows.Remove(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
-                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                dsRelatorios ds = new dsRelatorios();
-                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
-                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
-                any1.MinOccurs = new decimal(0);
-                any1.MaxOccurs = decimal.MaxValue;
-                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any1);
-                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
-                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
-                any2.MinOccurs = new decimal(1);
-                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any2);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute1.Name = "namespace";
-                attribute1.FixedValue = ds.Namespace;
-                type.Attributes.Add(attribute1);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "LV_IMPRIMI_VENDA_CLIENTE_P4DataTable";
-                type.Attributes.Add(attribute2);
-                type.Particle = sequence;
-                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
-                if (xs.Contains(dsSchema.TargetNamespace)) {
-                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
-                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
-                    try {
-                        global::System.Xml.Schema.XmlSchema schema = null;
-                        dsSchema.Write(s1);
-                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
-                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
-                            s2.SetLength(0);
-                            schema.Write(s2);
-                            if ((s1.Length == s2.Length)) {
-                                s1.Position = 0;
-                                s2.Position = 0;
-                                for (; ((s1.Position != s1.Length) 
-                                            && (s1.ReadByte() == s2.ReadByte())); ) {
-                                    ;
-                                }
-                                if ((s1.Position == s1.Length)) {
-                                    return type;
-                                }
-                            }
-                        }
-                    }
-                    finally {
-                        if ((s1 != null)) {
-                            s1.Close();
-                        }
-                        if ((s2 != null)) {
-                            s2.Close();
-                        }
-                    }
-                }
-                xs.Add(dsSchema);
-                return type;
-            }
-        }
-        
-        /// <summary>
-        ///Represents the strongly named DataTable class.
-        ///</summary>
-        [global::System.Serializable()]
-        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class LV_IMPRIMI_VENDA_COMPLETA_V1DataTable : global::System.Data.TypedTableBase<LV_IMPRIMI_VENDA_COMPLETA_V1Row> {
             
             private global::System.Data.DataColumn columnCODIGO;
@@ -3533,34 +2170,18 @@ namespace LiveCommerce.Relatorios {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class LV_IMPRIMI_VENDA_PADRAO_P1DataTable : global::System.Data.TypedTableBase<LV_IMPRIMI_VENDA_PADRAO_P1Row> {
+        public partial class LV_VENDA_FORMA_PAGAMENTO_DIADataTable : global::System.Data.TypedTableBase<LV_VENDA_FORMA_PAGAMENTO_DIARow> {
             
-            private global::System.Data.DataColumn columnCODIGO;
+            private global::System.Data.DataColumn columnDS_FORMAPAGAMENTO;
             
-            private global::System.Data.DataColumn columnNOME;
+            private global::System.Data.DataColumn columnQTD_VENDA;
             
-            private global::System.Data.DataColumn columnCPF;
-            
-            private global::System.Data.DataColumn columnRG;
-            
-            private global::System.Data.DataColumn columnENDERECO;
-            
-            private global::System.Data.DataColumn columnNUMERO;
-            
-            private global::System.Data.DataColumn columnBAIRRO;
-            
-            private global::System.Data.DataColumn columnCEP;
-            
-            private global::System.Data.DataColumn columnUF;
-            
-            private global::System.Data.DataColumn columnCIDADE;
-            
-            private global::System.Data.DataColumn columnID_VENDA;
+            private global::System.Data.DataColumn columnVLR_VENDA;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_PADRAO_P1DataTable() {
-                this.TableName = "LV_IMPRIMI_VENDA_PADRAO_P1";
+            public LV_VENDA_FORMA_PAGAMENTO_DIADataTable() {
+                this.TableName = "LV_VENDA_FORMA_PAGAMENTO_DIA";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -3568,7 +2189,7 @@ namespace LiveCommerce.Relatorios {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal LV_IMPRIMI_VENDA_PADRAO_P1DataTable(global::System.Data.DataTable table) {
+            internal LV_VENDA_FORMA_PAGAMENTO_DIADataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -3585,96 +2206,32 @@ namespace LiveCommerce.Relatorios {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected LV_IMPRIMI_VENDA_PADRAO_P1DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected LV_VENDA_FORMA_PAGAMENTO_DIADataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn CODIGOColumn {
+            public global::System.Data.DataColumn DS_FORMAPAGAMENTOColumn {
                 get {
-                    return this.columnCODIGO;
+                    return this.columnDS_FORMAPAGAMENTO;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn NOMEColumn {
+            public global::System.Data.DataColumn QTD_VENDAColumn {
                 get {
-                    return this.columnNOME;
+                    return this.columnQTD_VENDA;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn CPFColumn {
+            public global::System.Data.DataColumn VLR_VENDAColumn {
                 get {
-                    return this.columnCPF;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn RGColumn {
-                get {
-                    return this.columnRG;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn ENDERECOColumn {
-                get {
-                    return this.columnENDERECO;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn NUMEROColumn {
-                get {
-                    return this.columnNUMERO;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn BAIRROColumn {
-                get {
-                    return this.columnBAIRRO;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn CEPColumn {
-                get {
-                    return this.columnCEP;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn UFColumn {
-                get {
-                    return this.columnUF;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn CIDADEColumn {
-                get {
-                    return this.columnCIDADE;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn ID_VENDAColumn {
-                get {
-                    return this.columnID_VENDA;
+                    return this.columnVLR_VENDA;
                 }
             }
             
@@ -3689,55 +2246,47 @@ namespace LiveCommerce.Relatorios {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_PADRAO_P1Row this[int index] {
+            public LV_VENDA_FORMA_PAGAMENTO_DIARow this[int index] {
                 get {
-                    return ((LV_IMPRIMI_VENDA_PADRAO_P1Row)(this.Rows[index]));
+                    return ((LV_VENDA_FORMA_PAGAMENTO_DIARow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event LV_IMPRIMI_VENDA_PADRAO_P1RowChangeEventHandler LV_IMPRIMI_VENDA_PADRAO_P1RowChanging;
+            public event LV_VENDA_FORMA_PAGAMENTO_DIARowChangeEventHandler LV_VENDA_FORMA_PAGAMENTO_DIARowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event LV_IMPRIMI_VENDA_PADRAO_P1RowChangeEventHandler LV_IMPRIMI_VENDA_PADRAO_P1RowChanged;
+            public event LV_VENDA_FORMA_PAGAMENTO_DIARowChangeEventHandler LV_VENDA_FORMA_PAGAMENTO_DIARowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event LV_IMPRIMI_VENDA_PADRAO_P1RowChangeEventHandler LV_IMPRIMI_VENDA_PADRAO_P1RowDeleting;
+            public event LV_VENDA_FORMA_PAGAMENTO_DIARowChangeEventHandler LV_VENDA_FORMA_PAGAMENTO_DIARowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event LV_IMPRIMI_VENDA_PADRAO_P1RowChangeEventHandler LV_IMPRIMI_VENDA_PADRAO_P1RowDeleted;
+            public event LV_VENDA_FORMA_PAGAMENTO_DIARowChangeEventHandler LV_VENDA_FORMA_PAGAMENTO_DIARowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void AddLV_IMPRIMI_VENDA_PADRAO_P1Row(LV_IMPRIMI_VENDA_PADRAO_P1Row row) {
+            public void AddLV_VENDA_FORMA_PAGAMENTO_DIARow(LV_VENDA_FORMA_PAGAMENTO_DIARow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_PADRAO_P1Row AddLV_IMPRIMI_VENDA_PADRAO_P1Row(string NOME, string CPF, string RG, string ENDERECO, int NUMERO, string BAIRRO, string CEP, string UF, string CIDADE) {
-                LV_IMPRIMI_VENDA_PADRAO_P1Row rowLV_IMPRIMI_VENDA_PADRAO_P1Row = ((LV_IMPRIMI_VENDA_PADRAO_P1Row)(this.NewRow()));
+            public LV_VENDA_FORMA_PAGAMENTO_DIARow AddLV_VENDA_FORMA_PAGAMENTO_DIARow(string DS_FORMAPAGAMENTO, int QTD_VENDA, decimal VLR_VENDA) {
+                LV_VENDA_FORMA_PAGAMENTO_DIARow rowLV_VENDA_FORMA_PAGAMENTO_DIARow = ((LV_VENDA_FORMA_PAGAMENTO_DIARow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        null,
-                        NOME,
-                        CPF,
-                        RG,
-                        ENDERECO,
-                        NUMERO,
-                        BAIRRO,
-                        CEP,
-                        UF,
-                        CIDADE,
-                        null};
-                rowLV_IMPRIMI_VENDA_PADRAO_P1Row.ItemArray = columnValuesArray;
-                this.Rows.Add(rowLV_IMPRIMI_VENDA_PADRAO_P1Row);
-                return rowLV_IMPRIMI_VENDA_PADRAO_P1Row;
+                        DS_FORMAPAGAMENTO,
+                        QTD_VENDA,
+                        VLR_VENDA};
+                rowLV_VENDA_FORMA_PAGAMENTO_DIARow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowLV_VENDA_FORMA_PAGAMENTO_DIARow);
+                return rowLV_VENDA_FORMA_PAGAMENTO_DIARow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                LV_IMPRIMI_VENDA_PADRAO_P1DataTable cln = ((LV_IMPRIMI_VENDA_PADRAO_P1DataTable)(base.Clone()));
+                LV_VENDA_FORMA_PAGAMENTO_DIADataTable cln = ((LV_VENDA_FORMA_PAGAMENTO_DIADataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -3745,97 +2294,56 @@ namespace LiveCommerce.Relatorios {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new LV_IMPRIMI_VENDA_PADRAO_P1DataTable();
+                return new LV_VENDA_FORMA_PAGAMENTO_DIADataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             internal void InitVars() {
-                this.columnCODIGO = base.Columns["CODIGO"];
-                this.columnNOME = base.Columns["NOME"];
-                this.columnCPF = base.Columns["CPF"];
-                this.columnRG = base.Columns["RG"];
-                this.columnENDERECO = base.Columns["ENDERECO"];
-                this.columnNUMERO = base.Columns["NUMERO"];
-                this.columnBAIRRO = base.Columns["BAIRRO"];
-                this.columnCEP = base.Columns["CEP"];
-                this.columnUF = base.Columns["UF"];
-                this.columnCIDADE = base.Columns["CIDADE"];
-                this.columnID_VENDA = base.Columns["ID_VENDA"];
+                this.columnDS_FORMAPAGAMENTO = base.Columns["DS_FORMAPAGAMENTO"];
+                this.columnQTD_VENDA = base.Columns["QTD_VENDA"];
+                this.columnVLR_VENDA = base.Columns["VLR_VENDA"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             private void InitClass() {
-                this.columnCODIGO = new global::System.Data.DataColumn("CODIGO", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCODIGO);
-                this.columnNOME = new global::System.Data.DataColumn("NOME", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNOME);
-                this.columnCPF = new global::System.Data.DataColumn("CPF", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCPF);
-                this.columnRG = new global::System.Data.DataColumn("RG", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnRG);
-                this.columnENDERECO = new global::System.Data.DataColumn("ENDERECO", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnENDERECO);
-                this.columnNUMERO = new global::System.Data.DataColumn("NUMERO", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNUMERO);
-                this.columnBAIRRO = new global::System.Data.DataColumn("BAIRRO", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnBAIRRO);
-                this.columnCEP = new global::System.Data.DataColumn("CEP", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCEP);
-                this.columnUF = new global::System.Data.DataColumn("UF", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnUF);
-                this.columnCIDADE = new global::System.Data.DataColumn("CIDADE", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCIDADE);
-                this.columnID_VENDA = new global::System.Data.DataColumn("ID_VENDA", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnID_VENDA);
-                this.columnCODIGO.AutoIncrement = true;
-                this.columnCODIGO.AutoIncrementSeed = -1;
-                this.columnCODIGO.AutoIncrementStep = -1;
-                this.columnCODIGO.AllowDBNull = false;
-                this.columnCODIGO.ReadOnly = true;
-                this.columnNOME.AllowDBNull = false;
-                this.columnNOME.MaxLength = 35;
-                this.columnCPF.MaxLength = 15;
-                this.columnRG.MaxLength = 15;
-                this.columnENDERECO.MaxLength = 50;
-                this.columnBAIRRO.MaxLength = 30;
-                this.columnCEP.MaxLength = 9;
-                this.columnUF.AllowDBNull = false;
-                this.columnUF.MaxLength = 2;
-                this.columnCIDADE.AllowDBNull = false;
-                this.columnCIDADE.MaxLength = 50;
-                this.columnID_VENDA.AutoIncrement = true;
-                this.columnID_VENDA.AutoIncrementSeed = -1;
-                this.columnID_VENDA.AutoIncrementStep = -1;
-                this.columnID_VENDA.AllowDBNull = false;
-                this.columnID_VENDA.ReadOnly = true;
+                this.columnDS_FORMAPAGAMENTO = new global::System.Data.DataColumn("DS_FORMAPAGAMENTO", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDS_FORMAPAGAMENTO);
+                this.columnQTD_VENDA = new global::System.Data.DataColumn("QTD_VENDA", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnQTD_VENDA);
+                this.columnVLR_VENDA = new global::System.Data.DataColumn("VLR_VENDA", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVLR_VENDA);
+                this.columnDS_FORMAPAGAMENTO.AllowDBNull = false;
+                this.columnDS_FORMAPAGAMENTO.MaxLength = 20;
+                this.columnQTD_VENDA.ReadOnly = true;
+                this.columnVLR_VENDA.ReadOnly = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_PADRAO_P1Row NewLV_IMPRIMI_VENDA_PADRAO_P1Row() {
-                return ((LV_IMPRIMI_VENDA_PADRAO_P1Row)(this.NewRow()));
+            public LV_VENDA_FORMA_PAGAMENTO_DIARow NewLV_VENDA_FORMA_PAGAMENTO_DIARow() {
+                return ((LV_VENDA_FORMA_PAGAMENTO_DIARow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new LV_IMPRIMI_VENDA_PADRAO_P1Row(builder);
+                return new LV_VENDA_FORMA_PAGAMENTO_DIARow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(LV_IMPRIMI_VENDA_PADRAO_P1Row);
+                return typeof(LV_VENDA_FORMA_PAGAMENTO_DIARow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.LV_IMPRIMI_VENDA_PADRAO_P1RowChanged != null)) {
-                    this.LV_IMPRIMI_VENDA_PADRAO_P1RowChanged(this, new LV_IMPRIMI_VENDA_PADRAO_P1RowChangeEvent(((LV_IMPRIMI_VENDA_PADRAO_P1Row)(e.Row)), e.Action));
+                if ((this.LV_VENDA_FORMA_PAGAMENTO_DIARowChanged != null)) {
+                    this.LV_VENDA_FORMA_PAGAMENTO_DIARowChanged(this, new LV_VENDA_FORMA_PAGAMENTO_DIARowChangeEvent(((LV_VENDA_FORMA_PAGAMENTO_DIARow)(e.Row)), e.Action));
                 }
             }
             
@@ -3843,8 +2351,8 @@ namespace LiveCommerce.Relatorios {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.LV_IMPRIMI_VENDA_PADRAO_P1RowChanging != null)) {
-                    this.LV_IMPRIMI_VENDA_PADRAO_P1RowChanging(this, new LV_IMPRIMI_VENDA_PADRAO_P1RowChangeEvent(((LV_IMPRIMI_VENDA_PADRAO_P1Row)(e.Row)), e.Action));
+                if ((this.LV_VENDA_FORMA_PAGAMENTO_DIARowChanging != null)) {
+                    this.LV_VENDA_FORMA_PAGAMENTO_DIARowChanging(this, new LV_VENDA_FORMA_PAGAMENTO_DIARowChangeEvent(((LV_VENDA_FORMA_PAGAMENTO_DIARow)(e.Row)), e.Action));
                 }
             }
             
@@ -3852,8 +2360,8 @@ namespace LiveCommerce.Relatorios {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.LV_IMPRIMI_VENDA_PADRAO_P1RowDeleted != null)) {
-                    this.LV_IMPRIMI_VENDA_PADRAO_P1RowDeleted(this, new LV_IMPRIMI_VENDA_PADRAO_P1RowChangeEvent(((LV_IMPRIMI_VENDA_PADRAO_P1Row)(e.Row)), e.Action));
+                if ((this.LV_VENDA_FORMA_PAGAMENTO_DIARowDeleted != null)) {
+                    this.LV_VENDA_FORMA_PAGAMENTO_DIARowDeleted(this, new LV_VENDA_FORMA_PAGAMENTO_DIARowChangeEvent(((LV_VENDA_FORMA_PAGAMENTO_DIARow)(e.Row)), e.Action));
                 }
             }
             
@@ -3861,14 +2369,14 @@ namespace LiveCommerce.Relatorios {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.LV_IMPRIMI_VENDA_PADRAO_P1RowDeleting != null)) {
-                    this.LV_IMPRIMI_VENDA_PADRAO_P1RowDeleting(this, new LV_IMPRIMI_VENDA_PADRAO_P1RowChangeEvent(((LV_IMPRIMI_VENDA_PADRAO_P1Row)(e.Row)), e.Action));
+                if ((this.LV_VENDA_FORMA_PAGAMENTO_DIARowDeleting != null)) {
+                    this.LV_VENDA_FORMA_PAGAMENTO_DIARowDeleting(this, new LV_VENDA_FORMA_PAGAMENTO_DIARowChangeEvent(((LV_VENDA_FORMA_PAGAMENTO_DIARow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void RemoveLV_IMPRIMI_VENDA_PADRAO_P1Row(LV_IMPRIMI_VENDA_PADRAO_P1Row row) {
+            public void RemoveLV_VENDA_FORMA_PAGAMENTO_DIARow(LV_VENDA_FORMA_PAGAMENTO_DIARow row) {
                 this.Rows.Remove(row);
             }
             
@@ -3895,344 +2403,7 @@ namespace LiveCommerce.Relatorios {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "LV_IMPRIMI_VENDA_PADRAO_P1DataTable";
-                type.Attributes.Add(attribute2);
-                type.Particle = sequence;
-                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
-                if (xs.Contains(dsSchema.TargetNamespace)) {
-                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
-                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
-                    try {
-                        global::System.Xml.Schema.XmlSchema schema = null;
-                        dsSchema.Write(s1);
-                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
-                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
-                            s2.SetLength(0);
-                            schema.Write(s2);
-                            if ((s1.Length == s2.Length)) {
-                                s1.Position = 0;
-                                s2.Position = 0;
-                                for (; ((s1.Position != s1.Length) 
-                                            && (s1.ReadByte() == s2.ReadByte())); ) {
-                                    ;
-                                }
-                                if ((s1.Position == s1.Length)) {
-                                    return type;
-                                }
-                            }
-                        }
-                    }
-                    finally {
-                        if ((s1 != null)) {
-                            s1.Close();
-                        }
-                        if ((s2 != null)) {
-                            s2.Close();
-                        }
-                    }
-                }
-                xs.Add(dsSchema);
-                return type;
-            }
-        }
-        
-        /// <summary>
-        ///Represents the strongly named DataTable class.
-        ///</summary>
-        [global::System.Serializable()]
-        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class LV_IMPRIMI_VENDA_PADRAO_P2DataTable : global::System.Data.TypedTableBase<LV_IMPRIMI_VENDA_PADRAO_P2Row> {
-            
-            private global::System.Data.DataColumn columnCODIGO;
-            
-            private global::System.Data.DataColumn columnPRODUTO;
-            
-            private global::System.Data.DataColumn columnVALOR_PRODUTO;
-            
-            private global::System.Data.DataColumn columnQUANTIDADE;
-            
-            private global::System.Data.DataColumn columnTOTAL;
-            
-            private global::System.Data.DataColumn columnID_VENDA;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_PADRAO_P2DataTable() {
-                this.TableName = "LV_IMPRIMI_VENDA_PADRAO_P2";
-                this.BeginInit();
-                this.InitClass();
-                this.EndInit();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal LV_IMPRIMI_VENDA_PADRAO_P2DataTable(global::System.Data.DataTable table) {
-                this.TableName = table.TableName;
-                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
-                    this.CaseSensitive = table.CaseSensitive;
-                }
-                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
-                    this.Locale = table.Locale;
-                }
-                if ((table.Namespace != table.DataSet.Namespace)) {
-                    this.Namespace = table.Namespace;
-                }
-                this.Prefix = table.Prefix;
-                this.MinimumCapacity = table.MinimumCapacity;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected LV_IMPRIMI_VENDA_PADRAO_P2DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
-                    base(info, context) {
-                this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn CODIGOColumn {
-                get {
-                    return this.columnCODIGO;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn PRODUTOColumn {
-                get {
-                    return this.columnPRODUTO;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn VALOR_PRODUTOColumn {
-                get {
-                    return this.columnVALOR_PRODUTO;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn QUANTIDADEColumn {
-                get {
-                    return this.columnQUANTIDADE;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn TOTALColumn {
-                get {
-                    return this.columnTOTAL;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn ID_VENDAColumn {
-                get {
-                    return this.columnID_VENDA;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            [global::System.ComponentModel.Browsable(false)]
-            public int Count {
-                get {
-                    return this.Rows.Count;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_PADRAO_P2Row this[int index] {
-                get {
-                    return ((LV_IMPRIMI_VENDA_PADRAO_P2Row)(this.Rows[index]));
-                }
-            }
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event LV_IMPRIMI_VENDA_PADRAO_P2RowChangeEventHandler LV_IMPRIMI_VENDA_PADRAO_P2RowChanging;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event LV_IMPRIMI_VENDA_PADRAO_P2RowChangeEventHandler LV_IMPRIMI_VENDA_PADRAO_P2RowChanged;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event LV_IMPRIMI_VENDA_PADRAO_P2RowChangeEventHandler LV_IMPRIMI_VENDA_PADRAO_P2RowDeleting;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event LV_IMPRIMI_VENDA_PADRAO_P2RowChangeEventHandler LV_IMPRIMI_VENDA_PADRAO_P2RowDeleted;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void AddLV_IMPRIMI_VENDA_PADRAO_P2Row(LV_IMPRIMI_VENDA_PADRAO_P2Row row) {
-                this.Rows.Add(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_PADRAO_P2Row AddLV_IMPRIMI_VENDA_PADRAO_P2Row(int CODIGO, string PRODUTO, decimal VALOR_PRODUTO, int QUANTIDADE, decimal TOTAL) {
-                LV_IMPRIMI_VENDA_PADRAO_P2Row rowLV_IMPRIMI_VENDA_PADRAO_P2Row = ((LV_IMPRIMI_VENDA_PADRAO_P2Row)(this.NewRow()));
-                object[] columnValuesArray = new object[] {
-                        CODIGO,
-                        PRODUTO,
-                        VALOR_PRODUTO,
-                        QUANTIDADE,
-                        TOTAL,
-                        null};
-                rowLV_IMPRIMI_VENDA_PADRAO_P2Row.ItemArray = columnValuesArray;
-                this.Rows.Add(rowLV_IMPRIMI_VENDA_PADRAO_P2Row);
-                return rowLV_IMPRIMI_VENDA_PADRAO_P2Row;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_PADRAO_P2Row FindByID_VENDA(int ID_VENDA) {
-                return ((LV_IMPRIMI_VENDA_PADRAO_P2Row)(this.Rows.Find(new object[] {
-                            ID_VENDA})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public override global::System.Data.DataTable Clone() {
-                LV_IMPRIMI_VENDA_PADRAO_P2DataTable cln = ((LV_IMPRIMI_VENDA_PADRAO_P2DataTable)(base.Clone()));
-                cln.InitVars();
-                return cln;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override global::System.Data.DataTable CreateInstance() {
-                return new LV_IMPRIMI_VENDA_PADRAO_P2DataTable();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal void InitVars() {
-                this.columnCODIGO = base.Columns["CODIGO"];
-                this.columnPRODUTO = base.Columns["PRODUTO"];
-                this.columnVALOR_PRODUTO = base.Columns["VALOR_PRODUTO"];
-                this.columnQUANTIDADE = base.Columns["QUANTIDADE"];
-                this.columnTOTAL = base.Columns["TOTAL"];
-                this.columnID_VENDA = base.Columns["ID_VENDA"];
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            private void InitClass() {
-                this.columnCODIGO = new global::System.Data.DataColumn("CODIGO", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCODIGO);
-                this.columnPRODUTO = new global::System.Data.DataColumn("PRODUTO", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPRODUTO);
-                this.columnVALOR_PRODUTO = new global::System.Data.DataColumn("VALOR_PRODUTO", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnVALOR_PRODUTO);
-                this.columnQUANTIDADE = new global::System.Data.DataColumn("QUANTIDADE", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnQUANTIDADE);
-                this.columnTOTAL = new global::System.Data.DataColumn("TOTAL", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTOTAL);
-                this.columnID_VENDA = new global::System.Data.DataColumn("ID_VENDA", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnID_VENDA);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnID_VENDA}, true));
-                this.columnCODIGO.AllowDBNull = false;
-                this.columnPRODUTO.MaxLength = 20;
-                this.columnVALOR_PRODUTO.AllowDBNull = false;
-                this.columnQUANTIDADE.AllowDBNull = false;
-                this.columnTOTAL.AllowDBNull = false;
-                this.columnID_VENDA.AutoIncrement = true;
-                this.columnID_VENDA.AutoIncrementSeed = -1;
-                this.columnID_VENDA.AutoIncrementStep = -1;
-                this.columnID_VENDA.AllowDBNull = false;
-                this.columnID_VENDA.ReadOnly = true;
-                this.columnID_VENDA.Unique = true;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_PADRAO_P2Row NewLV_IMPRIMI_VENDA_PADRAO_P2Row() {
-                return ((LV_IMPRIMI_VENDA_PADRAO_P2Row)(this.NewRow()));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new LV_IMPRIMI_VENDA_PADRAO_P2Row(builder);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override global::System.Type GetRowType() {
-                return typeof(LV_IMPRIMI_VENDA_PADRAO_P2Row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanged(e);
-                if ((this.LV_IMPRIMI_VENDA_PADRAO_P2RowChanged != null)) {
-                    this.LV_IMPRIMI_VENDA_PADRAO_P2RowChanged(this, new LV_IMPRIMI_VENDA_PADRAO_P2RowChangeEvent(((LV_IMPRIMI_VENDA_PADRAO_P2Row)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanging(e);
-                if ((this.LV_IMPRIMI_VENDA_PADRAO_P2RowChanging != null)) {
-                    this.LV_IMPRIMI_VENDA_PADRAO_P2RowChanging(this, new LV_IMPRIMI_VENDA_PADRAO_P2RowChangeEvent(((LV_IMPRIMI_VENDA_PADRAO_P2Row)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleted(e);
-                if ((this.LV_IMPRIMI_VENDA_PADRAO_P2RowDeleted != null)) {
-                    this.LV_IMPRIMI_VENDA_PADRAO_P2RowDeleted(this, new LV_IMPRIMI_VENDA_PADRAO_P2RowChangeEvent(((LV_IMPRIMI_VENDA_PADRAO_P2Row)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleting(e);
-                if ((this.LV_IMPRIMI_VENDA_PADRAO_P2RowDeleting != null)) {
-                    this.LV_IMPRIMI_VENDA_PADRAO_P2RowDeleting(this, new LV_IMPRIMI_VENDA_PADRAO_P2RowChangeEvent(((LV_IMPRIMI_VENDA_PADRAO_P2Row)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void RemoveLV_IMPRIMI_VENDA_PADRAO_P2Row(LV_IMPRIMI_VENDA_PADRAO_P2Row row) {
-                this.Rows.Remove(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
-                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                dsRelatorios ds = new dsRelatorios();
-                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
-                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
-                any1.MinOccurs = new decimal(0);
-                any1.MaxOccurs = decimal.MaxValue;
-                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any1);
-                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
-                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
-                any2.MinOccurs = new decimal(1);
-                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any2);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute1.Name = "namespace";
-                attribute1.FixedValue = ds.Namespace;
-                type.Attributes.Add(attribute1);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "LV_IMPRIMI_VENDA_PADRAO_P2DataTable";
+                attribute2.FixedValue = "LV_VENDA_FORMA_PAGAMENTO_DIADataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -4660,361 +2831,6 @@ namespace LiveCommerce.Relatorios {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class LV_IMPRIMI_VENDA_CLIENTE_P1Row : global::System.Data.DataRow {
-            
-            private LV_IMPRIMI_VENDA_CLIENTE_P1DataTable tableLV_IMPRIMI_VENDA_CLIENTE_P1;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal LV_IMPRIMI_VENDA_CLIENTE_P1Row(global::System.Data.DataRowBuilder rb) : 
-                    base(rb) {
-                this.tableLV_IMPRIMI_VENDA_CLIENTE_P1 = ((LV_IMPRIMI_VENDA_CLIENTE_P1DataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public int CODIGO {
-                get {
-                    return ((int)(this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P1.CODIGOColumn]));
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P1.CODIGOColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string NOME {
-                get {
-                    return ((string)(this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P1.NOMEColumn]));
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P1.NOMEColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string CPF {
-                get {
-                    try {
-                        return ((string)(this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P1.CPFColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'CPF\' na tabela \'LV_IMPRIMI_VENDA_CLIENTE_P1\' é DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P1.CPFColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string RG {
-                get {
-                    try {
-                        return ((string)(this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P1.RGColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'RG\' na tabela \'LV_IMPRIMI_VENDA_CLIENTE_P1\' é DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P1.RGColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsCPFNull() {
-                return this.IsNull(this.tableLV_IMPRIMI_VENDA_CLIENTE_P1.CPFColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetCPFNull() {
-                this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P1.CPFColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsRGNull() {
-                return this.IsNull(this.tableLV_IMPRIMI_VENDA_CLIENTE_P1.RGColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetRGNull() {
-                this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P1.RGColumn] = global::System.Convert.DBNull;
-            }
-        }
-        
-        /// <summary>
-        ///Represents strongly named DataRow class.
-        ///</summary>
-        public partial class LV_IMPRIMI_VENDA_CLIENTE_P2Row : global::System.Data.DataRow {
-            
-            private LV_IMPRIMI_VENDA_CLIENTE_P2DataTable tableLV_IMPRIMI_VENDA_CLIENTE_P2;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal LV_IMPRIMI_VENDA_CLIENTE_P2Row(global::System.Data.DataRowBuilder rb) : 
-                    base(rb) {
-                this.tableLV_IMPRIMI_VENDA_CLIENTE_P2 = ((LV_IMPRIMI_VENDA_CLIENTE_P2DataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string ENDERECO {
-                get {
-                    try {
-                        return ((string)(this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P2.ENDERECOColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'ENDERECO\' na tabela \'LV_IMPRIMI_VENDA_CLIENTE_P2\' é DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P2.ENDERECOColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public int NUMERO {
-                get {
-                    try {
-                        return ((int)(this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P2.NUMEROColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'NUMERO\' na tabela \'LV_IMPRIMI_VENDA_CLIENTE_P2\' é DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P2.NUMEROColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string BAIRRO {
-                get {
-                    try {
-                        return ((string)(this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P2.BAIRROColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'BAIRRO\' na tabela \'LV_IMPRIMI_VENDA_CLIENTE_P2\' é DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P2.BAIRROColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string CEP {
-                get {
-                    try {
-                        return ((string)(this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P2.CEPColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'CEP\' na tabela \'LV_IMPRIMI_VENDA_CLIENTE_P2\' é DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P2.CEPColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string UF {
-                get {
-                    return ((string)(this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P2.UFColumn]));
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P2.UFColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string CIDADE {
-                get {
-                    return ((string)(this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P2.CIDADEColumn]));
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P2.CIDADEColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsENDERECONull() {
-                return this.IsNull(this.tableLV_IMPRIMI_VENDA_CLIENTE_P2.ENDERECOColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetENDERECONull() {
-                this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P2.ENDERECOColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsNUMERONull() {
-                return this.IsNull(this.tableLV_IMPRIMI_VENDA_CLIENTE_P2.NUMEROColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetNUMERONull() {
-                this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P2.NUMEROColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsBAIRRONull() {
-                return this.IsNull(this.tableLV_IMPRIMI_VENDA_CLIENTE_P2.BAIRROColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetBAIRRONull() {
-                this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P2.BAIRROColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsCEPNull() {
-                return this.IsNull(this.tableLV_IMPRIMI_VENDA_CLIENTE_P2.CEPColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetCEPNull() {
-                this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P2.CEPColumn] = global::System.Convert.DBNull;
-            }
-        }
-        
-        /// <summary>
-        ///Represents strongly named DataRow class.
-        ///</summary>
-        public partial class LV_IMPRIMI_VENDA_CLIENTE_P3Row : global::System.Data.DataRow {
-            
-            private LV_IMPRIMI_VENDA_CLIENTE_P3DataTable tableLV_IMPRIMI_VENDA_CLIENTE_P3;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal LV_IMPRIMI_VENDA_CLIENTE_P3Row(global::System.Data.DataRowBuilder rb) : 
-                    base(rb) {
-                this.tableLV_IMPRIMI_VENDA_CLIENTE_P3 = ((LV_IMPRIMI_VENDA_CLIENTE_P3DataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public int CODIGO {
-                get {
-                    return ((int)(this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P3.CODIGOColumn]));
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P3.CODIGOColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string PRODUTO {
-                get {
-                    try {
-                        return ((string)(this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P3.PRODUTOColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'PRODUTO\' na tabela \'LV_IMPRIMI_VENDA_CLIENTE_P3\' é DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P3.PRODUTOColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public decimal VALOR_PRODUTO {
-                get {
-                    return ((decimal)(this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P3.VALOR_PRODUTOColumn]));
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P3.VALOR_PRODUTOColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public int QUANTIDADE {
-                get {
-                    return ((int)(this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P3.QUANTIDADEColumn]));
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P3.QUANTIDADEColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public decimal TOTAL {
-                get {
-                    return ((decimal)(this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P3.TOTALColumn]));
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P3.TOTALColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsPRODUTONull() {
-                return this.IsNull(this.tableLV_IMPRIMI_VENDA_CLIENTE_P3.PRODUTOColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetPRODUTONull() {
-                this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P3.PRODUTOColumn] = global::System.Convert.DBNull;
-            }
-        }
-        
-        /// <summary>
-        ///Represents strongly named DataRow class.
-        ///</summary>
-        public partial class LV_IMPRIMI_VENDA_CLIENTE_P4Row : global::System.Data.DataRow {
-            
-            private LV_IMPRIMI_VENDA_CLIENTE_P4DataTable tableLV_IMPRIMI_VENDA_CLIENTE_P4;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal LV_IMPRIMI_VENDA_CLIENTE_P4Row(global::System.Data.DataRowBuilder rb) : 
-                    base(rb) {
-                this.tableLV_IMPRIMI_VENDA_CLIENTE_P4 = ((LV_IMPRIMI_VENDA_CLIENTE_P4DataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public decimal VL_FINAL_VENDA {
-                get {
-                    return ((decimal)(this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P4.VL_FINAL_VENDAColumn]));
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_CLIENTE_P4.VL_FINAL_VENDAColumn] = value;
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Represents strongly named DataRow class.
-        ///</summary>
         public partial class LV_IMPRIMI_VENDA_COMPLETA_V1Row : global::System.Data.DataRow {
             
             private LV_IMPRIMI_VENDA_COMPLETA_V1DataTable tableLV_IMPRIMI_VENDA_COMPLETA_V1;
@@ -5325,336 +3141,82 @@ namespace LiveCommerce.Relatorios {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class LV_IMPRIMI_VENDA_PADRAO_P1Row : global::System.Data.DataRow {
+        public partial class LV_VENDA_FORMA_PAGAMENTO_DIARow : global::System.Data.DataRow {
             
-            private LV_IMPRIMI_VENDA_PADRAO_P1DataTable tableLV_IMPRIMI_VENDA_PADRAO_P1;
+            private LV_VENDA_FORMA_PAGAMENTO_DIADataTable tableLV_VENDA_FORMA_PAGAMENTO_DIA;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal LV_IMPRIMI_VENDA_PADRAO_P1Row(global::System.Data.DataRowBuilder rb) : 
+            internal LV_VENDA_FORMA_PAGAMENTO_DIARow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableLV_IMPRIMI_VENDA_PADRAO_P1 = ((LV_IMPRIMI_VENDA_PADRAO_P1DataTable)(this.Table));
+                this.tableLV_VENDA_FORMA_PAGAMENTO_DIA = ((LV_VENDA_FORMA_PAGAMENTO_DIADataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public int CODIGO {
+            public string DS_FORMAPAGAMENTO {
                 get {
-                    return ((int)(this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.CODIGOColumn]));
+                    return ((string)(this[this.tableLV_VENDA_FORMA_PAGAMENTO_DIA.DS_FORMAPAGAMENTOColumn]));
                 }
                 set {
-                    this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.CODIGOColumn] = value;
+                    this[this.tableLV_VENDA_FORMA_PAGAMENTO_DIA.DS_FORMAPAGAMENTOColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string NOME {
-                get {
-                    return ((string)(this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.NOMEColumn]));
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.NOMEColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string CPF {
+            public int QTD_VENDA {
                 get {
                     try {
-                        return ((string)(this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.CPFColumn]));
+                        return ((int)(this[this.tableLV_VENDA_FORMA_PAGAMENTO_DIA.QTD_VENDAColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'CPF\' na tabela \'LV_IMPRIMI_VENDA_PADRAO_P1\' é DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'QTD_VENDA\' na tabela \'LV_VENDA_FORMA_PAGAMENTO_DIA\' é DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.CPFColumn] = value;
+                    this[this.tableLV_VENDA_FORMA_PAGAMENTO_DIA.QTD_VENDAColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string RG {
+            public decimal VLR_VENDA {
                 get {
                     try {
-                        return ((string)(this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.RGColumn]));
+                        return ((decimal)(this[this.tableLV_VENDA_FORMA_PAGAMENTO_DIA.VLR_VENDAColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'RG\' na tabela \'LV_IMPRIMI_VENDA_PADRAO_P1\' é DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'VLR_VENDA\' na tabela \'LV_VENDA_FORMA_PAGAMENTO_DIA\' é DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.RGColumn] = value;
+                    this[this.tableLV_VENDA_FORMA_PAGAMENTO_DIA.VLR_VENDAColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string ENDERECO {
-                get {
-                    try {
-                        return ((string)(this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.ENDERECOColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'ENDERECO\' na tabela \'LV_IMPRIMI_VENDA_PADRAO_P1\' é DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.ENDERECOColumn] = value;
-                }
+            public bool IsQTD_VENDANull() {
+                return this.IsNull(this.tableLV_VENDA_FORMA_PAGAMENTO_DIA.QTD_VENDAColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public int NUMERO {
-                get {
-                    try {
-                        return ((int)(this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.NUMEROColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'NUMERO\' na tabela \'LV_IMPRIMI_VENDA_PADRAO_P1\' é DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.NUMEROColumn] = value;
-                }
+            public void SetQTD_VENDANull() {
+                this[this.tableLV_VENDA_FORMA_PAGAMENTO_DIA.QTD_VENDAColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string BAIRRO {
-                get {
-                    try {
-                        return ((string)(this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.BAIRROColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'BAIRRO\' na tabela \'LV_IMPRIMI_VENDA_PADRAO_P1\' é DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.BAIRROColumn] = value;
-                }
+            public bool IsVLR_VENDANull() {
+                return this.IsNull(this.tableLV_VENDA_FORMA_PAGAMENTO_DIA.VLR_VENDAColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string CEP {
-                get {
-                    try {
-                        return ((string)(this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.CEPColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'CEP\' na tabela \'LV_IMPRIMI_VENDA_PADRAO_P1\' é DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.CEPColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string UF {
-                get {
-                    return ((string)(this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.UFColumn]));
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.UFColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string CIDADE {
-                get {
-                    return ((string)(this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.CIDADEColumn]));
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.CIDADEColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public int ID_VENDA {
-                get {
-                    return ((int)(this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.ID_VENDAColumn]));
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.ID_VENDAColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsCPFNull() {
-                return this.IsNull(this.tableLV_IMPRIMI_VENDA_PADRAO_P1.CPFColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetCPFNull() {
-                this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.CPFColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsRGNull() {
-                return this.IsNull(this.tableLV_IMPRIMI_VENDA_PADRAO_P1.RGColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetRGNull() {
-                this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.RGColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsENDERECONull() {
-                return this.IsNull(this.tableLV_IMPRIMI_VENDA_PADRAO_P1.ENDERECOColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetENDERECONull() {
-                this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.ENDERECOColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsNUMERONull() {
-                return this.IsNull(this.tableLV_IMPRIMI_VENDA_PADRAO_P1.NUMEROColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetNUMERONull() {
-                this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.NUMEROColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsBAIRRONull() {
-                return this.IsNull(this.tableLV_IMPRIMI_VENDA_PADRAO_P1.BAIRROColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetBAIRRONull() {
-                this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.BAIRROColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsCEPNull() {
-                return this.IsNull(this.tableLV_IMPRIMI_VENDA_PADRAO_P1.CEPColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetCEPNull() {
-                this[this.tableLV_IMPRIMI_VENDA_PADRAO_P1.CEPColumn] = global::System.Convert.DBNull;
-            }
-        }
-        
-        /// <summary>
-        ///Represents strongly named DataRow class.
-        ///</summary>
-        public partial class LV_IMPRIMI_VENDA_PADRAO_P2Row : global::System.Data.DataRow {
-            
-            private LV_IMPRIMI_VENDA_PADRAO_P2DataTable tableLV_IMPRIMI_VENDA_PADRAO_P2;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal LV_IMPRIMI_VENDA_PADRAO_P2Row(global::System.Data.DataRowBuilder rb) : 
-                    base(rb) {
-                this.tableLV_IMPRIMI_VENDA_PADRAO_P2 = ((LV_IMPRIMI_VENDA_PADRAO_P2DataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public int CODIGO {
-                get {
-                    return ((int)(this[this.tableLV_IMPRIMI_VENDA_PADRAO_P2.CODIGOColumn]));
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_PADRAO_P2.CODIGOColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string PRODUTO {
-                get {
-                    try {
-                        return ((string)(this[this.tableLV_IMPRIMI_VENDA_PADRAO_P2.PRODUTOColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'PRODUTO\' na tabela \'LV_IMPRIMI_VENDA_PADRAO_P2\' é DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_PADRAO_P2.PRODUTOColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public decimal VALOR_PRODUTO {
-                get {
-                    return ((decimal)(this[this.tableLV_IMPRIMI_VENDA_PADRAO_P2.VALOR_PRODUTOColumn]));
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_PADRAO_P2.VALOR_PRODUTOColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public int QUANTIDADE {
-                get {
-                    return ((int)(this[this.tableLV_IMPRIMI_VENDA_PADRAO_P2.QUANTIDADEColumn]));
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_PADRAO_P2.QUANTIDADEColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public decimal TOTAL {
-                get {
-                    return ((decimal)(this[this.tableLV_IMPRIMI_VENDA_PADRAO_P2.TOTALColumn]));
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_PADRAO_P2.TOTALColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public int ID_VENDA {
-                get {
-                    return ((int)(this[this.tableLV_IMPRIMI_VENDA_PADRAO_P2.ID_VENDAColumn]));
-                }
-                set {
-                    this[this.tableLV_IMPRIMI_VENDA_PADRAO_P2.ID_VENDAColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsPRODUTONull() {
-                return this.IsNull(this.tableLV_IMPRIMI_VENDA_PADRAO_P2.PRODUTOColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetPRODUTONull() {
-                this[this.tableLV_IMPRIMI_VENDA_PADRAO_P2.PRODUTOColumn] = global::System.Convert.DBNull;
+            public void SetVLR_VENDANull() {
+                this[this.tableLV_VENDA_FORMA_PAGAMENTO_DIA.VLR_VENDAColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -5798,142 +3360,6 @@ namespace LiveCommerce.Relatorios {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public class LV_IMPRIMI_VENDA_CLIENTE_P1RowChangeEvent : global::System.EventArgs {
-            
-            private LV_IMPRIMI_VENDA_CLIENTE_P1Row eventRow;
-            
-            private global::System.Data.DataRowAction eventAction;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_CLIENTE_P1RowChangeEvent(LV_IMPRIMI_VENDA_CLIENTE_P1Row row, global::System.Data.DataRowAction action) {
-                this.eventRow = row;
-                this.eventAction = action;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_CLIENTE_P1Row Row {
-                get {
-                    return this.eventRow;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataRowAction Action {
-                get {
-                    return this.eventAction;
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Row event argument class
-        ///</summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public class LV_IMPRIMI_VENDA_CLIENTE_P2RowChangeEvent : global::System.EventArgs {
-            
-            private LV_IMPRIMI_VENDA_CLIENTE_P2Row eventRow;
-            
-            private global::System.Data.DataRowAction eventAction;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_CLIENTE_P2RowChangeEvent(LV_IMPRIMI_VENDA_CLIENTE_P2Row row, global::System.Data.DataRowAction action) {
-                this.eventRow = row;
-                this.eventAction = action;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_CLIENTE_P2Row Row {
-                get {
-                    return this.eventRow;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataRowAction Action {
-                get {
-                    return this.eventAction;
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Row event argument class
-        ///</summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public class LV_IMPRIMI_VENDA_CLIENTE_P3RowChangeEvent : global::System.EventArgs {
-            
-            private LV_IMPRIMI_VENDA_CLIENTE_P3Row eventRow;
-            
-            private global::System.Data.DataRowAction eventAction;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_CLIENTE_P3RowChangeEvent(LV_IMPRIMI_VENDA_CLIENTE_P3Row row, global::System.Data.DataRowAction action) {
-                this.eventRow = row;
-                this.eventAction = action;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_CLIENTE_P3Row Row {
-                get {
-                    return this.eventRow;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataRowAction Action {
-                get {
-                    return this.eventAction;
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Row event argument class
-        ///</summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public class LV_IMPRIMI_VENDA_CLIENTE_P4RowChangeEvent : global::System.EventArgs {
-            
-            private LV_IMPRIMI_VENDA_CLIENTE_P4Row eventRow;
-            
-            private global::System.Data.DataRowAction eventAction;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_CLIENTE_P4RowChangeEvent(LV_IMPRIMI_VENDA_CLIENTE_P4Row row, global::System.Data.DataRowAction action) {
-                this.eventRow = row;
-                this.eventAction = action;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_CLIENTE_P4Row Row {
-                get {
-                    return this.eventRow;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataRowAction Action {
-                get {
-                    return this.eventAction;
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Row event argument class
-        ///</summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public class LV_IMPRIMI_VENDA_COMPLETA_V1RowChangeEvent : global::System.EventArgs {
             
             private LV_IMPRIMI_VENDA_COMPLETA_V1Row eventRow;
@@ -5968,56 +3394,22 @@ namespace LiveCommerce.Relatorios {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public class LV_IMPRIMI_VENDA_PADRAO_P1RowChangeEvent : global::System.EventArgs {
+        public class LV_VENDA_FORMA_PAGAMENTO_DIARowChangeEvent : global::System.EventArgs {
             
-            private LV_IMPRIMI_VENDA_PADRAO_P1Row eventRow;
+            private LV_VENDA_FORMA_PAGAMENTO_DIARow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_PADRAO_P1RowChangeEvent(LV_IMPRIMI_VENDA_PADRAO_P1Row row, global::System.Data.DataRowAction action) {
+            public LV_VENDA_FORMA_PAGAMENTO_DIARowChangeEvent(LV_VENDA_FORMA_PAGAMENTO_DIARow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_PADRAO_P1Row Row {
-                get {
-                    return this.eventRow;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataRowAction Action {
-                get {
-                    return this.eventAction;
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Row event argument class
-        ///</summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public class LV_IMPRIMI_VENDA_PADRAO_P2RowChangeEvent : global::System.EventArgs {
-            
-            private LV_IMPRIMI_VENDA_PADRAO_P2Row eventRow;
-            
-            private global::System.Data.DataRowAction eventAction;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_PADRAO_P2RowChangeEvent(LV_IMPRIMI_VENDA_PADRAO_P2Row row, global::System.Data.DataRowAction action) {
-                this.eventRow = row;
-                this.eventAction = action;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public LV_IMPRIMI_VENDA_PADRAO_P2Row Row {
+            public LV_VENDA_FORMA_PAGAMENTO_DIARow Row {
                 get {
                     return this.eventRow;
                 }
@@ -6730,690 +4122,6 @@ namespace LiveCommerce.Relatorios.dsRelatoriosTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class LV_IMPRIMI_VENDA_CLIENTE_P1TableAdapter : global::System.ComponentModel.Component {
-        
-        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
-        
-        private global::System.Data.SqlClient.SqlConnection _connection;
-        
-        private global::System.Data.SqlClient.SqlTransaction _transaction;
-        
-        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
-        
-        private bool _clearBeforeFill;
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public LV_IMPRIMI_VENDA_CLIENTE_P1TableAdapter() {
-            this.ClearBeforeFill = true;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
-            get {
-                if ((this._adapter == null)) {
-                    this.InitAdapter();
-                }
-                return this._adapter;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        internal global::System.Data.SqlClient.SqlConnection Connection {
-            get {
-                if ((this._connection == null)) {
-                    this.InitConnection();
-                }
-                return this._connection;
-            }
-            set {
-                this._connection = value;
-                if ((this.Adapter.InsertCommand != null)) {
-                    this.Adapter.InsertCommand.Connection = value;
-                }
-                if ((this.Adapter.DeleteCommand != null)) {
-                    this.Adapter.DeleteCommand.Connection = value;
-                }
-                if ((this.Adapter.UpdateCommand != null)) {
-                    this.Adapter.UpdateCommand.Connection = value;
-                }
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    if ((this.CommandCollection[i] != null)) {
-                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
-                    }
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        internal global::System.Data.SqlClient.SqlTransaction Transaction {
-            get {
-                return this._transaction;
-            }
-            set {
-                this._transaction = value;
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    this.CommandCollection[i].Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.DeleteCommand != null))) {
-                    this.Adapter.DeleteCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.InsertCommand != null))) {
-                    this.Adapter.InsertCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.UpdateCommand != null))) {
-                    this.Adapter.UpdateCommand.Transaction = this._transaction;
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
-            get {
-                if ((this._commandCollection == null)) {
-                    this.InitCommandCollection();
-                }
-                return this._commandCollection;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public bool ClearBeforeFill {
-            get {
-                return this._clearBeforeFill;
-            }
-            set {
-                this._clearBeforeFill = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private void InitAdapter() {
-            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
-            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
-            tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "LV_IMPRIMI_VENDA_CLIENTE_P1";
-            tableMapping.ColumnMappings.Add("CODIGO", "CODIGO");
-            tableMapping.ColumnMappings.Add("NOME", "NOME");
-            tableMapping.ColumnMappings.Add("CPF", "CPF");
-            tableMapping.ColumnMappings.Add("RG", "RG");
-            this._adapter.TableMappings.Add(tableMapping);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private void InitConnection() {
-            this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::LiveCommerce.Properties.Settings.Default.PETS201802ConnectionString;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
-            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "dbo.LV_IMPRIMI_VENDA_CLIENTE_P1";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(dsRelatorios.LV_IMPRIMI_VENDA_CLIENTE_P1DataTable dataTable) {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual dsRelatorios.LV_IMPRIMI_VENDA_CLIENTE_P1DataTable GetData() {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            dsRelatorios.LV_IMPRIMI_VENDA_CLIENTE_P1DataTable dataTable = new dsRelatorios.LV_IMPRIMI_VENDA_CLIENTE_P1DataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-    }
-    
-    /// <summary>
-    ///Represents the connection and commands used to retrieve and save data.
-    ///</summary>
-    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
-    [global::System.ComponentModel.ToolboxItem(true)]
-    [global::System.ComponentModel.DataObjectAttribute(true)]
-    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class LV_IMPRIMI_VENDA_CLIENTE_P2TableAdapter : global::System.ComponentModel.Component {
-        
-        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
-        
-        private global::System.Data.SqlClient.SqlConnection _connection;
-        
-        private global::System.Data.SqlClient.SqlTransaction _transaction;
-        
-        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
-        
-        private bool _clearBeforeFill;
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public LV_IMPRIMI_VENDA_CLIENTE_P2TableAdapter() {
-            this.ClearBeforeFill = true;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
-            get {
-                if ((this._adapter == null)) {
-                    this.InitAdapter();
-                }
-                return this._adapter;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        internal global::System.Data.SqlClient.SqlConnection Connection {
-            get {
-                if ((this._connection == null)) {
-                    this.InitConnection();
-                }
-                return this._connection;
-            }
-            set {
-                this._connection = value;
-                if ((this.Adapter.InsertCommand != null)) {
-                    this.Adapter.InsertCommand.Connection = value;
-                }
-                if ((this.Adapter.DeleteCommand != null)) {
-                    this.Adapter.DeleteCommand.Connection = value;
-                }
-                if ((this.Adapter.UpdateCommand != null)) {
-                    this.Adapter.UpdateCommand.Connection = value;
-                }
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    if ((this.CommandCollection[i] != null)) {
-                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
-                    }
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        internal global::System.Data.SqlClient.SqlTransaction Transaction {
-            get {
-                return this._transaction;
-            }
-            set {
-                this._transaction = value;
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    this.CommandCollection[i].Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.DeleteCommand != null))) {
-                    this.Adapter.DeleteCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.InsertCommand != null))) {
-                    this.Adapter.InsertCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.UpdateCommand != null))) {
-                    this.Adapter.UpdateCommand.Transaction = this._transaction;
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
-            get {
-                if ((this._commandCollection == null)) {
-                    this.InitCommandCollection();
-                }
-                return this._commandCollection;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public bool ClearBeforeFill {
-            get {
-                return this._clearBeforeFill;
-            }
-            set {
-                this._clearBeforeFill = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private void InitAdapter() {
-            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
-            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
-            tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "LV_IMPRIMI_VENDA_CLIENTE_P2";
-            tableMapping.ColumnMappings.Add("ENDERECO", "ENDERECO");
-            tableMapping.ColumnMappings.Add("NUMERO", "NUMERO");
-            tableMapping.ColumnMappings.Add("BAIRRO", "BAIRRO");
-            tableMapping.ColumnMappings.Add("CEP", "CEP");
-            tableMapping.ColumnMappings.Add("UF", "UF");
-            tableMapping.ColumnMappings.Add("CIDADE", "CIDADE");
-            this._adapter.TableMappings.Add(tableMapping);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private void InitConnection() {
-            this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::LiveCommerce.Properties.Settings.Default.PETS201802ConnectionString;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
-            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "dbo.LV_IMPRIMI_VENDA_CLIENTE_P2";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(dsRelatorios.LV_IMPRIMI_VENDA_CLIENTE_P2DataTable dataTable) {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual dsRelatorios.LV_IMPRIMI_VENDA_CLIENTE_P2DataTable GetData() {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            dsRelatorios.LV_IMPRIMI_VENDA_CLIENTE_P2DataTable dataTable = new dsRelatorios.LV_IMPRIMI_VENDA_CLIENTE_P2DataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-    }
-    
-    /// <summary>
-    ///Represents the connection and commands used to retrieve and save data.
-    ///</summary>
-    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
-    [global::System.ComponentModel.ToolboxItem(true)]
-    [global::System.ComponentModel.DataObjectAttribute(true)]
-    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class LV_IMPRIMI_VENDA_CLIENTE_P3TableAdapter : global::System.ComponentModel.Component {
-        
-        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
-        
-        private global::System.Data.SqlClient.SqlConnection _connection;
-        
-        private global::System.Data.SqlClient.SqlTransaction _transaction;
-        
-        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
-        
-        private bool _clearBeforeFill;
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public LV_IMPRIMI_VENDA_CLIENTE_P3TableAdapter() {
-            this.ClearBeforeFill = true;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
-            get {
-                if ((this._adapter == null)) {
-                    this.InitAdapter();
-                }
-                return this._adapter;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        internal global::System.Data.SqlClient.SqlConnection Connection {
-            get {
-                if ((this._connection == null)) {
-                    this.InitConnection();
-                }
-                return this._connection;
-            }
-            set {
-                this._connection = value;
-                if ((this.Adapter.InsertCommand != null)) {
-                    this.Adapter.InsertCommand.Connection = value;
-                }
-                if ((this.Adapter.DeleteCommand != null)) {
-                    this.Adapter.DeleteCommand.Connection = value;
-                }
-                if ((this.Adapter.UpdateCommand != null)) {
-                    this.Adapter.UpdateCommand.Connection = value;
-                }
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    if ((this.CommandCollection[i] != null)) {
-                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
-                    }
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        internal global::System.Data.SqlClient.SqlTransaction Transaction {
-            get {
-                return this._transaction;
-            }
-            set {
-                this._transaction = value;
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    this.CommandCollection[i].Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.DeleteCommand != null))) {
-                    this.Adapter.DeleteCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.InsertCommand != null))) {
-                    this.Adapter.InsertCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.UpdateCommand != null))) {
-                    this.Adapter.UpdateCommand.Transaction = this._transaction;
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
-            get {
-                if ((this._commandCollection == null)) {
-                    this.InitCommandCollection();
-                }
-                return this._commandCollection;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public bool ClearBeforeFill {
-            get {
-                return this._clearBeforeFill;
-            }
-            set {
-                this._clearBeforeFill = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private void InitAdapter() {
-            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
-            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
-            tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "LV_IMPRIMI_VENDA_CLIENTE_P3";
-            tableMapping.ColumnMappings.Add("CODIGO", "CODIGO");
-            tableMapping.ColumnMappings.Add("PRODUTO", "PRODUTO");
-            tableMapping.ColumnMappings.Add("VALOR_PRODUTO", "VALOR_PRODUTO");
-            tableMapping.ColumnMappings.Add("QUANTIDADE", "QUANTIDADE");
-            tableMapping.ColumnMappings.Add("TOTAL", "TOTAL");
-            this._adapter.TableMappings.Add(tableMapping);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private void InitConnection() {
-            this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::LiveCommerce.Properties.Settings.Default.PETS201802ConnectionString;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
-            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "dbo.LV_IMPRIMI_VENDA_CLIENTE_P3";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(dsRelatorios.LV_IMPRIMI_VENDA_CLIENTE_P3DataTable dataTable) {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual dsRelatorios.LV_IMPRIMI_VENDA_CLIENTE_P3DataTable GetData() {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            dsRelatorios.LV_IMPRIMI_VENDA_CLIENTE_P3DataTable dataTable = new dsRelatorios.LV_IMPRIMI_VENDA_CLIENTE_P3DataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-    }
-    
-    /// <summary>
-    ///Represents the connection and commands used to retrieve and save data.
-    ///</summary>
-    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
-    [global::System.ComponentModel.ToolboxItem(true)]
-    [global::System.ComponentModel.DataObjectAttribute(true)]
-    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class LV_IMPRIMI_VENDA_CLIENTE_P4TableAdapter : global::System.ComponentModel.Component {
-        
-        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
-        
-        private global::System.Data.SqlClient.SqlConnection _connection;
-        
-        private global::System.Data.SqlClient.SqlTransaction _transaction;
-        
-        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
-        
-        private bool _clearBeforeFill;
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public LV_IMPRIMI_VENDA_CLIENTE_P4TableAdapter() {
-            this.ClearBeforeFill = true;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
-            get {
-                if ((this._adapter == null)) {
-                    this.InitAdapter();
-                }
-                return this._adapter;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        internal global::System.Data.SqlClient.SqlConnection Connection {
-            get {
-                if ((this._connection == null)) {
-                    this.InitConnection();
-                }
-                return this._connection;
-            }
-            set {
-                this._connection = value;
-                if ((this.Adapter.InsertCommand != null)) {
-                    this.Adapter.InsertCommand.Connection = value;
-                }
-                if ((this.Adapter.DeleteCommand != null)) {
-                    this.Adapter.DeleteCommand.Connection = value;
-                }
-                if ((this.Adapter.UpdateCommand != null)) {
-                    this.Adapter.UpdateCommand.Connection = value;
-                }
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    if ((this.CommandCollection[i] != null)) {
-                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
-                    }
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        internal global::System.Data.SqlClient.SqlTransaction Transaction {
-            get {
-                return this._transaction;
-            }
-            set {
-                this._transaction = value;
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    this.CommandCollection[i].Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.DeleteCommand != null))) {
-                    this.Adapter.DeleteCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.InsertCommand != null))) {
-                    this.Adapter.InsertCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.UpdateCommand != null))) {
-                    this.Adapter.UpdateCommand.Transaction = this._transaction;
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
-            get {
-                if ((this._commandCollection == null)) {
-                    this.InitCommandCollection();
-                }
-                return this._commandCollection;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public bool ClearBeforeFill {
-            get {
-                return this._clearBeforeFill;
-            }
-            set {
-                this._clearBeforeFill = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private void InitAdapter() {
-            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
-            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
-            tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "LV_IMPRIMI_VENDA_CLIENTE_P4";
-            tableMapping.ColumnMappings.Add("VL_FINAL_VENDA", "VL_FINAL_VENDA");
-            this._adapter.TableMappings.Add(tableMapping);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private void InitConnection() {
-            this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::LiveCommerce.Properties.Settings.Default.PETS201802ConnectionString;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
-            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "dbo.LV_IMPRIMI_VENDA_CLIENTE_P4";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(dsRelatorios.LV_IMPRIMI_VENDA_CLIENTE_P4DataTable dataTable) {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual dsRelatorios.LV_IMPRIMI_VENDA_CLIENTE_P4DataTable GetData() {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            dsRelatorios.LV_IMPRIMI_VENDA_CLIENTE_P4DataTable dataTable = new dsRelatorios.LV_IMPRIMI_VENDA_CLIENTE_P4DataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-    }
-    
-    /// <summary>
-    ///Represents the connection and commands used to retrieve and save data.
-    ///</summary>
-    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
-    [global::System.ComponentModel.ToolboxItem(true)]
-    [global::System.ComponentModel.DataObjectAttribute(true)]
-    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
     public partial class LV_IMPRIMI_VENDA_COMPLETA_V1TableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
@@ -7597,7 +4305,7 @@ namespace LiveCommerce.Relatorios.dsRelatoriosTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class LV_IMPRIMI_VENDA_PADRAO_P1TableAdapter : global::System.ComponentModel.Component {
+    public partial class LV_VENDA_FORMA_PAGAMENTO_DIATableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -7611,7 +4319,7 @@ namespace LiveCommerce.Relatorios.dsRelatoriosTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public LV_IMPRIMI_VENDA_PADRAO_P1TableAdapter() {
+        public LV_VENDA_FORMA_PAGAMENTO_DIATableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -7708,18 +4416,10 @@ namespace LiveCommerce.Relatorios.dsRelatoriosTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "LV_IMPRIMI_VENDA_PADRAO_P1";
-            tableMapping.ColumnMappings.Add("CODIGO", "CODIGO");
-            tableMapping.ColumnMappings.Add("NOME", "NOME");
-            tableMapping.ColumnMappings.Add("CPF", "CPF");
-            tableMapping.ColumnMappings.Add("RG", "RG");
-            tableMapping.ColumnMappings.Add("ENDERECO", "ENDERECO");
-            tableMapping.ColumnMappings.Add("NUMERO", "NUMERO");
-            tableMapping.ColumnMappings.Add("BAIRRO", "BAIRRO");
-            tableMapping.ColumnMappings.Add("CEP", "CEP");
-            tableMapping.ColumnMappings.Add("UF", "UF");
-            tableMapping.ColumnMappings.Add("CIDADE", "CIDADE");
-            tableMapping.ColumnMappings.Add("ID_VENDA", "ID_VENDA");
+            tableMapping.DataSetTable = "LV_VENDA_FORMA_PAGAMENTO_DIA";
+            tableMapping.ColumnMappings.Add("DS_FORMAPAGAMENTO", "DS_FORMAPAGAMENTO");
+            tableMapping.ColumnMappings.Add("QTD_VENDA", "QTD_VENDA");
+            tableMapping.ColumnMappings.Add("VLR_VENDA", "VLR_VENDA");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -7736,7 +4436,7 @@ namespace LiveCommerce.Relatorios.dsRelatoriosTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "dbo.LV_IMPRIMI_VENDA_PADRAO_P1";
+            this._commandCollection[0].CommandText = "dbo.LV_VENDA_FORMA_PAGAMENTO_DIA";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -7745,7 +4445,7 @@ namespace LiveCommerce.Relatorios.dsRelatoriosTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(dsRelatorios.LV_IMPRIMI_VENDA_PADRAO_P1DataTable dataTable) {
+        public virtual int Fill(dsRelatorios.LV_VENDA_FORMA_PAGAMENTO_DIADataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -7758,182 +4458,9 @@ namespace LiveCommerce.Relatorios.dsRelatoriosTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual dsRelatorios.LV_IMPRIMI_VENDA_PADRAO_P1DataTable GetData() {
+        public virtual dsRelatorios.LV_VENDA_FORMA_PAGAMENTO_DIADataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            dsRelatorios.LV_IMPRIMI_VENDA_PADRAO_P1DataTable dataTable = new dsRelatorios.LV_IMPRIMI_VENDA_PADRAO_P1DataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-    }
-    
-    /// <summary>
-    ///Represents the connection and commands used to retrieve and save data.
-    ///</summary>
-    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
-    [global::System.ComponentModel.ToolboxItem(true)]
-    [global::System.ComponentModel.DataObjectAttribute(true)]
-    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class LV_IMPRIMI_VENDA_PADRAO_P2TableAdapter : global::System.ComponentModel.Component {
-        
-        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
-        
-        private global::System.Data.SqlClient.SqlConnection _connection;
-        
-        private global::System.Data.SqlClient.SqlTransaction _transaction;
-        
-        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
-        
-        private bool _clearBeforeFill;
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public LV_IMPRIMI_VENDA_PADRAO_P2TableAdapter() {
-            this.ClearBeforeFill = true;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
-            get {
-                if ((this._adapter == null)) {
-                    this.InitAdapter();
-                }
-                return this._adapter;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        internal global::System.Data.SqlClient.SqlConnection Connection {
-            get {
-                if ((this._connection == null)) {
-                    this.InitConnection();
-                }
-                return this._connection;
-            }
-            set {
-                this._connection = value;
-                if ((this.Adapter.InsertCommand != null)) {
-                    this.Adapter.InsertCommand.Connection = value;
-                }
-                if ((this.Adapter.DeleteCommand != null)) {
-                    this.Adapter.DeleteCommand.Connection = value;
-                }
-                if ((this.Adapter.UpdateCommand != null)) {
-                    this.Adapter.UpdateCommand.Connection = value;
-                }
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    if ((this.CommandCollection[i] != null)) {
-                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
-                    }
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        internal global::System.Data.SqlClient.SqlTransaction Transaction {
-            get {
-                return this._transaction;
-            }
-            set {
-                this._transaction = value;
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    this.CommandCollection[i].Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.DeleteCommand != null))) {
-                    this.Adapter.DeleteCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.InsertCommand != null))) {
-                    this.Adapter.InsertCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.UpdateCommand != null))) {
-                    this.Adapter.UpdateCommand.Transaction = this._transaction;
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
-            get {
-                if ((this._commandCollection == null)) {
-                    this.InitCommandCollection();
-                }
-                return this._commandCollection;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public bool ClearBeforeFill {
-            get {
-                return this._clearBeforeFill;
-            }
-            set {
-                this._clearBeforeFill = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private void InitAdapter() {
-            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
-            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
-            tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "LV_IMPRIMI_VENDA_PADRAO_P2";
-            tableMapping.ColumnMappings.Add("CODIGO", "CODIGO");
-            tableMapping.ColumnMappings.Add("PRODUTO", "PRODUTO");
-            tableMapping.ColumnMappings.Add("VALOR_PRODUTO", "VALOR_PRODUTO");
-            tableMapping.ColumnMappings.Add("QUANTIDADE", "QUANTIDADE");
-            tableMapping.ColumnMappings.Add("TOTAL", "TOTAL");
-            tableMapping.ColumnMappings.Add("ID_VENDA", "ID_VENDA");
-            this._adapter.TableMappings.Add(tableMapping);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private void InitConnection() {
-            this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::LiveCommerce.Properties.Settings.Default.PETS201802ConnectionString;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
-            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "dbo.LV_IMPRIMI_VENDA_PADRAO_P2";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(dsRelatorios.LV_IMPRIMI_VENDA_PADRAO_P2DataTable dataTable) {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual dsRelatorios.LV_IMPRIMI_VENDA_PADRAO_P2DataTable GetData() {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            dsRelatorios.LV_IMPRIMI_VENDA_PADRAO_P2DataTable dataTable = new dsRelatorios.LV_IMPRIMI_VENDA_PADRAO_P2DataTable();
+            dsRelatorios.LV_VENDA_FORMA_PAGAMENTO_DIADataTable dataTable = new dsRelatorios.LV_VENDA_FORMA_PAGAMENTO_DIADataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }

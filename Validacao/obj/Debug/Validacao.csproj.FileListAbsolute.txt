@@ -4,3 +4,9 @@ D:\Projetos\Projeto_RR\LiveCommerce\Validacao\obj\Debug\Validacao.csprojAssembly
 D:\Projetos\Projeto_RR\LiveCommerce\Validacao\obj\Debug\Validacao.csproj.CoreCompileInputs.cache
 D:\Projetos\Projeto_RR\LiveCommerce\Validacao\obj\Debug\Validacao.dll
 D:\Projetos\Projeto_RR\LiveCommerce\Validacao\obj\Debug\Validacao.pdb
+E:\Projetos\Projeto_RR\LiveCommerce\Validacao\bin\Debug\Validacao.dll
+E:\Projetos\Projeto_RR\LiveCommerce\Validacao\bin\Debug\Validacao.pdb
+E:\Projetos\Projeto_RR\LiveCommerce\Validacao\obj\Debug\Validacao.csprojAssemblyReference.cache
+E:\Projetos\Projeto_RR\LiveCommerce\Validacao\obj\Debug\Validacao.csproj.CoreCompileInputs.cache
+E:\Projetos\Projeto_RR\LiveCommerce\Validacao\obj\Debug\Validacao.dll
+E:\Projetos\Projeto_RR\LiveCommerce\Validacao\obj\Debug\Validacao.pdb

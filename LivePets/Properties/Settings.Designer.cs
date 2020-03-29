@@ -26,8 +26,7 @@ namespace LiveCommerce.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=172.16.48.10;Initial Catalog=PETS201802;User ID=livepets;Password=l1v" +
-            "3p3t5")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=HUGO;Initial Catalog=LIVECOMMERCE;User ID=sa;Password=123456")]
         public string PETS201802ConnectionString {
             get {
                 return ((string)(this["PETS201802ConnectionString"]));

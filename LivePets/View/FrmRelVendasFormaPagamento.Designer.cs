@@ -33,10 +33,11 @@
             // 
             // rptVendasFormaPagamento
             // 
+            this.rptVendasFormaPagamento.AutoScroll = true;
             this.rptVendasFormaPagamento.Location = new System.Drawing.Point(13, 13);
             this.rptVendasFormaPagamento.Name = "rptVendasFormaPagamento";
             this.rptVendasFormaPagamento.ServerReport.BearerToken = null;
-            this.rptVendasFormaPagamento.Size = new System.Drawing.Size(677, 340);
+            this.rptVendasFormaPagamento.Size = new System.Drawing.Size(818, 418);
             this.rptVendasFormaPagamento.TabIndex = 0;
             this.rptVendasFormaPagamento.Load += new System.EventHandler(this.rptVendasFormaPagamento_Load);
             // 
@@ -44,7 +45,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(702, 365);
+            this.ClientSize = new System.Drawing.Size(843, 443);
             this.Controls.Add(this.rptVendasFormaPagamento);
             this.Name = "FrmRelVendasFormaPagamento";
             this.Text = "FrmRelVendasFormaPagamento";
