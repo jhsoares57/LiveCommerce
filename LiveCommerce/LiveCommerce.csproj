@@ -415,11 +415,14 @@
     <Content Include="DAL\BD\CIDADES_ATUALIZADO.sql" />
     <Content Include="DAL\BD\ContasPagarReceber\LV_CONTAPAGAR_RECEBER_TIPO_V1.sql" />
     <Content Include="DAL\BD\ContasPagarReceber\LV_CONTA_PAGAR_RECEBER_CONFIRMA_PAGAMENTO.sql" />
+    <Content Include="DAL\BD\ListaGenerica\LTGEN.SQL" />
     <Content Include="DAL\BD\LIVE18112018.sql" />
     <Content Include="DAL\BD\LV_IMPRIMI_VENDA_COMPLETA_V1.sql" />
     <Content Include="DAL\BD\ContasPagarReceber\LV_INSERIR_CONT_V1.sql" />
     <Content Include="DAL\BD\PROCEDURE PETSTATUS.sql" />
     <Content Include="DAL\BD\PROCEDURE USP_AGENDAMENTO.sql" />
+    <Content Include="DAL\BD\Relatorios\LV_VENDA_FORMA_PAGAMENTO_DIA.sql" />
+    <Content Include="DAL\BD\TabelaDeParametros\LPRAM.sql" />
     <Content Include="DAL\BD\USP_VENDA_DIA.sql" />
     <Content Include="DAL\BD\TABELA_CONTAS_PAGAR_RECEBER.sql" />
     <Content Include="Icone.ico" />
@@ -496,5 +499,6 @@
       <Name>Validacao</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
