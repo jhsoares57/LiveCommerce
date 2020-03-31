@@ -10,7 +10,7 @@ namespace LiveCommerce.DAL
 {
     public class VendasItensDAL
     {
-        ConnectionFactory cf;
+        //ConnectionFactory cf;
 
         public void Insert(VendaItens V, ConnectionFactory cf)
         {

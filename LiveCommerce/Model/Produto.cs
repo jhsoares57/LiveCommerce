@@ -41,6 +41,8 @@ namespace LiveCommerce.Model
 
         private float lucroProduto;
 
+        private string referencia;
+
         
 
         public int Id { get => id; set => id = value; }
@@ -64,5 +66,6 @@ namespace LiveCommerce.Model
         public float LucroProduto { get => lucroProduto; set => lucroProduto = value; }
         public decimal ValorUnitarioProduto { get => valorUnitarioProduto; set => valorUnitarioProduto = value; }
         public decimal ValorCompra { get => valorCompra; set => valorCompra = value; }
+        public string Referencia { get => referencia; set => referencia = value; }
     }
 }

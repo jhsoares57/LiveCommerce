@@ -7,14 +7,14 @@
     <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="LiveCommerce.exe.manifest" size="50976">
+    <dependentAssembly dependencyType="install" codebase="LiveCommerce.exe.manifest" size="52222">
       <assemblyIdentity name="LiveCommerce.exe" version="20.00.03.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>G4DY8Y9Ea1Ogn4d0mSiRRUsbOiFSGE1SEie6Il6dn6E=</dsig:DigestValue>
+        <dsig:DigestValue>sbJYRz4TA2EQ/eTfIfyoZVTo29DLpIldJh1A21XHk24=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

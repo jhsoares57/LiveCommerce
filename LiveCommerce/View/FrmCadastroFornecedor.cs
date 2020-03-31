@@ -408,6 +408,7 @@ namespace LiveCommerce.View
             cbxSituacaoFornecedor.SelectedValue = situacao;
             txtRazaoFornecedor.Text = dgvCadastroFornecedor.Rows[e.RowIndex].Cells[3].Value.ToString();
             txtNomeFantasia.Text = dgvCadastroFornecedor.Rows[e.RowIndex].Cells[4].Value.ToString();
+            cbxTipoFornecedor.SelectedValue = TipoCliente;
             txtCpfCnpj.Text = dgvCadastroFornecedor.Rows[e.RowIndex].Cells[5].Value.ToString();
             txtIE.Text = dgvCadastroFornecedor.Rows[e.RowIndex].Cells[6].Value.ToString();
             cbxUFCadastroFornecedor.SelectedValue = ufID;
@@ -444,6 +445,14 @@ namespace LiveCommerce.View
                 txtNomeFantasia.Visible = false;
                 lblCPFCNPJ.Text = "CPF";
                 lblIERG.Text = "RG";
+            }
+        }
+
+        private void txtIE_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
+            {
+                e.Handled = true;
             }
         }
     }

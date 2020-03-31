@@ -36,7 +36,7 @@
             this.txtDTCadastroCadastroCliente = new System.Windows.Forms.TextBox();
             this.cbxSituacaoCadastroCliente = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblRazao = new System.Windows.Forms.Label();
             this.txtNomeCliente = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -51,8 +51,8 @@
             this.txtBairroCliente = new System.Windows.Forms.TextBox();
             this.txtNumeroCliente = new System.Windows.Forms.TextBox();
             this.txtEnderecoCliente = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.lblCPF = new System.Windows.Forms.Label();
+            this.lblRG = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.txtCpfCliente = new System.Windows.Forms.MaskedTextBox();
             this.txtRGCliente = new System.Windows.Forms.TextBox();
@@ -66,6 +66,8 @@
             this.btnExcluirCliente = new System.Windows.Forms.Button();
             this.btnSairCadastroCliente = new System.Windows.Forms.Button();
             this.btnCadastroCliente = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbxTipo = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.Pesquisa.SuspendLayout();
@@ -98,9 +100,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(186, 10);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 20);
+            this.label4.Size = new System.Drawing.Size(44, 20);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Situação";
+            this.label4.Text = "Ativo";
             // 
             // txtIDCliente
             // 
@@ -141,15 +143,15 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Celular";
             // 
-            // label7
+            // lblRazao
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(5, 69);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(157, 20);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Razão Social / Nome";
+            this.lblRazao.AutoSize = true;
+            this.lblRazao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRazao.Location = new System.Drawing.Point(5, 69);
+            this.lblRazao.Name = "lblRazao";
+            this.lblRazao.Size = new System.Drawing.Size(157, 20);
+            this.lblRazao.TabIndex = 11;
+            this.lblRazao.Text = "Razão Social / Nome";
             // 
             // txtNomeCliente
             // 
@@ -296,25 +298,25 @@
             this.txtEnderecoCliente.Size = new System.Drawing.Size(298, 26);
             this.txtEnderecoCliente.TabIndex = 7;
             // 
-            // label19
+            // lblCPF
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(6, 121);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(40, 20);
-            this.label19.TabIndex = 24;
-            this.label19.Text = "CPF";
+            this.lblCPF.AutoSize = true;
+            this.lblCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCPF.Location = new System.Drawing.Point(6, 121);
+            this.lblCPF.Name = "lblCPF";
+            this.lblCPF.Size = new System.Drawing.Size(40, 20);
+            this.lblCPF.TabIndex = 24;
+            this.lblCPF.Text = "CPF";
             // 
-            // label20
+            // lblRG
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(184, 121);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(34, 20);
-            this.label20.TabIndex = 26;
-            this.label20.Text = "RG";
+            this.lblRG.AutoSize = true;
+            this.lblRG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRG.Location = new System.Drawing.Point(184, 121);
+            this.lblRG.Name = "lblRG";
+            this.lblRG.Size = new System.Drawing.Size(34, 20);
+            this.lblRG.TabIndex = 26;
+            this.lblRG.Text = "RG";
             // 
             // label21
             // 
@@ -330,7 +332,6 @@
             // 
             this.txtCpfCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCpfCliente.Location = new System.Drawing.Point(9, 139);
-            this.txtCpfCliente.Mask = "999,999,999,99";
             this.txtCpfCliente.Name = "txtCpfCliente";
             this.txtCpfCliente.Size = new System.Drawing.Size(165, 26);
             this.txtCpfCliente.TabIndex = 4;
@@ -345,7 +346,9 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.cbxTipo);
             this.groupBox3.Controls.Add(this.txtCelularCliente);
+            this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Controls.Add(this.txtDTNascimentoCliente);
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.txtRGCliente);
@@ -357,9 +360,9 @@
             this.groupBox3.Controls.Add(this.cbxSituacaoCadastroCliente);
             this.groupBox3.Controls.Add(this.label21);
             this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.label20);
-            this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.label19);
+            this.groupBox3.Controls.Add(this.lblRG);
+            this.groupBox3.Controls.Add(this.lblRazao);
+            this.groupBox3.Controls.Add(this.lblCPF);
             this.groupBox3.Controls.Add(this.txtNomeCliente);
             this.groupBox3.Location = new System.Drawing.Point(349, 20);
             this.groupBox3.Name = "groupBox3";
@@ -472,6 +475,27 @@
             this.btnCadastroCliente.UseVisualStyleBackColor = true;
             this.btnCadastroCliente.Click += new System.EventHandler(this.btnCadastroCliente_Click_1);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(286, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 20);
+            this.label1.TabIndex = 32;
+            this.label1.Text = "Tipo";
+            // 
+            // cbxTipo
+            // 
+            this.cbxTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxTipo.FormattingEnabled = true;
+            this.cbxTipo.Location = new System.Drawing.Point(291, 33);
+            this.cbxTipo.Name = "cbxTipo";
+            this.cbxTipo.Size = new System.Drawing.Size(136, 28);
+            this.cbxTipo.TabIndex = 33;
+            this.cbxTipo.SelectedIndexChanged += new System.EventHandler(this.cbxTipo_SelectedIndexChanged);
+            // 
             // FrmCadastroCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -511,7 +535,7 @@
         private System.Windows.Forms.TextBox txtDTCadastroCadastroCliente;
         private System.Windows.Forms.ComboBox cbxSituacaoCadastroCliente;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblRazao;
         private System.Windows.Forms.TextBox txtNomeCliente;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
@@ -524,8 +548,8 @@
         private System.Windows.Forms.TextBox txtBairroCliente;
         private System.Windows.Forms.TextBox txtNumeroCliente;
         private System.Windows.Forms.TextBox txtEnderecoCliente;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label lblCPF;
+        private System.Windows.Forms.Label lblRG;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Button btnCadastroCliente;
         private System.Windows.Forms.Button btnSairCadastroCliente;
@@ -541,5 +565,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DateTimePicker txtDTNascimentoCliente;
         private System.Windows.Forms.MaskedTextBox txtCelularCliente;
+        private System.Windows.Forms.ComboBox cbxTipo;
+        private System.Windows.Forms.Label label1;
     }
 }

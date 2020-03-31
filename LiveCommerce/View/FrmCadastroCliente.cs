@@ -21,13 +21,22 @@ namespace LiveCommerce.View
        
         CidadesBLL cidadesService = new CidadesBLL();
         SituacaoBLL situacaoService = new SituacaoBLL();
+        TipoPessoaBLL tipoService = new TipoPessoaBLL();
 
-        
         public FrmCadastroCliente()
         {
             InitializeComponent();
         }
 
+        public void CarregarPessoa()
+        {
+            List<TipoPessoa> listaPessoa = new List<TipoPessoa>();
+            listaPessoa.Add(new TipoPessoa() { IDPessoa = 0, DSPessoa = "SELECIONE" });
+            listaPessoa.AddRange(tipoService.FindALL());
+            cbxTipo.DataSource = listaPessoa;
+            cbxTipo.ValueMember = "IDPessoa";
+            cbxTipo.DisplayMember = "DSPessoa";
+        }
 
         public void Limpar()
         {
@@ -144,8 +153,9 @@ namespace LiveCommerce.View
                 c.CidadeEndereco = Convert.ToInt32(cbxCidadeCliente.SelectedValue);
                 c.Situacao = Convert.ToInt32(cbxSituacaoCadastroCliente.SelectedValue);
                 c.Endereco = txtEnderecoCliente.Text;
-         
-                clienteService.Insert(c);
+                c.TipoPessoa = Convert.ToInt32(cbxTipo.SelectedValue);
+
+                    clienteService.Insert(c);
                 MessageBox.Show("CLIENTE ID: " + c.ID+ " CADASTRADO!");
                 }
                 else
@@ -164,6 +174,7 @@ namespace LiveCommerce.View
                     c.CidadeEndereco = Convert.ToInt32(cbxCidadeCliente.SelectedValue);
                     c.Situacao = Convert.ToInt32(cbxSituacaoCadastroCliente.SelectedValue);
                     c.Endereco = txtEnderecoCliente.Text;
+                    c.TipoPessoa = Convert.ToInt32(cbxTipo.SelectedValue);
 
                     clienteService.Update(c);
                     MessageBox.Show("CLIENTE ATUALIZADO!");
@@ -247,6 +258,7 @@ namespace LiveCommerce.View
             CarregarUF();
             CarregarSituacao();
             DataCadastro();
+            CarregarPessoa();
         }
 
 
@@ -258,8 +270,10 @@ namespace LiveCommerce.View
             int ufID = Convert.ToInt32(dgvPesquisaCliente.Rows[e.RowIndex].Cells[8].Value.ToString());
             int situacaoID = Convert.ToInt32(dgvPesquisaCliente.Rows[e.RowIndex].Cells[9].Value.ToString());
             int cidadeID = Convert.ToInt32(dgvPesquisaCliente.Rows[e.RowIndex].Cells[11].Value.ToString());
+            int TipoCliente = Convert.ToInt32(dgvPesquisaCliente.Rows[e.RowIndex].Cells[14].Value.ToString());
 
             txtIDCliente.Text = dgvPesquisaCliente.Rows[e.RowIndex].Cells[0].Value.ToString();
+            cbxTipo.SelectedValue = TipoCliente;
             txtNomeCliente.Text = dgvPesquisaCliente.Rows[e.RowIndex].Cells[1].Value.ToString();
             txtCpfCliente.Text = dgvPesquisaCliente.Rows[e.RowIndex].Cells[2].Value.ToString();
             txtDTNascimentoCliente.Text = dataNascimento.ToString();
@@ -273,7 +287,32 @@ namespace LiveCommerce.View
             cbxCidadeCliente.SelectedValue = cidadeID;
             txtRGCliente.Text = dgvPesquisaCliente.Rows[e.RowIndex].Cells[12].Value.ToString();
             txtCelularCliente.Text = dgvPesquisaCliente.Rows[e.RowIndex].Cells[13].Value.ToString();
+            cbxTipo.SelectedValue = TipoCliente;
 
+        }
+
+        private void cbxTipo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbxTipo.SelectedValue.ToString() == "2")
+            {
+                txtCpfCliente.Text = "";
+                txtCpfCliente.Mask = "00,000,000/0000-00";
+                lblRazao.Text = "Razão Social";
+                //lblFantasia.Visible = true;
+                //txtNomeFantasia.Visible = true;
+                lblCPF.Text = "CNPJ";
+                lblRG.Text = "Inscrição estadual";
+            }
+            else
+            {
+                txtCpfCliente.Text = "";
+                txtCpfCliente.Mask = "000,000,000-00";
+                lblRazao.Text = "Nome";
+                //lblFantasia.Visible = false;
+                //txtNomeFantasia.Visible = false;
+                lblCPF.Text = "CPF";
+                lblRG.Text = "RG";
+            }
         }
     }
 

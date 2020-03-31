@@ -23,9 +23,9 @@ namespace LiveCommerce.DAL
                 query.AppendLine("INSERT INTO CLIENTE");
                 query.AppendLine("(DATA_CADASTRO, NM_CLIENTE,  CPF_CLIENTE, RG_CLIENTE, DT_NASCIMENTO_CLIENTE, ");
                 query.AppendLine(" ENDERECO_CLIENTE, NUMERO_ENDERECO_CLIENTE, BAIRRO_ENDERECO_CLIENTE, CEP_ENDERECO_CLIENTE, CELULAR_CLIENTE,");
-                query.AppendLine("ID_UF, ID_SITUACAO ,ID_CIDADE) ");
+                query.AppendLine("ID_UF, ID_SITUACAO ,ID_CIDADE,ID_TIPO_PESSOA) ");
                 query.AppendLine("VALUES (@DATA_CADASTRO,  @NM_CLIENTE, @CPF_CLIENTE, @RG_CLIENTE, @DT_NASCIMENTO_CLIENTE,");
-                query.AppendLine("@ENDERECO_CLIENTE, @NUMERO_ENDERECO_CLIENTE, @BAIRRO_ENDERECO_CLIENTE, @CEP_ENDERECO_CLIENTE, @CELULAR_CLIENTE, @ID_UF, @ID_SITUACAO , @ID_CIDADE ) ");
+                query.AppendLine("@ENDERECO_CLIENTE, @NUMERO_ENDERECO_CLIENTE, @BAIRRO_ENDERECO_CLIENTE, @CEP_ENDERECO_CLIENTE, @CELULAR_CLIENTE, @ID_UF, @ID_SITUACAO , @ID_CIDADE, @ID_TIPO_PESSOA ) ");
                 query.AppendLine("SELECT SCOPE_IDENTITY();");
 
                 cf.Comando = cf.Conexao.CreateCommand();
@@ -43,6 +43,7 @@ namespace LiveCommerce.DAL
                 cf.Comando.Parameters.AddWithValue("@ID_UF", C.UfEndereco);
                 cf.Comando.Parameters.AddWithValue("@ID_SITUACAO", C.Situacao);
                 cf.Comando.Parameters.AddWithValue("@ID_CIDADE", C.CidadeEndereco);
+                cf.Comando.Parameters.AddWithValue("@ID_TIPO_PESSOA", C.TipoPessoa);
                 cf.Comando.CommandType = CommandType.Text;
                 cf.Comando.CommandText = query.ToString();
 
@@ -94,7 +95,7 @@ namespace LiveCommerce.DAL
         }
         public DataTable FindLike(string termo1)
         {
-            string query = "SELECT ID_CLIENTE [ID], NM_CLIENTE [NOME DO CLIENTE], CPF_CLIENTE [CPF ], DT_NASCIMENTO_CLIENTE [DATA NASCIMENTO], ENDERECO_CLIENTE [ENDEREÇO], NUMERO_ENDERECO_CLIENTE [NÚMERO], BAIRRO_ENDERECO_CLIENTE [BAIRRO], CEP_ENDERECO_CLIENTE [CEP], ID_UF [UF], ID_SITUACAO [SITUAÇÃO], DATA_CADASTRO [DATA CADASTRO], ID_CIDADE [CIDADE],RG_CLIENTE [RG],CELULAR_CLIENTE [CELULAR] FROM CLIENTE WHERE (NM_CLIENTE like @termo1 or ID_CLIENTE like @termo1)";
+            string query = "SELECT ID_CLIENTE [ID], NM_CLIENTE [NOME DO CLIENTE], CPF_CLIENTE [CPF ], DT_NASCIMENTO_CLIENTE [DATA NASCIMENTO], ENDERECO_CLIENTE [ENDEREÇO], NUMERO_ENDERECO_CLIENTE [NÚMERO], BAIRRO_ENDERECO_CLIENTE [BAIRRO], CEP_ENDERECO_CLIENTE [CEP], ID_UF [UF], ID_SITUACAO [SITUAÇÃO], DATA_CADASTRO [DATA CADASTRO], ID_CIDADE [CIDADE],RG_CLIENTE [RG],CELULAR_CLIENTE [CELULAR], ID_TIPO_PESSOA [TIPO_CLIENTE] FROM CLIENTE WHERE (NM_CLIENTE like @termo1 or ID_CLIENTE like @termo1)";
 
             cf = new ConnectionFactory();
             cf.Comando = cf.Conexao.CreateCommand();
@@ -134,7 +135,8 @@ namespace LiveCommerce.DAL
                 query.AppendLine(" CELULAR_CLIENTE = @CELULAR_CLIENTE, ");
                 query.AppendLine(" ID_UF = @ID_UF,");
                 query.AppendLine(" ID_SITUACAO = @ID_SITUACAO,");
-                query.AppendLine(" ID_CIDADE = @ID_CIDADE");
+                query.AppendLine(" ID_CIDADE = @ID_CIDADE"); 
+                query.AppendLine(" ID_TIPO_PESSOA = @ID_TIPO_PESSOA");
                 query.AppendLine(" WHERE ID_CLIENTE = @ID_CLIENTE");
 
                 cf.Comando = cf.Conexao.CreateCommand();
@@ -153,6 +155,7 @@ namespace LiveCommerce.DAL
                 cf.Comando.Parameters.AddWithValue("@ID_SITUACAO", c.Situacao);
                 cf.Comando.Parameters.AddWithValue("@ID_CIDADE", c.CidadeEndereco);
                 cf.Comando.Parameters.AddWithValue("@ID_CLIENTE", c.ID);
+                cf.Comando.Parameters.AddWithValue("@ID_TIPO_PESSOA", c.TipoPessoa);
 
                 cf.Comando.CommandType = CommandType.Text;
                 cf.Comando.CommandText = query.ToString();

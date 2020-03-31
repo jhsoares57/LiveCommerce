@@ -53,6 +53,8 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtReferencia = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtPrecoProduto = new System.Windows.Forms.TextBox();
             this.cbxFornecedor = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -81,17 +83,17 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(139, 41);
+            this.label3.Location = new System.Drawing.Point(249, 41);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(319, 20);
+            this.label3.Size = new System.Drawing.Size(93, 20);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Codigo de Barras(Passe o Produto no leitor)";
+            this.label3.Text = "Cod. Barras";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(491, 41);
+            this.label4.Location = new System.Drawing.Point(113, 41);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(113, 20);
             this.label4.TabIndex = 3;
@@ -143,13 +145,13 @@
             this.txtIdproduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdproduto.Location = new System.Drawing.Point(24, 64);
             this.txtIdproduto.Name = "txtIdproduto";
-            this.txtIdproduto.Size = new System.Drawing.Size(100, 26);
+            this.txtIdproduto.Size = new System.Drawing.Size(87, 26);
             this.txtIdproduto.TabIndex = 0;
             // 
             // txtCDBarras
             // 
             this.txtCDBarras.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCDBarras.Location = new System.Drawing.Point(142, 64);
+            this.txtCDBarras.Location = new System.Drawing.Point(252, 64);
             this.txtCDBarras.Name = "txtCDBarras";
             this.txtCDBarras.Size = new System.Drawing.Size(193, 26);
             this.txtCDBarras.TabIndex = 1;
@@ -158,9 +160,9 @@
             // 
             this.txtDTCadastroProduto.Enabled = false;
             this.txtDTCadastroProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDTCadastroProduto.Location = new System.Drawing.Point(495, 64);
+            this.txtDTCadastroProduto.Location = new System.Drawing.Point(117, 64);
             this.txtDTCadastroProduto.Name = "txtDTCadastroProduto";
-            this.txtDTCadastroProduto.Size = new System.Drawing.Size(100, 26);
+            this.txtDTCadastroProduto.Size = new System.Drawing.Size(109, 26);
             this.txtDTCadastroProduto.TabIndex = 2;
             // 
             // txtNomeProduto
@@ -168,6 +170,7 @@
             this.txtNomeProduto.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtNomeProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeProduto.Location = new System.Drawing.Point(24, 151);
+            this.txtNomeProduto.MaxLength = 20;
             this.txtNomeProduto.Name = "txtNomeProduto";
             this.txtNomeProduto.Size = new System.Drawing.Size(243, 26);
             this.txtNomeProduto.TabIndex = 3;
@@ -179,6 +182,7 @@
             this.txtLucroProduto.Name = "txtLucroProduto";
             this.txtLucroProduto.Size = new System.Drawing.Size(100, 26);
             this.txtLucroProduto.TabIndex = 7;
+            this.txtLucroProduto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLucroProduto_KeyPress);
             this.txtLucroProduto.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.txtLucroProduto_PreviewKeyDown);
             // 
             // label9
@@ -258,6 +262,7 @@
             this.txtQuantidadeProduto.Name = "txtQuantidadeProduto";
             this.txtQuantidadeProduto.Size = new System.Drawing.Size(100, 26);
             this.txtQuantidadeProduto.TabIndex = 12;
+            this.txtQuantidadeProduto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtQuantidadeProduto_KeyPress);
             // 
             // txtValorVenda
             // 
@@ -299,6 +304,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtReferencia);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtPrecoProduto);
             this.groupBox1.Controls.Add(this.cbxFornecedor);
             this.groupBox1.Controls.Add(this.label2);
@@ -331,6 +338,25 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "PRODUTO";
+            // 
+            // txtReferencia
+            // 
+            this.txtReferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtReferencia.Location = new System.Drawing.Point(457, 64);
+            this.txtReferencia.MaxLength = 10;
+            this.txtReferencia.Name = "txtReferencia";
+            this.txtReferencia.Size = new System.Drawing.Size(131, 26);
+            this.txtReferencia.TabIndex = 44;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(453, 41);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(87, 20);
+            this.label1.TabIndex = 43;
+            this.label1.Text = "Referência";
             // 
             // txtPrecoProduto
             // 
@@ -500,5 +526,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ComboBox cbxFornecedor;
         private System.Windows.Forms.TextBox txtPrecoProduto;
+        private System.Windows.Forms.TextBox txtReferencia;
+        private System.Windows.Forms.Label label1;
     }
 }

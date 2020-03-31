@@ -170,7 +170,7 @@ namespace LiveCommerce.View
             {
                 this.Close();
                 FrmListaVendas fvendas = new FrmListaVendas();
-                fvendas.Visible = true;
+                fvendas.Show();
             }
         }
 

@@ -31,15 +31,23 @@ namespace LiveCommerce.View
 
         private void btnAdicionarVenda_Click_1(object sender, EventArgs e)
         {
-          
+            
             FrmVendas frmVenda = new FrmVendas();
             frmVenda.Show();
-            this.Visible = false;
+            this.Close();
         }
 
         private void btnSairlistaVendas_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //Crio o método para o botão Sair
+            DialogResult result;
+
+            result = MessageBox.Show("Deseja realmente sair?", "Mensagem do Sistema", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == System.Windows.Forms.DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
 
         public void CarregarVendas()

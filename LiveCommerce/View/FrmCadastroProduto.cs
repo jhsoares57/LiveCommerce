@@ -43,6 +43,7 @@ namespace LiveCommerce.View
             cbxFormaCompraMedida.SelectedValue = 0;
             txtQuantidadeProduto.Clear();
             txtCDBarras.Focus();
+            txtReferencia.Clear();
         }
 
         private void CarregarUnidadeMedida()
@@ -195,8 +196,8 @@ namespace LiveCommerce.View
                     P.NomeProduto = txtNomeProduto.Text;
                     P.DTCadastro = Convert.ToDateTime(txtDTCadastroProduto.Text);
                     P.NomeProduto = txtNomeProduto.Text;
-                    P.ValorCompra = Convert.ToDecimal(txtValorVenda.Text);
-                    P.ValorUnitarioProduto = Convert.ToDecimal(txtPrecoProduto.Text);
+                    P.ValorCompra = Convert.ToDecimal(txtPrecoProduto.Text);
+                    P.ValorUnitarioProduto = Convert.ToDecimal(txtValorVenda.Text);
                     P.LucroProduto = Convert.ToSingle(txtLucroProduto.Text);
                     P.UnidadeMedida = Convert.ToInt32(cbxUnidadeMedidaCadastroProduto.SelectedValue);
                     P.FormaCompra = Convert.ToInt32(cbxFormaCompraMedida.SelectedValue);
@@ -204,6 +205,7 @@ namespace LiveCommerce.View
                     P.QuantidadeProduto = Convert.ToInt32(txtQuantidadeProduto.Text);
                     P.IdTipoProduto = Convert.ToInt32(cbxTipoProduto.SelectedValue);
                     P.IdFornecedor = Convert.ToInt32(cbxFornecedor.SelectedValue);
+                    P.Referencia = txtReferencia.Text;
 
                     ProdutoService.Insert(P);
 
@@ -220,8 +222,8 @@ namespace LiveCommerce.View
                     P.NomeProduto = txtNomeProduto.Text;
                     P.DTCadastro = Convert.ToDateTime(txtDTCadastroProduto.Text);
                     P.NomeProduto = txtNomeProduto.Text;
-                    P.ValorCompra = Convert.ToDecimal(txtValorVenda.Text);
-                    P.ValorUnitarioProduto = Convert.ToDecimal(txtPrecoProduto.Text);
+                    P.ValorCompra = Convert.ToDecimal(txtPrecoProduto.Text);
+                    P.ValorUnitarioProduto = Convert.ToDecimal(txtValorVenda.Text);
                     P.LucroProduto = Convert.ToSingle(txtLucroProduto.Text);
                     P.UnidadeMedida = Convert.ToInt32(cbxUnidadeMedidaCadastroProduto.SelectedValue);
                     P.FormaCompra = Convert.ToInt32(cbxFormaCompraMedida.SelectedValue);
@@ -229,6 +231,7 @@ namespace LiveCommerce.View
                     P.QuantidadeProduto = Convert.ToInt32(txtQuantidadeProduto.Text);
                     P.IdTipoProduto = Convert.ToInt32(cbxTipoProduto.SelectedValue);
                     P.IdFornecedor = Convert.ToInt32(cbxFornecedor.SelectedValue);
+                    P.Referencia = txtReferencia.Text;
 
                     ProdutoService.Update(P);
 
@@ -270,8 +273,8 @@ namespace LiveCommerce.View
             int categoriaID = Convert.ToInt32(dgvPesquisaProduto.Rows[e.RowIndex].Cells[10].Value.ToString());
             int formacompraID = Convert.ToInt32(dgvPesquisaProduto.Rows[e.RowIndex].Cells[11].Value.ToString());
             int fornecedorID = Convert.ToInt32(dgvPesquisaProduto.Rows[e.RowIndex].Cells[5].Value.ToString());
-            decimal precoProduto = Convert.ToDecimal(dgvPesquisaProduto.Rows[e.RowIndex].Cells[6].Value.ToString());
-            decimal valorVenda = Convert.ToDecimal(dgvPesquisaProduto.Rows[e.RowIndex].Cells[8].Value.ToString());
+            decimal precoProduto = Convert.ToDecimal(dgvPesquisaProduto.Rows[e.RowIndex].Cells[8].Value.ToString());
+            decimal valorVenda = Convert.ToDecimal(dgvPesquisaProduto.Rows[e.RowIndex].Cells[6].Value.ToString());
 
             txtIdproduto.Text = dgvPesquisaProduto.Rows[e.RowIndex].Cells[0].Value.ToString();
             txtCDBarras.Text = dgvPesquisaProduto.Rows[e.RowIndex].Cells[1].Value.ToString();
@@ -286,6 +289,7 @@ namespace LiveCommerce.View
             cbxCategoriaProduto.SelectedValue = categoriaID;
             cbxFormaCompraMedida.SelectedValue = formacompraID;
             txtQuantidadeProduto.Text = dgvPesquisaProduto.Rows[e.RowIndex].Cells[12].Value.ToString();
+            txtReferencia.Text = dgvPesquisaProduto.Rows[e.RowIndex].Cells[13].Value.ToString();
 
         }
 
@@ -298,6 +302,22 @@ namespace LiveCommerce.View
                     VendaProduto();
 
                 }
+            }
+        }
+
+        private void txtQuantidadeProduto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtLucroProduto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
+            {
+                e.Handled = true;
             }
         }
     }

@@ -19,9 +19,9 @@ namespace LiveCommerce.DAL
             StringBuilder query = new StringBuilder();
             query.AppendLine("INSERT INTO PRODUTO");
             query.AppendLine("(CD_BARRAS_PRODUTO, NM_PRODUTO, DT_CADASTRO_PRODUTO, VL_UNITARIO_PRODUTO_VENDA,VALOR_COMPRA_PRODUTO, LUCRO_PORCENTO_PRODUTO, QT_PRODUTO, ID_UNIDADE_MEDIDA, ID_CATEGORIA_PRODUTO,");
-            query.AppendLine("ID_FORMA_COMPRA, ID_FORNECEDOR, ID_TIPO)");
+            query.AppendLine("ID_FORMA_COMPRA, ID_FORNECEDOR, ID_TIPO,REF_PRODUTO)");
             query.AppendLine("VALUES (@CD_BARRAS_PRODUTO, @NM_PRODUTO, @DT_CADASTRO_PRODUTO, @VL_UNITARIO_PRODUTO_VENDA,@VALOR_COMPRA_PRODUTO, @LUCRO_PORCENTO_PRODUTO, @QT_PRODUTO, @ID_UNIDADE_MEDIDA, @ID_CATEGORIA_PRODUTO,");
-            query.AppendLine("@ID_FORMA_COMPRA, @ID_FORNECEDOR, @ID_TIPO)");
+            query.AppendLine("@ID_FORMA_COMPRA, @ID_FORNECEDOR, @ID_TIPO,@REF_PRODUTO)");
             query.AppendLine("SELECT SCOPE_IDENTITY();");
 
             cf.Comando = cf.Conexao.CreateCommand();
@@ -38,6 +38,7 @@ namespace LiveCommerce.DAL
             cf.Comando.Parameters.AddWithValue("@ID_FORMA_COMPRA", p.FormaCompra);
             cf.Comando.Parameters.AddWithValue("@ID_FORNECEDOR", p.IdFornecedor);
             cf.Comando.Parameters.AddWithValue("@ID_TIPO", p.IdTipoProduto);
+            cf.Comando.Parameters.AddWithValue("@REF_PRODUTO", p.Referencia);
 
 
             cf.Comando.CommandType = CommandType.Text;
@@ -69,7 +70,8 @@ namespace LiveCommerce.DAL
                 query.AppendLine("ID_CATEGORIA_PRODUTO = @ID_CATEGORIA_PRODUTO,");
                 query.AppendLine("ID_FORMA_COMPRA = @ID_FORMA_COMPRA,");
                 query.AppendLine("ID_FORNECEDOR = @ID_FORNECEDOR,");
-                query.AppendLine("ID_TIPO = @ID_TIPO");
+                query.AppendLine("ID_TIPO = @ID_TIPO,");
+                query.AppendLine("REF_PRODUTO = @REF_PRODUTO");
                 query.AppendLine("WHERE ID_PRODUTO = @ID_PRODUTO");
 
                 cf.Comando = cf.Conexao.CreateCommand();
@@ -87,6 +89,7 @@ namespace LiveCommerce.DAL
                 cf.Comando.Parameters.AddWithValue("@ID_FORNECEDOR", P.IdFornecedor);
                 cf.Comando.Parameters.AddWithValue("@ID_TIPO", P.IdTipoProduto);
                 cf.Comando.Parameters.AddWithValue("@ID_PRODUTO", P.Id);
+                cf.Comando.Parameters.AddWithValue("@REF_PRODUTO", P.Referencia);
 
                 cf.Comando.CommandType = CommandType.Text;
                 cf.Comando.CommandText = query.ToString();
@@ -164,7 +167,7 @@ namespace LiveCommerce.DAL
             cf = new ConnectionFactory();
             StringBuilder query = new StringBuilder();
             query.AppendLine("SELECT ID_PRODUTO [ID], CD_BARRAS_PRODUTO AS 'CODIGO DE BARRAS', DT_CADASTRO_PRODUTO AS 'DATA', NM_PRODUTO AS 'NOME PRODUTO', ID_TIPO AS 'ID TIPO' , ID_FORNECEDOR AS 'ID DO FORNECEDOR' , VL_UNITARIO_PRODUTO_VENDA AS 'VALOR', LUCRO_PORCENTO_PRODUTO AS 'LUCRO' , VALOR_COMPRA_PRODUTO AS 'VALOR DE COMPRA', ID_UNIDADE_MEDIDA AS 'ID UNIDADE DE MEDIDA', ID_CATEGORIA_PRODUTO AS 'ID CATEGORIA',");
-            query.AppendLine("ID_FORMA_COMPRA AS 'ID FORMA DE COMPRA', QT_PRODUTO AS 'QUANTIDADE' FROM PRODUTO WHERE (NM_PRODUTO like @termo or ID_PRODUTO like @termo)");
+            query.AppendLine("ID_FORMA_COMPRA AS 'ID FORMA DE COMPRA', QT_PRODUTO AS 'QUANTIDADE', REF_PRODUTO AS 'REFERENCIA' FROM PRODUTO WHERE (NM_PRODUTO like @termo or ID_PRODUTO like @termo OR REF_PRODUTO LIKE @termo)");
 
             cf.Comando = cf.Conexao.CreateCommand();
             cf.Comando.CommandType = CommandType.Text;

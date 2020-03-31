@@ -320,6 +320,7 @@
             this.txtIE.Name = "txtIE";
             this.txtIE.Size = new System.Drawing.Size(170, 26);
             this.txtIE.TabIndex = 7;
+            this.txtIE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIE_KeyPress);
             // 
             // cbxCidade
             // 
@@ -346,9 +347,9 @@
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(376, 45);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(72, 20);
+            this.label18.Size = new System.Drawing.Size(44, 20);
             this.label18.TabIndex = 21;
-            this.label18.Text = "Situação";
+            this.label18.Text = "Ativo";
             // 
             // cbxSituacaoFornecedor
             // 

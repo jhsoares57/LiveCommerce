@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCadastroFuncionario));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtDTFuncionario = new System.Windows.Forms.DateTimePicker();
             this.cbxCidadeFuncionario = new System.Windows.Forms.ComboBox();
             this.txtCELFuncionario = new System.Windows.Forms.MaskedTextBox();
             this.txtCEPFuncionario = new System.Windows.Forms.MaskedTextBox();
@@ -68,7 +69,6 @@
             this.btnExcluirCadastroFuncionario = new System.Windows.Forms.Button();
             this.btnSairCadastroFuncionario = new System.Windows.Forms.Button();
             this.btnSalvarCadastroFuncionario = new System.Windows.Forms.Button();
-            this.txtDTFuncionario = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisaFuncionario)).BeginInit();
@@ -115,6 +115,14 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cadastro";
+            // 
+            // txtDTFuncionario
+            // 
+            this.txtDTFuncionario.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtDTFuncionario.Location = new System.Drawing.Point(329, 122);
+            this.txtDTFuncionario.Name = "txtDTFuncionario";
+            this.txtDTFuncionario.Size = new System.Drawing.Size(128, 26);
+            this.txtDTFuncionario.TabIndex = 67;
             // 
             // cbxCidadeFuncionario
             // 
@@ -187,9 +195,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(20, 302);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(72, 20);
+            this.label6.Size = new System.Drawing.Size(44, 20);
             this.label6.TabIndex = 63;
-            this.label6.Text = "Situação";
+            this.label6.Text = "Ativo";
             // 
             // label1
             // 
@@ -254,6 +262,7 @@
             this.txtSalarioBaseFuncionario.Name = "txtSalarioBaseFuncionario";
             this.txtSalarioBaseFuncionario.Size = new System.Drawing.Size(86, 24);
             this.txtSalarioBaseFuncionario.TabIndex = 11;
+            this.txtSalarioBaseFuncionario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSalarioBaseFuncionario_KeyPress);
             // 
             // txtNomeFuncionario
             // 
@@ -492,14 +501,6 @@
             this.btnSalvarCadastroFuncionario.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSalvarCadastroFuncionario.UseVisualStyleBackColor = true;
             this.btnSalvarCadastroFuncionario.Click += new System.EventHandler(this.btnSalvarCadastroFuncionario_Click_1);
-            // 
-            // txtDTFuncionario
-            // 
-            this.txtDTFuncionario.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtDTFuncionario.Location = new System.Drawing.Point(329, 122);
-            this.txtDTFuncionario.Name = "txtDTFuncionario";
-            this.txtDTFuncionario.Size = new System.Drawing.Size(128, 26);
-            this.txtDTFuncionario.TabIndex = 67;
             // 
             // FrmCadastroFuncionario
             // 

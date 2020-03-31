@@ -39,7 +39,9 @@ namespace LiveCommerce.Model
 
         private string rgCliente;
 
-      
+        private int tipoPessoa;
+
+
 
         public DateTime DataCadastro { get => dataCadastro; set => dataCadastro = value; }
         public string Pessoa { get => pessoa; set => pessoa = value; }
@@ -57,5 +59,6 @@ namespace LiveCommerce.Model
         public int Situacao { get => situacao; set => situacao = value; }
         public int UfEndereco { get => ufEndereco; set => ufEndereco = value; }
         public int CidadeEndereco { get => cidadeEndereco; set => cidadeEndereco = value; }
+        public int TipoPessoa { get => tipoPessoa; set => tipoPessoa = value; }
     }
 }
