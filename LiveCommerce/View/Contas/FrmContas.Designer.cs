@@ -50,26 +50,31 @@
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.txtTotalContas = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.gpPagemento = new System.Windows.Forms.GroupBox();
+            this.txtDataPagamentoFim = new System.Windows.Forms.DateTimePicker();
+            this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.btnRealizarPagamento = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.btnFiltrar = new System.Windows.Forms.Button();
             this.cbxFiltroTipo = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvContas = new System.Windows.Forms.DataGridView();
-            this.btnFiltrar = new System.Windows.Forms.Button();
-            this.txtDataPagamentoFim = new System.Windows.Forms.DateTimePicker();
-            this.label10 = new System.Windows.Forms.Label();
+            this.gpCancelamento = new System.Windows.Forms.GroupBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.txtDataCancelamento = new System.Windows.Forms.DateTimePicker();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.GBgbDados.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            this.groupBox6.SuspendLayout();
+            this.gpPagemento.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContas)).BeginInit();
+            this.gpCancelamento.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -253,8 +258,9 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.gpCancelamento);
             this.groupBox4.Controls.Add(this.groupBox7);
-            this.groupBox4.Controls.Add(this.groupBox6);
+            this.groupBox4.Controls.Add(this.gpPagemento);
             this.groupBox4.Controls.Add(this.btnFechar);
             this.groupBox4.Controls.Add(this.groupBox5);
             this.groupBox4.Controls.Add(this.groupBox1);
@@ -293,33 +299,51 @@
             this.label12.TabIndex = 16;
             this.label12.Text = "Total de contas:";
             // 
-            // groupBox6
+            // gpPagemento
             // 
-            this.groupBox6.Controls.Add(this.txtDataPagamentoFim);
-            this.groupBox6.Controls.Add(this.label10);
-            this.groupBox6.Controls.Add(this.label11);
-            this.groupBox6.Controls.Add(this.btnRealizarPagamento);
-            this.groupBox6.Location = new System.Drawing.Point(307, 19);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(395, 71);
-            this.groupBox6.TabIndex = 15;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Realizar Pagamento";
+            this.gpPagemento.Controls.Add(this.txtDataPagamentoFim);
+            this.gpPagemento.Controls.Add(this.label10);
+            this.gpPagemento.Controls.Add(this.label11);
+            this.gpPagemento.Controls.Add(this.btnRealizarPagamento);
+            this.gpPagemento.Location = new System.Drawing.Point(282, 19);
+            this.gpPagemento.Name = "gpPagemento";
+            this.gpPagemento.Size = new System.Drawing.Size(262, 71);
+            this.gpPagemento.TabIndex = 15;
+            this.gpPagemento.TabStop = false;
+            this.gpPagemento.Text = "Realizar Pagamento";
+            // 
+            // txtDataPagamentoFim
+            // 
+            this.txtDataPagamentoFim.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtDataPagamentoFim.Location = new System.Drawing.Point(18, 35);
+            this.txtDataPagamentoFim.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            this.txtDataPagamentoFim.Name = "txtDataPagamentoFim";
+            this.txtDataPagamentoFim.Size = new System.Drawing.Size(96, 20);
+            this.txtDataPagamentoFim.TabIndex = 17;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(15, 19);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(90, 13);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "Data Pagamento:";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(151, 16);
+            this.label11.Location = new System.Drawing.Point(117, 17);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(196, 13);
+            this.label11.Size = new System.Drawing.Size(132, 13);
             this.label11.TabIndex = 14;
-            this.label11.Text = "Selecione uma conta no grid para pagar";
+            this.label11.Text = "Sel. uma conta para pagar";
             // 
             // btnRealizarPagamento
             // 
-            this.btnRealizarPagamento.Location = new System.Drawing.Point(154, 31);
+            this.btnRealizarPagamento.Location = new System.Drawing.Point(120, 32);
             this.btnRealizarPagamento.Name = "btnRealizarPagamento";
-            this.btnRealizarPagamento.Size = new System.Drawing.Size(235, 33);
+            this.btnRealizarPagamento.Size = new System.Drawing.Size(129, 25);
             this.btnRealizarPagamento.TabIndex = 13;
             this.btnRealizarPagamento.Text = "Realizar Pagamento";
             this.btnRealizarPagamento.UseVisualStyleBackColor = true;
@@ -346,6 +370,16 @@
             this.groupBox5.TabIndex = 2;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Filtros";
+            // 
+            // btnFiltrar
+            // 
+            this.btnFiltrar.Location = new System.Drawing.Point(163, 33);
+            this.btnFiltrar.Name = "btnFiltrar";
+            this.btnFiltrar.Size = new System.Drawing.Size(94, 23);
+            this.btnFiltrar.TabIndex = 12;
+            this.btnFiltrar.Text = "Filtrar";
+            this.btnFiltrar.UseVisualStyleBackColor = true;
+            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
             // 
             // cbxFiltroTipo
             // 
@@ -386,33 +420,45 @@
             this.dgvContas.TabIndex = 15;
             this.dgvContas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvContas_CellClick);
             // 
-            // btnFiltrar
+            // gpCancelamento
             // 
-            this.btnFiltrar.Location = new System.Drawing.Point(163, 33);
-            this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(94, 23);
-            this.btnFiltrar.TabIndex = 12;
-            this.btnFiltrar.Text = "Filtrar";
-            this.btnFiltrar.UseVisualStyleBackColor = true;
-            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
+            this.gpCancelamento.Controls.Add(this.txtDataCancelamento);
+            this.gpCancelamento.Controls.Add(this.label9);
+            this.gpCancelamento.Controls.Add(this.btnCancelar);
+            this.gpCancelamento.Location = new System.Drawing.Point(550, 19);
+            this.gpCancelamento.Name = "gpCancelamento";
+            this.gpCancelamento.Size = new System.Drawing.Size(214, 71);
+            this.gpCancelamento.TabIndex = 17;
+            this.gpCancelamento.TabStop = false;
+            this.gpCancelamento.Text = "Cancelamento";
             // 
-            // txtDataPagamentoFim
+            // btnCancelar
             // 
-            this.txtDataPagamentoFim.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtDataPagamentoFim.Location = new System.Drawing.Point(18, 35);
-            this.txtDataPagamentoFim.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
-            this.txtDataPagamentoFim.Name = "txtDataPagamentoFim";
-            this.txtDataPagamentoFim.Size = new System.Drawing.Size(112, 20);
-            this.txtDataPagamentoFim.TabIndex = 17;
+            this.btnCancelar.Location = new System.Drawing.Point(113, 32);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(95, 25);
+            this.btnCancelar.TabIndex = 0;
+            this.btnCancelar.Text = "Cancelar conta";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // label10
+            // txtDataCancelamento
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(15, 19);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(90, 13);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "Data Pagamento:";
+            this.txtDataCancelamento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtDataCancelamento.Location = new System.Drawing.Point(6, 37);
+            this.txtDataCancelamento.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            this.txtDataCancelamento.Name = "txtDataCancelamento";
+            this.txtDataCancelamento.Size = new System.Drawing.Size(96, 20);
+            this.txtDataCancelamento.TabIndex = 19;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(3, 19);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(104, 13);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Data Cancelamento:";
             // 
             // FrmContas
             // 
@@ -434,12 +480,14 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
+            this.gpPagemento.ResumeLayout(false);
+            this.gpPagemento.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvContas)).EndInit();
+            this.gpCancelamento.ResumeLayout(false);
+            this.gpCancelamento.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -473,11 +521,15 @@
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.TextBox txtTotalContas;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.GroupBox gpPagemento;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox GBgbDados;
         private System.Windows.Forms.Button btnFiltrar;
         private System.Windows.Forms.DateTimePicker txtDataPagamentoFim;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.GroupBox gpCancelamento;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.DateTimePicker txtDataCancelamento;
+        private System.Windows.Forms.Label label9;
     }
 }

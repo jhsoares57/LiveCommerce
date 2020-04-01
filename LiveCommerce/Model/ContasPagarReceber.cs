@@ -16,6 +16,7 @@ namespace LiveCommerce.Model
         private DateTime ddtPag;
         private DateTime cdtVcto;
         private string cobs;
+        private string status; // A= Aberta, C=Cancelada, P=Paga
 
         public int CodCont { get => codCont; set => codCont = value; }
         public int CtpCont { get => ctpCont; set => ctpCont = value; }
@@ -25,5 +26,6 @@ namespace LiveCommerce.Model
         public DateTime DdtPag { get => ddtPag; set => ddtPag = value; }
         public DateTime CdtVcto { get => cdtVcto; set => cdtVcto = value; }
         public string Cobs { get => cobs; set => cobs = value; }
+        public string Status { get => status; set => status = value; }
     }
 }

@@ -174,8 +174,21 @@ namespace LiveCommerce.View.Contas
         {
             ContasPagarReceber p = new ContasPagarReceber();
             p.DdtPag = Convert.ToDateTime(txtDataPagamentoFim.Text);
+            p.Status = "P";
             p.CodCont = Convert.ToInt32(idc);
             
+
+            contaService.PagamentoConta(p);
+
+        }
+
+        private void CancelamentoConta(int idc)
+        {
+            ContasPagarReceber p = new ContasPagarReceber();
+            p.DdtPag = Convert.ToDateTime(txtDataCancelamento.Text);
+            p.Status = "C";
+            p.CodCont = Convert.ToInt32(idc);
+
 
             contaService.PagamentoConta(p);
 
@@ -185,7 +198,51 @@ namespace LiveCommerce.View.Contas
         {
             try
             {
-                id = Convert.ToInt32(dgvContas.Rows[e.RowIndex].Cells[0].Value.ToString());
+                
+                string dt;
+                dt = Convert.ToString(dgvContas.Rows[e.RowIndex].Cells[6].Value.ToString());
+                if (dt != "")
+                {
+                    //id = Convert.ToInt32(dgvContas.Rows[e.RowIndex].Cells[0].Value.ToString());
+                    MessageBox.Show("Conta já paga! Selecione uma outra conta.");
+                    gpCancelamento.Enabled = false;
+                    gpPagemento.Enabled = false;
+                }
+                else
+                {
+                    id = Convert.ToInt32(dgvContas.Rows[e.RowIndex].Cells[0].Value.ToString());
+                    gpCancelamento.Enabled = true;
+                    gpPagemento.Enabled = true;
+                }
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Selecione uma conta!");
+            }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ContasPagarReceber v = new ContasPagarReceber();
+                v.CodCont = id;
+
+
+
+                if (v.CodCont > 0)
+                {
+                    //contaService.PagamentoConta(v);
+                    CancelamentoConta(v.CodCont);
+                    MessageBox.Show("Conta cancelada com sucesso!");
+                    CarregarConta();
+                }
+                else
+                {
+                    MessageBox.Show("Selecione uma conta!");
+                }
+
             }
             catch (Exception)
             {

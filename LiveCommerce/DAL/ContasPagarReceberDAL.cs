@@ -76,7 +76,7 @@ namespace LiveCommerce.Business
         public int PagamentoConta(ContasPagarReceber c)
         {
             cf = new ConnectionFactory();
-            string query = "LV_CONTA_PAGAR_RECEBER_CONFIRMA_PAGAMENTO";
+            string query = "LV_CONTA_PAGAR_RECEBER_CONFIRMA_PAGAMENTO_CANCELAMENTO";
 
             //Variável guardará a quantidade de linhas afetadas
             int linhasAfetadas = 0;
@@ -85,6 +85,7 @@ namespace LiveCommerce.Business
             cf.Comando = cf.Conexao.CreateCommand();
             cf.Comando.Parameters.AddWithValue("@ID", c.CodCont);
             cf.Comando.Parameters.AddWithValue("@DATAPAGAMENTO", c.DdtPag);
+            cf.Comando.Parameters.AddWithValue("@STATUS", c.Status);
 
             cf.Comando.CommandType = CommandType.StoredProcedure;
             cf.Comando.CommandText = query;
@@ -96,5 +97,7 @@ namespace LiveCommerce.Business
             //Este método retorna um número inteiro, conforme o que a assinatura pede.
             return linhasAfetadas;
         }
+
+
     }
 }
