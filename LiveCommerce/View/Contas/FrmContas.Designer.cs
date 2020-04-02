@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmContas));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.GBgbDados = new System.Windows.Forms.GroupBox();
             this.txtDtPagamento = new System.Windows.Forms.DateTimePicker();
@@ -47,6 +48,11 @@
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.txtImprimir = new System.Windows.Forms.Button();
+            this.gpCancelamento = new System.Windows.Forms.GroupBox();
+            this.txtDataCancelamento = new System.Windows.Forms.DateTimePicker();
+            this.label9 = new System.Windows.Forms.Label();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.txtTotalContas = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -62,19 +68,17 @@
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvContas = new System.Windows.Forms.DataGridView();
-            this.gpCancelamento = new System.Windows.Forms.GroupBox();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.txtDataCancelamento = new System.Windows.Forms.DateTimePicker();
-            this.label9 = new System.Windows.Forms.Label();
+            this.printPreviewDialog = new System.Windows.Forms.PrintPreviewDialog();
+            this.printDocument = new System.Drawing.Printing.PrintDocument();
             this.groupBox2.SuspendLayout();
             this.GBgbDados.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.gpCancelamento.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.gpPagemento.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContas)).BeginInit();
-            this.gpCancelamento.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -258,6 +262,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.txtImprimir);
             this.groupBox4.Controls.Add(this.gpCancelamento);
             this.groupBox4.Controls.Add(this.groupBox7);
             this.groupBox4.Controls.Add(this.gpPagemento);
@@ -271,13 +276,63 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Dados Lançados";
             // 
+            // txtImprimir
+            // 
+            this.txtImprimir.Location = new System.Drawing.Point(576, 309);
+            this.txtImprimir.Name = "txtImprimir";
+            this.txtImprimir.Size = new System.Drawing.Size(94, 37);
+            this.txtImprimir.TabIndex = 12;
+            this.txtImprimir.Text = "Imprimir Grid";
+            this.txtImprimir.UseVisualStyleBackColor = true;
+            this.txtImprimir.Click += new System.EventHandler(this.txtImprimir_Click);
+            // 
+            // gpCancelamento
+            // 
+            this.gpCancelamento.Controls.Add(this.txtDataCancelamento);
+            this.gpCancelamento.Controls.Add(this.label9);
+            this.gpCancelamento.Controls.Add(this.btnCancelar);
+            this.gpCancelamento.Location = new System.Drawing.Point(550, 19);
+            this.gpCancelamento.Name = "gpCancelamento";
+            this.gpCancelamento.Size = new System.Drawing.Size(214, 71);
+            this.gpCancelamento.TabIndex = 17;
+            this.gpCancelamento.TabStop = false;
+            this.gpCancelamento.Text = "Cancelamento";
+            // 
+            // txtDataCancelamento
+            // 
+            this.txtDataCancelamento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtDataCancelamento.Location = new System.Drawing.Point(6, 37);
+            this.txtDataCancelamento.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            this.txtDataCancelamento.Name = "txtDataCancelamento";
+            this.txtDataCancelamento.Size = new System.Drawing.Size(96, 20);
+            this.txtDataCancelamento.TabIndex = 19;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(3, 19);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(104, 13);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Data Cancelamento:";
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(113, 32);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(95, 25);
+            this.btnCancelar.TabIndex = 0;
+            this.btnCancelar.Text = "Cancelar conta";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
             // groupBox7
             // 
             this.groupBox7.Controls.Add(this.txtTotalContas);
             this.groupBox7.Controls.Add(this.label12);
-            this.groupBox7.Location = new System.Drawing.Point(6, 309);
+            this.groupBox7.Location = new System.Drawing.Point(12, 309);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(664, 37);
+            this.groupBox7.Size = new System.Drawing.Size(519, 37);
             this.groupBox7.TabIndex = 16;
             this.groupBox7.TabStop = false;
             // 
@@ -285,7 +340,7 @@
             // 
             this.txtTotalContas.Enabled = false;
             this.txtTotalContas.ForeColor = System.Drawing.Color.Yellow;
-            this.txtTotalContas.Location = new System.Drawing.Point(558, 11);
+            this.txtTotalContas.Location = new System.Drawing.Point(97, 11);
             this.txtTotalContas.Name = "txtTotalContas";
             this.txtTotalContas.Size = new System.Drawing.Size(100, 20);
             this.txtTotalContas.TabIndex = 17;
@@ -293,7 +348,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(471, 16);
+            this.label12.Location = new System.Drawing.Point(10, 16);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(84, 13);
             this.label12.TabIndex = 16;
@@ -420,45 +475,15 @@
             this.dgvContas.TabIndex = 15;
             this.dgvContas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvContas_CellClick);
             // 
-            // gpCancelamento
+            // printPreviewDialog
             // 
-            this.gpCancelamento.Controls.Add(this.txtDataCancelamento);
-            this.gpCancelamento.Controls.Add(this.label9);
-            this.gpCancelamento.Controls.Add(this.btnCancelar);
-            this.gpCancelamento.Location = new System.Drawing.Point(550, 19);
-            this.gpCancelamento.Name = "gpCancelamento";
-            this.gpCancelamento.Size = new System.Drawing.Size(214, 71);
-            this.gpCancelamento.TabIndex = 17;
-            this.gpCancelamento.TabStop = false;
-            this.gpCancelamento.Text = "Cancelamento";
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Location = new System.Drawing.Point(113, 32);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(95, 25);
-            this.btnCancelar.TabIndex = 0;
-            this.btnCancelar.Text = "Cancelar conta";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // txtDataCancelamento
-            // 
-            this.txtDataCancelamento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtDataCancelamento.Location = new System.Drawing.Point(6, 37);
-            this.txtDataCancelamento.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
-            this.txtDataCancelamento.Name = "txtDataCancelamento";
-            this.txtDataCancelamento.Size = new System.Drawing.Size(96, 20);
-            this.txtDataCancelamento.TabIndex = 19;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 19);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(104, 13);
-            this.label9.TabIndex = 20;
-            this.label9.Text = "Data Cancelamento:";
+            this.printPreviewDialog.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog.Enabled = true;
+            this.printPreviewDialog.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog.Icon")));
+            this.printPreviewDialog.Name = "printPreviewDialog";
+            this.printPreviewDialog.Visible = false;
             // 
             // FrmContas
             // 
@@ -478,6 +503,8 @@
             this.GBgbDados.ResumeLayout(false);
             this.GBgbDados.PerformLayout();
             this.groupBox4.ResumeLayout(false);
+            this.gpCancelamento.ResumeLayout(false);
+            this.gpCancelamento.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.gpPagemento.ResumeLayout(false);
@@ -486,8 +513,6 @@
             this.groupBox5.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvContas)).EndInit();
-            this.gpCancelamento.ResumeLayout(false);
-            this.gpCancelamento.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -531,5 +556,8 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.DateTimePicker txtDataCancelamento;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button txtImprimir;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog;
+        private System.Drawing.Printing.PrintDocument printDocument;
     }
 }

@@ -192,14 +192,14 @@
             this.relatoriosToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.relatoriosToolStripMenuItem.Name = "relatoriosToolStripMenuItem";
             this.relatoriosToolStripMenuItem.Size = new System.Drawing.Size(75, 53);
-            this.relatoriosToolStripMenuItem.Text = "Relatorios";
+            this.relatoriosToolStripMenuItem.Text = "Relatórios";
             // 
             // produtosToolStripMenuItem2
             // 
             this.produtosToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.estoqueToolStripMenuItem});
             this.produtosToolStripMenuItem2.Name = "produtosToolStripMenuItem2";
-            this.produtosToolStripMenuItem2.Size = new System.Drawing.Size(123, 22);
+            this.produtosToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.produtosToolStripMenuItem2.Text = "Produtos";
             // 
             // estoqueToolStripMenuItem
@@ -215,7 +215,7 @@
             this.vendasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.porFormaDePagamentoToolStripMenuItem});
             this.vendasToolStripMenuItem.Name = "vendasToolStripMenuItem";
-            this.vendasToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.vendasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.vendasToolStripMenuItem.Text = "Vendas";
             // 
             // porFormaDePagamentoToolStripMenuItem
@@ -231,7 +231,7 @@
             this.clientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clientesEndereçoToolStripMenuItem});
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.clientesToolStripMenuItem.Text = "Clientes";
             // 
             // clientesEndereçoToolStripMenuItem
@@ -312,7 +312,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel2.BackColor = System.Drawing.Color.LightGray;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(0, 57);

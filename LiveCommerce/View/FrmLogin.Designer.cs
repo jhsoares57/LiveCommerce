@@ -152,7 +152,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.lbData);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;

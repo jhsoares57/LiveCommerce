@@ -1,4 +1,5 @@
-﻿using LiveCommerce.Business;
+﻿using DGVPrinterHelper;
+using LiveCommerce.Business;
 using LiveCommerce.Model;
 using System;
 using System.Collections;
@@ -6,10 +7,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace LiveCommerce.View.Contas
 {
@@ -129,7 +132,7 @@ namespace LiveCommerce.View.Contas
         {
             CarregarConta();
 
-          
+
             total = 0;
             foreach (DataGridViewRow linha in dgvContas.Rows)
             {
@@ -250,5 +253,29 @@ namespace LiveCommerce.View.Contas
                 MessageBox.Show("Selecione uma conta!");
             }
         }
+        Bitmap bitmap;
+        private void txtImprimir_Click(object sender, EventArgs e)
+        {
+            this.printDocument.DefaultPageSettings.Landscape = true;
+            DGVPrinter print = new DGVPrinter();
+            print.Title = "Relatório de Contas a Pagar/Receber"; //Titulo da Página
+            print.PageSettings.Landscape = true;
+
+            // print.SubTitle = "Relatorio de Contas a Pagar/Receber"; //SubTitulo da Página
+            //print.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+
+            //print.PageNumbers = true;
+            //print.PageNumberInHeader = false;
+            //print.PorportionalColumns = false;
+            //print.HeaderCellAlignment = StringAlignment.Near;
+            print.Footer = "LiveCommerce";
+            print.FooterSpacing = 15;
+
+            //print.PrintPreviewDataGridView(dgvContas);
+            print.PrintDataGridView(dgvContas);
+          
+
+        }
+       
     }
 }
