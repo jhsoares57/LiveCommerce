@@ -196,3 +196,4 @@ E:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Release\LiveCommerce.applic
 E:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Release\LiveCommerce.csproj.CopyComplete
 E:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Release\LiveCommerce.exe
 E:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Release\LiveCommerce.pdb
+E:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Release\LiveCommerce.View.Relatorios.ContasPagar.FrmRelContaPagar.resources

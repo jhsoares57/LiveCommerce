@@ -467,6 +467,9 @@
             // 
             // dgvContas
             // 
+            this.dgvContas.AllowUserToOrderColumns = true;
+            this.dgvContas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvContas.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvContas.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvContas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvContas.Location = new System.Drawing.Point(6, 11);

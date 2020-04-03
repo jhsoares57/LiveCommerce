@@ -21,7 +21,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>20.00.03.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -317,11 +317,25 @@
     <Compile Include="View\Impressao\FrmImprimirVenda.Designer.cs">
       <DependentUpon>FrmImprimirVenda.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Relatorios\ContasPagar\FrmContasRecebidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Relatorios\ContasPagar\FrmContasRecebidas.Designer.cs">
+      <DependentUpon>FrmContasRecebidas.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Relatorios\ContasPagar\FrmRelContaPagar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\Relatorios\ContasPagar\FrmRelContaPagar.Designer.cs">
       <DependentUpon>FrmRelContaPagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Relatorios\dsRelatorios.cs">
+      <DependentUpon>dsRelatorios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="View\Relatorios\dsRelatorios.Designer.cs">
+      <DependentUpon>dsRelatorios.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -404,6 +418,9 @@
     <EmbeddedResource Include="View\Impressao\FrmImprimirVenda.resx">
       <DependentUpon>FrmImprimirVenda.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\Relatorios\ContasPagar\FrmContasRecebidas.resx">
+      <DependentUpon>FrmContasRecebidas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Relatorios\ContasPagar\FrmRelContaPagar.resx">
       <DependentUpon>FrmRelContaPagar.cs</DependentUpon>
     </EmbeddedResource>
@@ -418,6 +435,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="View\Relatorios\dsRelatorios.xsc">
+      <DependentUpon>dsRelatorios.xsd</DependentUpon>
+    </None>
+    <None Include="View\Relatorios\dsRelatorios.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRelatorios.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="View\Relatorios\dsRelatorios.xss">
+      <DependentUpon>dsRelatorios.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -426,6 +454,8 @@
     <Content Include="DAL\BD\CIDADES_ATUALIZADO.sql" />
     <Content Include="DAL\BD\ContasPagarReceber\LV_CONTAPAGAR_RECEBER_TIPO_V1.sql" />
     <Content Include="DAL\BD\ContasPagarReceber\LV_CONTA_PAGAR_RECEBER_CONFIRMA_PAGAMENTO.sql" />
+    <Content Include="DAL\BD\ContasPagarReceber\LV_RELATORIO_CONTAS_PAGAS_V1.sql" />
+    <Content Include="DAL\BD\ContasPagarReceber\LV_RELATORIO_CONTAS_RECEBIDAS_V1.sql" />
     <Content Include="DAL\BD\ListaGenerica\LTGEN.SQL" />
     <Content Include="DAL\BD\LIVE18112018.sql" />
     <Content Include="DAL\BD\LV_IMPRIMI_VENDA_COMPLETA_V1.sql" />

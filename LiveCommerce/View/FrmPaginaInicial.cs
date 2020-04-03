@@ -234,5 +234,31 @@ namespace LiveCommerce.View
             View.Contas.FrmContas frcontas = new View.Contas.FrmContas();
             frcontas.Show();
         }
+
+        private void contasPagasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<View.Relatorios.ContasPagar.FrmRelContaPagar>().Count() > 0)
+            {
+                Application.OpenForms["FrmRelContaPagar"].BringToFront();
+            }
+            else
+            {
+                View.Relatorios.ContasPagar.FrmRelContaPagar ContaPagas = new View.Relatorios.ContasPagar.FrmRelContaPagar();
+                ContaPagas.Show();
+            }
+        }
+
+        private void contasRecebidasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<View.Relatorios.ContasPagar.FrmContasRecebidas>().Count() > 0)
+            {
+                Application.OpenForms["FrmContasRecebidas"].BringToFront();
+            }
+            else
+            {
+                View.Relatorios.ContasPagar.FrmContasRecebidas ContaRecebidas = new View.Relatorios.ContasPagar.FrmContasRecebidas();
+                ContaRecebidas.Show();
+            }
+        }
     }
 }

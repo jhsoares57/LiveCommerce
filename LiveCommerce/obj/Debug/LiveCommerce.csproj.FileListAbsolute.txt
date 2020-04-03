@@ -377,6 +377,7 @@ E:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.Frm
 E:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmUsuario.resources
 E:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmVendas.resources
 E:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.Impressao.FrmImprimirVenda.resources
+E:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.Relatorios.ContasPagar.FrmRelContaPagar.resources
 E:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.csproj.GenerateResource.cache
 E:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\RdlCompile.cache
 E:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\RdlCompile.compiled
@@ -386,3 +387,4 @@ E:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.applicat
 E:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.csproj.CopyComplete
 E:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.exe
 E:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.pdb
+E:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.Relatorios.ContasPagar.FrmContasRecebidas.resources

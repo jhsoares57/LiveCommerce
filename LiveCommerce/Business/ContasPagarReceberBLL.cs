@@ -47,5 +47,14 @@ namespace LiveCommerce.Business
             }
             return atualizou;
         }
+        public DataTable RelatorioContasPagas(DateTime DATAINICIAL, DateTime DATAFINAL)
+        {
+            return new ContasPagarReceberDAL().RelatorioContasPagas(DATAINICIAL, DATAFINAL);
+        }
+
+        public DataTable RelatorioContasRecebidas(DateTime DATAINICIAL, DateTime DATAFINAL)
+        {
+            return new ContasPagarReceberDAL().RelatorioContasRecebidas(DATAINICIAL, DATAFINAL);
+        }
     }
 }

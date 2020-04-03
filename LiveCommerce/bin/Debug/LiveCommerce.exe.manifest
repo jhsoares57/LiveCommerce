@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="LiveCommerce.exe" version="20.00.03.3" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="LiveCommerce.exe" version="20.00.03.4" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="Icone.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LiveCommerce.exe" size="833472">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LiveCommerce.exe" size="909760">
       <assemblyIdentity name="LiveCommerce" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>sP9qt5Lwcv0iSUHuNweFf49jxrcBCAzT3pR5y0Ra+Vk=</dsig:DigestValue>
+        <dsig:DigestValue>0DMtVUbpf/xbYzv58uuBLGIk3GHEmjfCyTa+BvHSXn8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -732,13 +732,13 @@
       <dsig:DigestValue>9u7ZlnHlmq+D2NrQP5YsKAdaIOQcqvB7XKOuWnXSC9Y=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="DAL\BD\ContasPagarReceber\LV_CONTAPAGAR_RECEBER_TIPO_V1.sql" size="931">
+  <file name="DAL\BD\ContasPagarReceber\LV_CONTAPAGAR_RECEBER_TIPO_V1.sql" size="917">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>lcQXRua16XoL0u2yncYTyUQXrnv07ipfK5OFml9vjHk=</dsig:DigestValue>
+      <dsig:DigestValue>HtSp+Fq2s+uXjuutUGNX9CdHV+6q4YwGEVHtai4/5cA=</dsig:DigestValue>
     </hash>
   </file>
   <file name="DAL\BD\ContasPagarReceber\LV_INSERIR_CONT_V1.sql" size="387">
@@ -748,6 +748,24 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>Nja45cOLRo0rE1j0CxBJE9VMGtiXCik+np+cQJBSsu4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DAL\BD\ContasPagarReceber\LV_RELATORIO_CONTAS_PAGAS_V1.sql" size="543">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>c5pamtbiwg/+cUcqdZLLtvfZKegMo6myyrNocrrT5lM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DAL\BD\ContasPagarReceber\LV_RELATORIO_CONTAS_RECEBIDAS_V1.sql" size="483">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OSZ3Rif1hymzuF5oM2PSwuyhdWOPUl79KtCkMEfRbsI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="DAL\BD\ContasPagarReceber\TABELA_CONTAS_PAGAR_RECEBER.sql" size="290">

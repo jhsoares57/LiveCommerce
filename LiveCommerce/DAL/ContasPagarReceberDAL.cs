@@ -98,6 +98,50 @@ namespace LiveCommerce.Business
             return linhasAfetadas;
         }
 
+        public DataTable RelatorioContasPagas(DateTime DATAINICIAL, DateTime DATAFINAL)
+        {
+            cf = new ConnectionFactory();
+            string query = "LV_RELATORIO_CONTAS_PAGAS_V1";
 
+            cf.Comando = cf.Conexao.CreateCommand();
+            cf.Comando.CommandType = CommandType.StoredProcedure;
+            cf.Comando.CommandText = query.ToString();
+
+            cf.Comando.Parameters.AddWithValue("@DATAINICIAL",DATAINICIAL);
+
+            cf.Comando.Parameters.AddWithValue("@DATAFINAL",DATAFINAL);
+
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cf.Comando);
+
+            cf.Conexao.Open();
+            da.Fill(dt);
+            cf.Conexao.Close();
+
+            return dt;
+        }
+
+        public DataTable RelatorioContasRecebidas(DateTime DATAINICIAL, DateTime DATAFINAL)
+        {
+            cf = new ConnectionFactory();
+            string query = "LV_RELATORIO_CONTAS_RECEBIDAS_V1";
+
+            cf.Comando = cf.Conexao.CreateCommand();
+            cf.Comando.CommandType = CommandType.StoredProcedure;
+            cf.Comando.CommandText = query.ToString();
+
+            cf.Comando.Parameters.AddWithValue("@DATAINICIAL", DATAINICIAL);
+
+            cf.Comando.Parameters.AddWithValue("@DATAFINAL", DATAFINAL);
+
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cf.Comando);
+
+            cf.Conexao.Open();
+            da.Fill(dt);
+            cf.Conexao.Close();
+
+            return dt;
+        }
     }
 }
