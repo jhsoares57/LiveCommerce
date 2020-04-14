@@ -388,3 +388,204 @@ E:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.csproj.C
 E:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.exe
 E:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.pdb
 E:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.Relatorios.ContasPagar.FrmContasRecebidas.resources
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\LiveCommerce.exe.config
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\LiveCommerce.exe.manifest
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\LiveCommerce.application
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\LiveCommerce.exe
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\LiveCommerce.pdb
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\Validacao.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\EnvDTE.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\stdole.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\Microsoft.MSXML.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\Validacao.pdb
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.csprojAssemblyReference.cache
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.Properties.Resources.resources
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.Configurar.FrmParam.resources
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.Contas.FrmContas.resources
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmCadastroCliente.resources
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmCadastroFuncionario.resources
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmCadastroProduto.resources
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmCadastroFornecedor.resources
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmConfigurarAcesso.resources
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmFomaPagamento.resources
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmListaProdutos.resources
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmListaVendas.resources
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmLogin.resources
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmPaginaInicial.resources
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmPlanoDePagamento.resources
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmProgressBar.resources
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmRelatorioProdutos.resources
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmRelCliente.resources
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmRelVendasDia.resources
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmRelVendasFormaPagamento.resources
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmSelecionar.resources
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmSobre.resources
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmUsuario.resources
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmVendas.resources
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.Impressao.FrmImprimirVenda.resources
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.Relatorios.ContasPagar.FrmContasRecebidas.resources
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.Relatorios.ContasPagar.FrmRelContaPagar.resources
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.csproj.GenerateResource.cache
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\RdlCompile.cache
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\RdlCompile.compiled
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.csproj.CoreCompileInputs.cache
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.exe.manifest
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.application
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.csproj.CopyComplete
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.exe
+C:\Users\Hugo Barros\Desktop\Nova pasta\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.pdb
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\LiveCommerce.exe.config
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\LiveCommerce.exe.manifest
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\LiveCommerce.application
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\LiveCommerce.exe
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\LiveCommerce.pdb
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\Validacao.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\EnvDTE.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\stdole.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\Microsoft.MSXML.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\Validacao.pdb
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.csprojAssemblyReference.cache
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.Properties.Resources.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.Configurar.FrmParam.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.Contas.FrmContas.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmCadastroCliente.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmCadastroFuncionario.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmCadastroProduto.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmCadastroFornecedor.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmConfigurarAcesso.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmFomaPagamento.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmListaProdutos.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmListaVendas.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmLogin.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmPaginaInicial.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmPlanoDePagamento.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmProgressBar.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmRelatorioProdutos.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmRelCliente.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmRelVendasDia.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmRelVendasFormaPagamento.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmSelecionar.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmSobre.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmUsuario.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.FrmVendas.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.Impressao.FrmImprimirVenda.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.Relatorios.ContasPagar.FrmContasRecebidas.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.Relatorios.ContasPagar.FrmRelContaPagar.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.Relatorios.Vendas.FrmRelVendas.resources
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.csproj.GenerateResource.cache
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.csproj.CoreCompileInputs.cache
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.exe.manifest
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.application
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.csproj.CopyComplete
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.exe
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.pdb
