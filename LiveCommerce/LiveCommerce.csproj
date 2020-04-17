@@ -349,13 +349,12 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Relatorios\Clientes.rdlc" />
-    <EmbeddedResource Include="Relatorios\ImprimirVendaPadrao.rdlc" />
     <EmbeddedResource Include="Relatorios\ImprimiVenda.rdlc" />
     <EmbeddedResource Include="Relatorios\Produtos.rdlc" />
+    <EmbeddedResource Include="Relatorios\rptVendaMes.rdlc" />
     <EmbeddedResource Include="Relatorios\VendaFormaPagamentoDia.rdlc" />
     <EmbeddedResource Include="Relatorios\VendasDia.rdlc" />
     <EmbeddedResource Include="Relatorios\VendasFormaPagamento.rdlc" />
-    <EmbeddedResource Include="Relatorios\VendasMes.rdlc" />
     <EmbeddedResource Include="View\Configurar\FrmParam.resx">
       <DependentUpon>FrmParam.cs</DependentUpon>
     </EmbeddedResource>

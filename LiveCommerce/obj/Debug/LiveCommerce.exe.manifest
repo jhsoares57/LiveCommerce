@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LiveCommerce.exe" size="922560">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LiveCommerce.exe" size="927680">
       <assemblyIdentity name="LiveCommerce" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>eMxD7SyJFzMZTXutwILCAlm9ZdOf/sKYtKXfULSN1xI=</dsig:DigestValue>
+        <dsig:DigestValue>PXUzXNbBg1cr2y0HpeFSmHBsc6RPw65+Wy65RHSQXZA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -786,13 +786,13 @@
       <dsig:DigestValue>mo4TOqhEZwwUR9iqaE9yDWs4YC3W59yAyxQtyZSGvsE=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="DAL\BD\LIVE18112018.sql" size="13237">
+  <file name="DAL\BD\LIVE18112018.sql" size="13271">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>A/bzzofIOY2Oywj4qvMuFErhuDht1Cm/+ZDzRm8qKdw=</dsig:DigestValue>
+      <dsig:DigestValue>6GTxjU7O0m5J4xi1uspjYwnANby8wq/ZivlC6Bzup58=</dsig:DigestValue>
     </hash>
   </file>
   <file name="DAL\BD\LV_IMPRIMI_VENDA_COMPLETA_V1.sql" size="986">

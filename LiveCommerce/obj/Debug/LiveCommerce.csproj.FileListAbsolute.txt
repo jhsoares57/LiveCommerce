@@ -589,3 +589,5 @@ D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.applicat
 D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.csproj.CopyComplete
 D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.exe
 D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.pdb
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\RdlCompile.cache
+D:\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\RdlCompile.compiled
