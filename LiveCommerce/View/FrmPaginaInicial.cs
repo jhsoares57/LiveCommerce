@@ -260,5 +260,18 @@ namespace LiveCommerce.View
                 ContaRecebidas.Show();
             }
         }
+
+        private void vendasPorPeridoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<View.Relatorios.Vendas.FrmRelVendas>().Count() > 0)
+            {
+                Application.OpenForms["FrmRelVendas"].BringToFront();
+            }
+            else
+            {
+                View.Relatorios.Vendas.FrmRelVendas ContaRecebidas = new View.Relatorios.Vendas.FrmRelVendas();
+                ContaRecebidas.Show();
+            }
+        }
     }
 }
