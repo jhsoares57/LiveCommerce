@@ -28,6 +28,10 @@ namespace LiveCommerce.Model
 
         private List<VendaItens> listaVendasItens;
 
+        private float valorParcela;
+
+        private int qtdParcelas;
+
         
         public int IdVenda { get => idVenda; set => idVenda = value; }
         public int Id_funcionario { get => id_funcionario; set => id_funcionario = value; }
@@ -40,5 +44,7 @@ namespace LiveCommerce.Model
         public List<VendaItens> ListaVendasItens { get => listaVendasItens; set => listaVendasItens = value; }
         public DateTime DataVenda { get => dataVenda; set => dataVenda = value; }
         public DateTime HoraVenda { get => horaVenda; set => horaVenda = value; }
+        public float ValorParcela { get => valorParcela; set => valorParcela = value; }
+        public int QtdParcelas { get => qtdParcelas; set => qtdParcelas = value; }
     }
 }

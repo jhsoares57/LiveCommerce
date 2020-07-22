@@ -8,9 +8,10 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>LiveCommerce</RootNamespace>
     <AssemblyName>LiveCommerce</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
     <PublishUrl>C:\Users\Hugo\Desktop\Compilacao\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -21,7 +22,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationRevision>8</ApplicationRevision>
     <ApplicationVersion>20.00.03.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -544,11 +545,17 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FluxoCaixa\FluxoCaixa.csproj">
+      <Project>{65654d93-1b74-4e0e-86a4-8973a314943c}</Project>
+      <Name>FluxoCaixa</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Validacao\Validacao.csproj">
       <Project>{999d9514-d622-4811-a70f-8f282a6a1004}</Project>
       <Name>Validacao</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

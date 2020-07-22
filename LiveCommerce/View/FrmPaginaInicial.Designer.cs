@@ -41,6 +41,8 @@
             this.comercialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vendasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.contasAPagarEReceberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.financeiroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.caixaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatoriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.produtosToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.estoqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -51,6 +53,7 @@
             this.comercialToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.contasPagasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contasRecebidasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vendasPorPeridoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configuraçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.parâmetrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,7 +63,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtHora = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.vendasPorPeridoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -72,6 +74,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastroToolStripMenuItem,
             this.comercialToolStripMenuItem,
+            this.financeiroToolStripMenuItem,
             this.relatoriosToolStripMenuItem,
             this.sobreToolStripMenuItem,
             this.logoffToolStripMenuItem,
@@ -188,6 +191,22 @@
             this.contasAPagarEReceberToolStripMenuItem.Text = "Contas a Pagar e Receber";
             this.contasAPagarEReceberToolStripMenuItem.Click += new System.EventHandler(this.contasAPagarEReceberToolStripMenuItem_Click);
             // 
+            // financeiroToolStripMenuItem
+            // 
+            this.financeiroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.caixaToolStripMenuItem});
+            this.financeiroToolStripMenuItem.Name = "financeiroToolStripMenuItem";
+            this.financeiroToolStripMenuItem.Size = new System.Drawing.Size(74, 53);
+            this.financeiroToolStripMenuItem.Text = "Financeiro";
+            this.financeiroToolStripMenuItem.Visible = false;
+            // 
+            // caixaToolStripMenuItem
+            // 
+            this.caixaToolStripMenuItem.Name = "caixaToolStripMenuItem";
+            this.caixaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.caixaToolStripMenuItem.Text = "Caixa";
+            this.caixaToolStripMenuItem.Click += new System.EventHandler(this.caixaToolStripMenuItem_Click);
+            // 
             // relatoriosToolStripMenuItem
             // 
             this.relatoriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -206,7 +225,7 @@
             this.estoqueToolStripMenuItem});
             this.produtosToolStripMenuItem2.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.produtosToolStripMenuItem2.Name = "produtosToolStripMenuItem2";
-            this.produtosToolStripMenuItem2.Size = new System.Drawing.Size(180, 26);
+            this.produtosToolStripMenuItem2.Size = new System.Drawing.Size(150, 26);
             this.produtosToolStripMenuItem2.Text = "Produtos";
             // 
             // estoqueToolStripMenuItem
@@ -223,7 +242,7 @@
             this.porFormaDePagamentoToolStripMenuItem});
             this.vendasToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.vendasToolStripMenuItem.Name = "vendasToolStripMenuItem";
-            this.vendasToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.vendasToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.vendasToolStripMenuItem.Text = "Vendas";
             // 
             // porFormaDePagamentoToolStripMenuItem
@@ -240,7 +259,7 @@
             this.clientesEndereçoToolStripMenuItem});
             this.clientesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.clientesToolStripMenuItem.Text = "Clientes";
             // 
             // clientesEndereçoToolStripMenuItem
@@ -259,7 +278,7 @@
             this.vendasPorPeridoToolStripMenuItem});
             this.comercialToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.comercialToolStripMenuItem1.Name = "comercialToolStripMenuItem1";
-            this.comercialToolStripMenuItem1.Size = new System.Drawing.Size(180, 26);
+            this.comercialToolStripMenuItem1.Size = new System.Drawing.Size(150, 26);
             this.comercialToolStripMenuItem1.Text = "Comercial";
             // 
             // contasPagasToolStripMenuItem
@@ -275,6 +294,13 @@
             this.contasRecebidasToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
             this.contasRecebidasToolStripMenuItem.Text = "Contas Recebidas";
             this.contasRecebidasToolStripMenuItem.Click += new System.EventHandler(this.contasRecebidasToolStripMenuItem_Click);
+            // 
+            // vendasPorPeridoToolStripMenuItem
+            // 
+            this.vendasPorPeridoToolStripMenuItem.Name = "vendasPorPeridoToolStripMenuItem";
+            this.vendasPorPeridoToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
+            this.vendasPorPeridoToolStripMenuItem.Text = "Vendas por Perido";
+            this.vendasPorPeridoToolStripMenuItem.Click += new System.EventHandler(this.vendasPorPeridoToolStripMenuItem_Click);
             // 
             // sobreToolStripMenuItem
             // 
@@ -356,13 +382,6 @@
             this.panel2.Size = new System.Drawing.Size(800, 364);
             this.panel2.TabIndex = 2;
             // 
-            // vendasPorPeridoToolStripMenuItem
-            // 
-            this.vendasPorPeridoToolStripMenuItem.Name = "vendasPorPeridoToolStripMenuItem";
-            this.vendasPorPeridoToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
-            this.vendasPorPeridoToolStripMenuItem.Text = "Vendas por Perido";
-            this.vendasPorPeridoToolStripMenuItem.Click += new System.EventHandler(this.vendasPorPeridoToolStripMenuItem_Click);
-            // 
             // FrmPaginaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -425,5 +444,7 @@
         private System.Windows.Forms.ToolStripMenuItem contasPagasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem contasRecebidasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vendasPorPeridoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem financeiroToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem caixaToolStripMenuItem;
     }
 }

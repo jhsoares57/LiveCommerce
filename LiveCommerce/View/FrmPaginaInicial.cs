@@ -273,5 +273,18 @@ namespace LiveCommerce.View
                 ContaRecebidas.Show();
             }
         }
+
+        private void caixaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<FluxoCaixa.Caixa>().Count() > 0)
+            {
+                Application.OpenForms["Caixa"].BringToFront();
+            }
+            else
+            {
+                FluxoCaixa.Caixa cax = new FluxoCaixa.Caixa();
+                cax.Show();
+            }
+        }
     }
 }

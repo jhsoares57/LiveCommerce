@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("Sistema para gerenciamento de pequenas lojas.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("LiveSystem")]
-[assembly: AssemblyProduct("LiveCommerce")]
+[assembly: AssemblyProduct("Produto: LiveCommerce")]
 [assembly: AssemblyCopyright("Copyright © LiveSystem")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

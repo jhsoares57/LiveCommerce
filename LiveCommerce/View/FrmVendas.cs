@@ -144,6 +144,7 @@ namespace LiveCommerce.View
                 {
 
                     TotalVenda();
+                    CalcularParcela();
 
                 }
             }
@@ -231,7 +232,9 @@ namespace LiveCommerce.View
                 v.IdCliente = Convert.ToInt32(txtCodigoCliente.Text);
                 v.Id_funcionario = Convert.ToInt32(cbxVendedor.SelectedValue);
                 v.IdPagamento = Convert.ToInt32(cbxFormaPagamentoVendas.SelectedValue);
-                v.ValorFinalProdutos = Convert.ToSingle(txtTotalVenda.Text);
+                v.ValorFinalProdutos = Convert.ToSingle(txtTotalaPagar.Text);
+                v.QtdParcelas = Convert.ToInt32(txtParcela.Text);
+                v.ValorParcela = Convert.ToSingle(txtValorParcela.Text);
 
                 v.ListaVendasItens = new List<VendaItens>();
 
@@ -284,6 +287,8 @@ namespace LiveCommerce.View
             dgvVenda.Columns.Clear();
             listaVenda.Clear();
             txtDesconto.Clear();
+            txtParcela.Clear();
+            txtValorParcela.Clear();
             btnPesquisarCliente.Focus();
         }
 
@@ -303,6 +308,28 @@ namespace LiveCommerce.View
         {
             Impressao.FrmImprimirVenda FrImprimi = new Impressao.FrmImprimirVenda();
             FrImprimi.Show();
+        }
+
+        private void CalcularParcela()
+        {
+            if (txtParcela.Text != "")
+            {
+                double total = Convert.ToDouble(txtTotalaPagar.Text);
+                int parcela = Convert.ToInt32(txtParcela.Text);
+                double ValorParcela = (total / parcela);
+
+                string resul = string.Format("{0:C}", Convert.ToString(ValorParcela));
+                txtValorParcela.Text = resul;
+            }
+            else
+            {
+                txtParcela.Text = "1";
+            }
+        }
+
+        private void txtParcela_KeyUp(object sender, KeyEventArgs e)
+        {
+            CalcularParcela();
         }
     }
 }

@@ -30,6 +30,10 @@
         {
             this.lblVendas = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtValorParcela = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtParcela = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.txtTotalaPagar = new System.Windows.Forms.TextBox();
             this.txtDesconto = new System.Windows.Forms.TextBox();
             this.txtTotalVenda = new System.Windows.Forms.TextBox();
@@ -94,6 +98,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtValorParcela);
+            this.groupBox1.Controls.Add(this.label14);
+            this.groupBox1.Controls.Add(this.txtParcela);
+            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.txtTotalaPagar);
             this.groupBox1.Controls.Add(this.txtDesconto);
             this.groupBox1.Controls.Add(this.txtTotalVenda);
@@ -112,11 +120,48 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Pagamento";
             // 
+            // txtValorParcela
+            // 
+            this.txtValorParcela.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValorParcela.Location = new System.Drawing.Point(100, 260);
+            this.txtValorParcela.Name = "txtValorParcela";
+            this.txtValorParcela.Size = new System.Drawing.Size(84, 26);
+            this.txtValorParcela.TabIndex = 56;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(93, 239);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(40, 16);
+            this.label14.TabIndex = 55;
+            this.label14.Text = "Valor";
+            // 
+            // txtParcela
+            // 
+            this.txtParcela.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtParcela.Location = new System.Drawing.Point(22, 260);
+            this.txtParcela.Name = "txtParcela";
+            this.txtParcela.Size = new System.Drawing.Size(72, 26);
+            this.txtParcela.TabIndex = 54;
+            this.txtParcela.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtParcela_KeyUp);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(19, 239);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(62, 16);
+            this.label9.TabIndex = 53;
+            this.label9.Text = "Parcelas";
+            // 
             // txtTotalaPagar
             // 
             this.txtTotalaPagar.Enabled = false;
             this.txtTotalaPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotalaPagar.Location = new System.Drawing.Point(22, 153);
+            this.txtTotalaPagar.Location = new System.Drawing.Point(22, 152);
             this.txtTotalaPagar.Name = "txtTotalaPagar";
             this.txtTotalaPagar.Size = new System.Drawing.Size(162, 26);
             this.txtTotalaPagar.TabIndex = 52;
@@ -124,18 +169,18 @@
             // txtDesconto
             // 
             this.txtDesconto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDesconto.Location = new System.Drawing.Point(25, 102);
+            this.txtDesconto.Location = new System.Drawing.Point(22, 104);
             this.txtDesconto.Name = "txtDesconto";
-            this.txtDesconto.Size = new System.Drawing.Size(159, 26);
+            this.txtDesconto.Size = new System.Drawing.Size(162, 26);
             this.txtDesconto.TabIndex = 0;
             this.txtDesconto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtDesconto_KeyDown);
             // 
             // txtTotalVenda
             // 
             this.txtTotalVenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotalVenda.Location = new System.Drawing.Point(27, 47);
+            this.txtTotalVenda.Location = new System.Drawing.Point(22, 47);
             this.txtTotalVenda.Name = "txtTotalVenda";
-            this.txtTotalVenda.Size = new System.Drawing.Size(154, 26);
+            this.txtTotalVenda.Size = new System.Drawing.Size(162, 26);
             this.txtTotalVenda.TabIndex = 50;
             // 
             // cbxFormaPagamentoVendas
@@ -152,7 +197,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(33, 189);
+            this.label18.Location = new System.Drawing.Point(19, 189);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(122, 16);
             this.label18.TabIndex = 48;
@@ -162,7 +207,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(33, 134);
+            this.label17.Location = new System.Drawing.Point(19, 133);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(90, 16);
             this.label17.TabIndex = 47;
@@ -172,7 +217,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(40, 80);
+            this.label16.Location = new System.Drawing.Point(24, 83);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(66, 16);
             this.label16.TabIndex = 46;
@@ -182,7 +227,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(32, 22);
+            this.label15.Location = new System.Drawing.Point(19, 22);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(82, 16);
             this.label15.TabIndex = 45;
@@ -193,7 +238,7 @@
             this.btnFinalizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFinalizar.Image = global::LiveCommerce.Properties.Resources.Salvar;
             this.btnFinalizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFinalizar.Location = new System.Drawing.Point(43, 283);
+            this.btnFinalizar.Location = new System.Drawing.Point(43, 321);
             this.btnFinalizar.Name = "btnFinalizar";
             this.btnFinalizar.Size = new System.Drawing.Size(127, 52);
             this.btnFinalizar.TabIndex = 2;
@@ -207,7 +252,7 @@
             this.btnCancelarVendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelarVendas.Image = global::LiveCommerce.Properties.Resources.Excluir;
             this.btnCancelarVendas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelarVendas.Location = new System.Drawing.Point(43, 367);
+            this.btnCancelarVendas.Location = new System.Drawing.Point(43, 379);
             this.btnCancelarVendas.Name = "btnCancelarVendas";
             this.btnCancelarVendas.Size = new System.Drawing.Size(127, 49);
             this.btnCancelarVendas.TabIndex = 3;
@@ -638,6 +683,10 @@
         public System.Windows.Forms.TextBox txtQuantidade;
         public System.Windows.Forms.TextBox txtPrecoProduto;
         public System.Windows.Forms.TextBox txtCodigoProduto;
+        private System.Windows.Forms.TextBox txtValorParcela;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtParcela;
+        private System.Windows.Forms.Label label9;
     }
 }
 

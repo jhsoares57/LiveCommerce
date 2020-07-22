@@ -36,19 +36,51 @@ namespace LiveCommerce.View.Contas
 
         private void btnIncluir_Click(object sender, EventArgs e)
         {
-            ContasPagarReceber P = new ContasPagarReceber();
-            P.CtpCont = Convert.ToInt32(cbxTipoLabnc.SelectedValue);
-            P.CdtLanc = Convert.ToDateTime(txtDtLanc.Text);
-            P.CcodOri = Convert.ToInt32(cbxOrigem.SelectedValue);
-            P.CvlrCnt = Convert.ToDouble(txtValor.Text);
-            P.CdtVcto = Convert.ToDateTime(txtDtPagamento.Text);
-            P.Cobs = txtObservacao.Text;
+            try
+            {
+                string AtivoEx = cbxTipoLabnc.Text.Replace("SELECIONE", "").Trim();
+                if (string.IsNullOrEmpty(AtivoEx))
+                {
+                    throw new CpfInvalidoException("Informe um tipo de conta!");
+
+                }
+
+                string oriex = cbxOrigem.Text.Replace("SELECIONE", "").Trim();
+                if (string.IsNullOrEmpty(oriex))
+                {
+                    throw new CpfInvalidoException("Informe uma origem!");
+
+                }
+
+                string valorex = txtValor.Text;
+                if (string.IsNullOrEmpty(valorex))
+                {
+                    throw new CpfInvalidoException("Informe um valor!");
+
+                }
+
+                ContasPagarReceber P = new ContasPagarReceber();
+                P.CtpCont = Convert.ToInt32(cbxTipoLabnc.SelectedValue);
+                P.CdtLanc = Convert.ToDateTime(txtDtLanc.Text);
+                P.CcodOri = Convert.ToInt32(cbxOrigem.SelectedValue);
+                P.CvlrCnt = Convert.ToDouble(txtValor.Text);
+                P.CdtVcto = Convert.ToDateTime(txtDtPagamento.Text);
+                P.Cobs = txtObservacao.Text;
+
+                contaService.Insert(P);
+
+                MessageBox.Show("Conta Lançada com Sucesso!!!", "Mensagem do Sistema");
+                LimparDados();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+            
            
 
-            contaService.Insert(P);
-
-            MessageBox.Show("Conta Lançada com Sucesso!!!","Mensagem do Sistema");
-            LimparDados();
+          
         }
 
         public void LimparDados()

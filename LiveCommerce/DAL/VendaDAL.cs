@@ -22,8 +22,8 @@ namespace LiveCommerce.DAL
                 StringBuilder query = new StringBuilder();
 
                 query.AppendLine("INSERT INTO VENDA");
-                query.AppendLine("(VL_FINAL_VENDA, DT_VENDA, STATUS, HORA_VENDA,  ID_FUNCIONARIO, ID_CLIENTE,  ID_FORMAPAGAMENTO)");
-                query.AppendLine("VALUES(@VL_FINAL_VENDA, @DT_VENDA, 'FINALIZADA', @HORA_VENDA, @ID_FUNCIONARIO, @ID_CLIENTE, @ID_FORMAPAGAMENTO)");
+                query.AppendLine("(VL_FINAL_VENDA, DT_VENDA, STATUS, HORA_VENDA,  ID_FUNCIONARIO, ID_CLIENTE,  ID_FORMAPAGAMENTO, VALORPARCELAS,QTDPARCELAS)");
+                query.AppendLine("VALUES(@VL_FINAL_VENDA, @DT_VENDA, 'FINALIZADA', @HORA_VENDA, @ID_FUNCIONARIO, @ID_CLIENTE, @ID_FORMAPAGAMENTO,@VALORPARCELAS,@QTDPARCELAS)");
                 query.AppendLine("SELECT SCOPE_IDENTITY();");
 
                 cf.Comando = cf.Conexao.CreateCommand();
@@ -33,7 +33,9 @@ namespace LiveCommerce.DAL
                 cf.Comando.Parameters.AddWithValue("@HORA_VENDA", v.HoraVenda);
                 cf.Comando.Parameters.AddWithValue("@ID_FUNCIONARIO", v.Id_funcionario);
                 cf.Comando.Parameters.AddWithValue("@ID_CLIENTE", v.IdCliente);                                
-                cf.Comando.Parameters.AddWithValue("@ID_FORMAPAGAMENTO", v.IdPagamento);               
+                cf.Comando.Parameters.AddWithValue("@ID_FORMAPAGAMENTO", v.IdPagamento);
+                cf.Comando.Parameters.AddWithValue("@VALORPARCELAS", v.ValorParcela);
+                cf.Comando.Parameters.AddWithValue("@QTDPARCELAS", v.QtdParcelas);
 
 
                 cf.Comando.CommandType = CommandType.Text;

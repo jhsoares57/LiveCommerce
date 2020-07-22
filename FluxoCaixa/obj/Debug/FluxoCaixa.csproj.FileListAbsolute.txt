@@ -1,0 +1,9 @@
+C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\FluxoCaixa\bin\Debug\FluxoCaixa.exe.config
+C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\FluxoCaixa\bin\Debug\FluxoCaixa.exe
+C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\FluxoCaixa\bin\Debug\FluxoCaixa.pdb
+C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\FluxoCaixa\obj\Debug\FluxoCaixa.Caixa.resources
+C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\FluxoCaixa\obj\Debug\FluxoCaixa.Properties.Resources.resources
+C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\FluxoCaixa\obj\Debug\FluxoCaixa.csproj.GenerateResource.cache
+C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\FluxoCaixa\obj\Debug\FluxoCaixa.csproj.CoreCompileInputs.cache
+C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\FluxoCaixa\obj\Debug\FluxoCaixa.exe
+C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\FluxoCaixa\obj\Debug\FluxoCaixa.pdb

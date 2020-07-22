@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="LiveCommerce.exe" version="20.00.03.5" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="LiveCommerce.exe" version="20.00.03.8" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="Icone.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -43,26 +43,38 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnvDTE.dll" size="254840">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnvDTE.dll" size="254848">
       <assemblyIdentity name="EnvDTE" version="8.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>akNtLn6BD8ZaODonnQERpox0b71kkEOFEluRDofL6HM=</dsig:DigestValue>
+        <dsig:DigestValue>gmrIe/DrZhd/csiF7yM1BwCGElCIhc18qeNtgtNnzXc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LiveCommerce.exe" size="927680">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FluxoCaixa.exe" size="18432">
+      <assemblyIdentity name="FluxoCaixa" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ozzEDIv+OGBo9A6MnQn0veSvD6DzGWUmcvxx/0+ZIXU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LiveCommerce.exe" size="930240">
       <assemblyIdentity name="LiveCommerce" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>5e3kpQDJoHN1DLceooCQqG1nP1UoDQzmp3pj4AKDKYs=</dsig:DigestValue>
+        <dsig:DigestValue>WMI/Lz9ae75gHw8QjAz5nMFYn6nppgqFQZ7L+ePyPw4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -691,14 +703,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="stdole.dll" size="25472">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="stdole.dll" size="25480">
       <assemblyIdentity name="stdole" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>1wGY1g/glN+iY19WufNHnAftDmjNJSPQZwD5jt3f1uQ=</dsig:DigestValue>
+        <dsig:DigestValue>8NH3BZ5cLdMCKORMtY3Iiue1vqbeB39/PlIKXRO/mec=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -710,7 +722,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>xu7xfpyUajfQEFui6ihRaQO6jhwqwNh+BpeFMconvMc=</dsig:DigestValue>
+        <dsig:DigestValue>5NskpyXE0503HvoFlIO1LpRcbkL6mIB2BoZcUBqApWM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -786,13 +798,13 @@
       <dsig:DigestValue>mo4TOqhEZwwUR9iqaE9yDWs4YC3W59yAyxQtyZSGvsE=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="DAL\BD\LIVE18112018.sql" size="13271">
+  <file name="DAL\BD\LIVE18112018.sql" size="13341">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>6GTxjU7O0m5J4xi1uspjYwnANby8wq/ZivlC6Bzup58=</dsig:DigestValue>
+      <dsig:DigestValue>IEQNbNhxIVXQalhj1F6ulnck4LwXyP6D87xHZG8Jn9g=</dsig:DigestValue>
     </hash>
   </file>
   <file name="DAL\BD\LV_IMPRIMI_VENDA_COMPLETA_V1.sql" size="986">
@@ -867,13 +879,13 @@
       <dsig:DigestValue>fTMilgI8iUx5VZ1WsA1bvnsx6nVeor+EJCumA6Swehk=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="LiveCommerce.exe.config" size="931">
+  <file name="LiveCommerce.exe.config" size="1184">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>cs/VJ6duCLgrcWyj2kf7F7Eh/tq/lPEYpIHr7/6aJWM=</dsig:DigestValue>
+      <dsig:DigestValue>uRX4Tkqzm9ObIXQk/tvdJRqsc8FdNIgihDnLm6sDuEM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="SqlServerTypes\readme.htm" size="2369">
