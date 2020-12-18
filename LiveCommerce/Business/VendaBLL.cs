@@ -25,10 +25,12 @@ namespace LiveCommerce.Business
         {
             bool atualizou = false;
             VendaDAL vendaDAL = new VendaDAL();
+            int ID_Venda = v.IdVenda;
+
 
             if (vendaDAL.CancelarVenda(v) > 0)
             {
-                atualizou = true;
+                    atualizou = true;
             }
 
             return atualizou;
@@ -46,5 +48,6 @@ namespace LiveCommerce.Business
 
             return atualizou;
         }
+
     }
 }

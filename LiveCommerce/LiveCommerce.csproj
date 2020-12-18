@@ -22,7 +22,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>8</ApplicationRevision>
+    <ApplicationRevision>10</ApplicationRevision>
     <ApplicationVersion>20.00.03.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -65,6 +65,9 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
     </Reference>
@@ -98,6 +101,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BackupBase\ExecBackup.cs" />
+    <Compile Include="BackupBase\ListarBackup.cs" />
+    <Compile Include="BackupBase\RetornaDatabase.cs" />
     <Compile Include="Business\CategoriaProdutoBLL.cs" />
     <Compile Include="Business\CidadesBLL.cs" />
     <Compile Include="Business\ClienteBLL.cs" />
@@ -179,6 +185,18 @@
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Utils\Criptografia.cs" />
     <Compile Include="Utils\DGVPrinter.cs" />
+    <Compile Include="View\Backup\FrmBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Backup\FrmBackup.Designer.cs">
+      <DependentUpon>FrmBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Backup\FrmListaBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Backup\FrmListaBackup.Designer.cs">
+      <DependentUpon>FrmListaBackup.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Configurar\FrmParam.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -356,6 +374,12 @@
     <EmbeddedResource Include="Relatorios\VendaFormaPagamentoDia.rdlc" />
     <EmbeddedResource Include="Relatorios\VendasDia.rdlc" />
     <EmbeddedResource Include="Relatorios\VendasFormaPagamento.rdlc" />
+    <EmbeddedResource Include="View\Backup\FrmBackup.resx">
+      <DependentUpon>FrmBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Backup\FrmListaBackup.resx">
+      <DependentUpon>FrmListaBackup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Configurar\FrmParam.resx">
       <DependentUpon>FrmParam.cs</DependentUpon>
     </EmbeddedResource>
@@ -461,6 +485,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DAL\BD\Backup\Backup.sql" />
     <Content Include="DAL\BD\CIDADES_ATUALIZADO.sql" />
     <Content Include="DAL\BD\ContasPagarReceber\LV_CONTAPAGAR_RECEBER_TIPO_V1.sql" />
     <Content Include="DAL\BD\ContasPagarReceber\LV_CONTA_PAGAR_RECEBER_CONFIRMA_PAGAMENTO.sql" />
@@ -476,6 +501,9 @@
     <Content Include="DAL\BD\TabelaDeParametros\LPRAM.sql" />
     <Content Include="DAL\BD\USP_VENDA_DIA.sql" />
     <Content Include="DAL\BD\ContasPagarReceber\TABELA_CONTAS_PAGAR_RECEBER.sql" />
+    <Content Include="DAL\BD\VENDA\TabelaParcela.sql" />
+    <Content Include="DAL\BD\VENDA\TG_LANCAR_PARCELA.sql" />
+    <Content Include="DAL\BD\VENDA\USP_STATUS_VENDA.sql" />
     <Content Include="Icone.ico" />
     <Content Include="Icones\CadPlanos.png" />
     <None Include="Relatorios\dsRelatorios.xsc">
@@ -557,5 +585,6 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

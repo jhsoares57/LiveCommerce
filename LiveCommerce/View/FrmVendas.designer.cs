@@ -30,6 +30,8 @@
         {
             this.lblVendas = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtDataPrimeiroVencimento = new System.Windows.Forms.DateTimePicker();
+            this.label19 = new System.Windows.Forms.Label();
             this.txtValorParcela = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.txtParcela = new System.Windows.Forms.TextBox();
@@ -98,6 +100,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtDataPrimeiroVencimento);
+            this.groupBox1.Controls.Add(this.label19);
             this.groupBox1.Controls.Add(this.txtValorParcela);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.txtParcela);
@@ -115,10 +119,29 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(728, 34);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(212, 440);
+            this.groupBox1.Size = new System.Drawing.Size(212, 485);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Pagamento";
+            // 
+            // txtDataPrimeiroVencimento
+            // 
+            this.txtDataPrimeiroVencimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.txtDataPrimeiroVencimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtDataPrimeiroVencimento.Location = new System.Drawing.Point(27, 320);
+            this.txtDataPrimeiroVencimento.Name = "txtDataPrimeiroVencimento";
+            this.txtDataPrimeiroVencimento.Size = new System.Drawing.Size(157, 26);
+            this.txtDataPrimeiroVencimento.TabIndex = 58;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(24, 301);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(132, 16);
+            this.label19.TabIndex = 57;
+            this.label19.Text = "Primeiro Vencimento";
             // 
             // txtValorParcela
             // 
@@ -238,7 +261,7 @@
             this.btnFinalizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFinalizar.Image = global::LiveCommerce.Properties.Resources.Salvar;
             this.btnFinalizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFinalizar.Location = new System.Drawing.Point(43, 321);
+            this.btnFinalizar.Location = new System.Drawing.Point(43, 372);
             this.btnFinalizar.Name = "btnFinalizar";
             this.btnFinalizar.Size = new System.Drawing.Size(127, 52);
             this.btnFinalizar.TabIndex = 2;
@@ -252,7 +275,7 @@
             this.btnCancelarVendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelarVendas.Image = global::LiveCommerce.Properties.Resources.Excluir;
             this.btnCancelarVendas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelarVendas.Location = new System.Drawing.Point(43, 379);
+            this.btnCancelarVendas.Location = new System.Drawing.Point(43, 430);
             this.btnCancelarVendas.Name = "btnCancelarVendas";
             this.btnCancelarVendas.Size = new System.Drawing.Size(127, 49);
             this.btnCancelarVendas.TabIndex = 3;
@@ -583,7 +606,7 @@
             this.groupBox6.Controls.Add(this.dgvVenda);
             this.groupBox6.Location = new System.Drawing.Point(12, 298);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(688, 176);
+            this.groupBox6.Size = new System.Drawing.Size(688, 221);
             this.groupBox6.TabIndex = 36;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Itens Venda";
@@ -596,7 +619,7 @@
             this.dgvVenda.Location = new System.Drawing.Point(18, 19);
             this.dgvVenda.Name = "dgvVenda";
             this.dgvVenda.RowHeadersWidth = 21;
-            this.dgvVenda.Size = new System.Drawing.Size(653, 145);
+            this.dgvVenda.Size = new System.Drawing.Size(653, 196);
             this.dgvVenda.TabIndex = 0;
             this.dgvVenda.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVenda_CellDoubleClick);
             // 
@@ -606,7 +629,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(991, 504);
+            this.ClientSize = new System.Drawing.Size(991, 531);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
@@ -687,6 +710,8 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox txtParcela;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.DateTimePicker txtDataPrimeiroVencimento;
     }
 }
 

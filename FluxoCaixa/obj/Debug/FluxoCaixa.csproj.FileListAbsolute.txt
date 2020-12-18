@@ -7,3 +7,4 @@ C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\FluxoCaixa\obj\Debug\Fl
 C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\FluxoCaixa\obj\Debug\FluxoCaixa.csproj.CoreCompileInputs.cache
 C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\FluxoCaixa\obj\Debug\FluxoCaixa.exe
 C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\FluxoCaixa\obj\Debug\FluxoCaixa.pdb
+C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\FluxoCaixa\obj\Debug\FluxoCaixa.csprojAssemblyReference.cache

@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmContas));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.GBgbDados = new System.Windows.Forms.GroupBox();
+            this.txtnrdoc = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.txtDtPagamento = new System.Windows.Forms.DateTimePicker();
             this.txtDtLanc = new System.Windows.Forms.DateTimePicker();
             this.btnIncluir = new System.Windows.Forms.Button();
@@ -95,6 +97,8 @@
             // GBgbDados
             // 
             this.GBgbDados.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.GBgbDados.Controls.Add(this.txtnrdoc);
+            this.GBgbDados.Controls.Add(this.label13);
             this.GBgbDados.Controls.Add(this.txtDtPagamento);
             this.GBgbDados.Controls.Add(this.txtDtLanc);
             this.GBgbDados.Controls.Add(this.btnIncluir);
@@ -117,6 +121,22 @@
             this.GBgbDados.TabIndex = 0;
             this.GBgbDados.TabStop = false;
             this.GBgbDados.Text = "Dados";
+            // 
+            // txtnrdoc
+            // 
+            this.txtnrdoc.Location = new System.Drawing.Point(505, 81);
+            this.txtnrdoc.Name = "txtnrdoc";
+            this.txtnrdoc.Size = new System.Drawing.Size(100, 20);
+            this.txtnrdoc.TabIndex = 12;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(502, 65);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(47, 13);
+            this.label13.TabIndex = 13;
+            this.label13.Text = "Nr. Doc:";
             // 
             // txtDtPagamento
             // 
@@ -188,7 +208,7 @@
             this.txtObservacao.Location = new System.Drawing.Point(202, 81);
             this.txtObservacao.MaxLength = 250;
             this.txtObservacao.Name = "txtObservacao";
-            this.txtObservacao.Size = new System.Drawing.Size(403, 20);
+            this.txtObservacao.Size = new System.Drawing.Size(286, 20);
             this.txtObservacao.TabIndex = 6;
             // 
             // txtValor
@@ -562,5 +582,7 @@
         private System.Windows.Forms.Button txtImprimir;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog;
         private System.Drawing.Printing.PrintDocument printDocument;
+        private System.Windows.Forms.TextBox txtnrdoc;
+        private System.Windows.Forms.Label label13;
     }
 }

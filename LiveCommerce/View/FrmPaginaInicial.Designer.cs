@@ -57,12 +57,15 @@
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configuraçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.parâmetrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.executarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.logoffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtHora = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.listarBackucpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -203,7 +206,7 @@
             // caixaToolStripMenuItem
             // 
             this.caixaToolStripMenuItem.Name = "caixaToolStripMenuItem";
-            this.caixaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.caixaToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.caixaToolStripMenuItem.Text = "Caixa";
             this.caixaToolStripMenuItem.Click += new System.EventHandler(this.caixaToolStripMenuItem_Click);
             // 
@@ -306,6 +309,7 @@
             // 
             this.sobreToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.configuraçõesToolStripMenuItem,
+            this.backupToolStripMenuItem,
             this.sobreToolStripMenuItem1});
             this.sobreToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
@@ -327,6 +331,22 @@
             this.parâmetrosToolStripMenuItem.Size = new System.Drawing.Size(159, 26);
             this.parâmetrosToolStripMenuItem.Text = "Parâmetros";
             this.parâmetrosToolStripMenuItem.Click += new System.EventHandler(this.parâmetrosToolStripMenuItem_Click);
+            // 
+            // backupToolStripMenuItem
+            // 
+            this.backupToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.executarToolStripMenuItem,
+            this.listarBackucpToolStripMenuItem});
+            this.backupToolStripMenuItem.Name = "backupToolStripMenuItem";
+            this.backupToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.backupToolStripMenuItem.Text = "Backup";
+            // 
+            // executarToolStripMenuItem
+            // 
+            this.executarToolStripMenuItem.Name = "executarToolStripMenuItem";
+            this.executarToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.executarToolStripMenuItem.Text = "Executar";
+            this.executarToolStripMenuItem.Click += new System.EventHandler(this.executarToolStripMenuItem_Click);
             // 
             // sobreToolStripMenuItem1
             // 
@@ -381,6 +401,13 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(800, 364);
             this.panel2.TabIndex = 2;
+            // 
+            // listarBackucpToolStripMenuItem
+            // 
+            this.listarBackucpToolStripMenuItem.Name = "listarBackucpToolStripMenuItem";
+            this.listarBackucpToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.listarBackucpToolStripMenuItem.Text = "Listar Backucp";
+            this.listarBackucpToolStripMenuItem.Click += new System.EventHandler(this.listarBackucpToolStripMenuItem_Click);
             // 
             // FrmPaginaInicial
             // 
@@ -446,5 +473,8 @@
         private System.Windows.Forms.ToolStripMenuItem vendasPorPeridoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem financeiroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem caixaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem backupToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem executarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listarBackucpToolStripMenuItem;
     }
 }

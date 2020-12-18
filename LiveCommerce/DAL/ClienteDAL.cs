@@ -106,7 +106,7 @@ namespace LiveCommerce.DAL
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cf.Comando);
 
-            cf.Conexao.Open();
+            cf.Conexao.Open();  
             da.Fill(dt);
             cf.Conexao.Close();
 

@@ -1,7 +1,6 @@
 C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\FluxoCaixa\bin\Release\FluxoCaixa.exe.config
 C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\FluxoCaixa\bin\Release\FluxoCaixa.exe
 C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\FluxoCaixa\bin\Release\FluxoCaixa.pdb
-C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\FluxoCaixa\obj\Release\FluxoCaixa.csprojAssemblyReference.cache
 C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\FluxoCaixa\obj\Release\FluxoCaixa.Caixa.resources
 C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\FluxoCaixa\obj\Release\FluxoCaixa.Properties.Resources.resources
 C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\FluxoCaixa\obj\Release\FluxoCaixa.csproj.GenerateResource.cache

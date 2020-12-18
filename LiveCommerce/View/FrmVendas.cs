@@ -235,6 +235,7 @@ namespace LiveCommerce.View
                 v.ValorFinalProdutos = Convert.ToSingle(txtTotalaPagar.Text);
                 v.QtdParcelas = Convert.ToInt32(txtParcela.Text);
                 v.ValorParcela = Convert.ToSingle(txtValorParcela.Text);
+                v.DataPrimeiraParcela = Convert.ToDateTime(txtDataPrimeiroVencimento.Text);
 
                 v.ListaVendasItens = new List<VendaItens>();
 

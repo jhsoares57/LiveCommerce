@@ -67,6 +67,7 @@ namespace LiveCommerce.View
                 {
                     this.Hide();
                     FrmPaginaInicial inicial = new FrmPaginaInicial();
+                    inicial.NomeUser(usuario.NmUsuario, usuario.IdUsuario);
                     inicial.Show();
                 }
                 else

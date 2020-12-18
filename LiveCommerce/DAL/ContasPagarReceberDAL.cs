@@ -31,6 +31,7 @@ namespace LiveCommerce.Business
             cf.Comando.Parameters.AddWithValue("@CVLRCNT", c.CvlrCnt);
             cf.Comando.Parameters.AddWithValue("@CDTVCTO", c.CdtVcto);
             cf.Comando.Parameters.AddWithValue("@COBS", c.Cobs);
+            cf.Comando.Parameters.AddWithValue("@CSNRDOC", c.Cobs);
 
             cf.Comando.Parameters.AddWithValue("@ID_OUT", 0).Direction = ParameterDirection.Output;
 
@@ -143,5 +144,6 @@ namespace LiveCommerce.Business
 
             return dt;
         }
+
     }
 }

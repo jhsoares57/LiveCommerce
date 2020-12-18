@@ -696,3 +696,6 @@ C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\
 C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.csproj.CopyComplete
 C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.exe
 C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.pdb
+C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\bin\Debug\MaterialSkin.dll
+C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.Backup.FrmBackup.resources
+C:\Users\Hugo\Documents\Projetos\Projeto_RR\LiveCommerce\LiveCommerce\obj\Debug\LiveCommerce.View.Backup.FrmListaBackup.resources

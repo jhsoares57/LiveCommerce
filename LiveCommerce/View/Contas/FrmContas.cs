@@ -23,6 +23,7 @@ namespace LiveCommerce.View.Contas
         ContasPagarReceberBLL contaService = new ContasPagarReceberBLL();
         ClienteBLL ClienteService = new ClienteBLL();
         public static int id;
+        public static string obs;
         public static decimal total;
         public FrmContas()
         {
@@ -66,6 +67,7 @@ namespace LiveCommerce.View.Contas
                 P.CvlrCnt = Convert.ToDouble(txtValor.Text);
                 P.CdtVcto = Convert.ToDateTime(txtDtPagamento.Text);
                 P.Cobs = txtObservacao.Text;
+                P.CsNrDoc = txtnrdoc.Text;
 
                 contaService.Insert(P);
 
@@ -263,14 +265,27 @@ namespace LiveCommerce.View.Contas
             {
                 ContasPagarReceber v = new ContasPagarReceber();
                 v.CodCont = id;
+                v.Cobs = obs;
 
 
 
                 if (v.CodCont > 0)
                 {
+                    if(v.Cobs != "Conta Lançada a partir da venda") { 
                     //contaService.PagamentoConta(v);
                     CancelamentoConta(v.CodCont);
                     MessageBox.Show("Conta cancelada com sucesso!");
+                    CarregarConta();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Conta lançada a partir de uma venda, \n por favor cancele a venda!");
+                        CarregarConta();
+                    }
+                }
+                if (v.CodCont <= 0)
+                {
+                    MessageBox.Show("Selecione uma conta!");
                     CarregarConta();
                 }
                 else

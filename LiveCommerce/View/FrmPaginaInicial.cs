@@ -16,7 +16,19 @@ namespace LiveCommerce.View
         public FrmPaginaInicial()
         {
             InitializeComponent();         
-        }       
+        }
+
+        Label lblnome = new Label();
+        Label lblidUser = new Label();
+
+        public void NomeUser(string user, int id)
+        {
+            string nome = user;
+            int idUser = id;
+
+            lblidUser.Text = Convert.ToInt32(idUser).ToString();
+            lblnome.Text = nome;
+        }
 
         private void produtoToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -285,6 +297,20 @@ namespace LiveCommerce.View
                 FluxoCaixa.Caixa cax = new FluxoCaixa.Caixa();
                 cax.Show();
             }
+        }
+
+        private void executarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Backup.FrmBackup back = new Backup.FrmBackup();
+            back.dadosUser(lblnome.Text, Convert.ToInt32(lblidUser.Text));
+            back.Show();
+        }
+
+        private void listarBackucpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Backup.FrmListaBackup List = new Backup.FrmListaBackup();
+            List.dadosUser(lblnome.Text, Convert.ToInt32(lblidUser.Text));
+            List.Show();
         }
     }
 }
